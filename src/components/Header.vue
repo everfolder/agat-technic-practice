@@ -51,7 +51,7 @@ import CloseModal from '@/assets/icons/close-modal.svg'
                 Акции
               </a>
               <a class="burger-menu__item">
-                Услуги
+                Новости
               </a>
               <a class="burger-menu__item">
                 О компании
@@ -95,7 +95,7 @@ import CloseModal from '@/assets/icons/close-modal.svg'
         Акции
       </a>
       <a class="header__bottom-item">
-        Услуги
+        Новости
       </a>
       <a class="header__bottom-item">
         О компании
