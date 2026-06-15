@@ -1,33 +1,11 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import CatalogueView from "@/views/CatalogueView.vue"
-import CarDetail from "@/views/CataloqueDetail.vue"
-import MainView from "@/views/MainView.vue";
-import NewsView from "@/views/NewsView.vue";
-import ContactsView from "@/views/ContactsView.vue";
-
-
+import Main from "@/pages/Main.vue";
+import {createRouter, createWebHistory} from "vue-router";
 const routes = [
     {
         path: '/',
-        component: MainView
+        component: Main
     },
-    {
-        path: '/catalogue',
-        component: CatalogueView
-    },
-    {
-        path: '/catalogue/:id',
-        component: CarDetail,
-        props: true
-    },
-    {
-        path: '/news',
-        component: NewsView
-    },
-    {
-        path: '/contacts',
-        component: ContactsView
-    },
+
 ]
 
 const router = createRouter({
