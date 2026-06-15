@@ -1,3 +1,11 @@
+@use '@/styles/helpers' as *;
+
 body {
   font-family: var(--font-family);
+  font-size: rem(14);
+  overflow-inline: hidden;
+}
+
+a {
+  cursor: pointer;
 }
