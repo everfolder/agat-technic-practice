@@ -16,20 +16,20 @@ import Type13 from '@/assets/types/type13.jpg'
 import Type14 from '@/assets/types/type14.jpg'
 
 const types = ref([
-  {img: Type1, type: 'Самосвалы', path: '#'},
-  {img: Type2, type: 'Седельные тягачи', path: '#'},
-  {img: Type3, type: 'Прицепы и полуприцепы', path: '#'},
-  {img: Type4, type: 'Автоцистерны (емкостная техника)', path: '#'},
-  {img: Type5, type: 'Автокраны', path: '#'},
-  {img: Type6, type: 'Автогидроподъёмники', path: '#'},
-  {img: Type7, type: 'Краны-манипуляторы (КМУ)', path: '#'},
-  {img: Type8, type: 'Автобетоносмесители', path: '#'},
-  {img: Type9, type: 'Автобетононасосы', path: '#'},
-  {img: Type10, type: 'Коммунальная техника', path: '#'},
-  {img: Type11, type: 'Автобусы', path: '#'},
-  {img: Type12, type: 'Цельнометаллические автомобили (ЦМФ)', path: '#'},
-  {img: Type13, type: 'Авто с фургоном и бортовые автомобили', path: '#'},
-  {img: Type14, type: 'Навесная и прицепная техника для сельского хозяйства', path: '#'},
+  {img: Type1, type: 'Самосвалы', path: '/catalogue'},
+  {img: Type2, type: 'Седельные тягачи', path: '/catalogue'},
+  {img: Type3, type: 'Прицепы и полуприцепы', path: '/catalogue'},
+  {img: Type4, type: 'Автоцистерны (емкостная техника)', path: '/catalogue'},
+  {img: Type5, type: 'Автокраны', path: '/catalogue'},
+  {img: Type6, type: 'Автогидроподъёмники', path: '/catalogue'},
+  {img: Type7, type: 'Краны-манипуляторы (КМУ)', path: '/catalogue'},
+  {img: Type8, type: 'Автобетоносмесители', path: '/catalogue'},
+  {img: Type9, type: 'Автобетононасосы', path: '/catalogue'},
+  {img: Type10, type: 'Коммунальная техника', path: '/catalogue'},
+  {img: Type11, type: 'Автобусы', path: '/catalogue'},
+  {img: Type12, type: 'Цельнометаллические автомобили (ЦМФ)', path: '/catalogue'},
+  {img: Type13, type: 'Авто с фургоном и бортовые автомобили', path: '/catalogue'},
+  {img: Type14, type: 'Навесная и прицепная техника для сельского хозяйства', path: '/catalogue'},
 
 ])
 
