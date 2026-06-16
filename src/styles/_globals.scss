@@ -4,6 +4,15 @@ body {
   font-family: var(--font-family);
   font-size: rem(14);
   overflow-inline: hidden;
+
+  h2 {
+    font-size: fluid(30, 18);
+    font-weight: 500;
+  }
+  h3 {
+    font-size: fluid(20, 16);
+    font-weight: 500;
+  }
 }
 
 a {
