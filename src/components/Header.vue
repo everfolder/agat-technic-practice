@@ -4,6 +4,7 @@ import Geo from '@/assets/icons/geo.svg'
 import Search from '@/assets/icons/search.svg'
 import CloseModal from '@/assets/icons/close-modal.svg'
 import Modal from '@/components/Modal.vue'
+import Form from '@/components/Form.vue'
 </script>
 
 <template>
@@ -25,29 +26,7 @@ import Modal from '@/components/Modal.vue'
                 Заказать звонок
               </button>
               <Modal id="order-call" title="Заказать звонок">
-                <form action="#">
-                  <div>
-                    <label for="order-call__select">Выберите диллерский центр</label>
-                    <select id="order-call__select" required>
-                      <option>Нижний Новгород, ул. Ларина, 23г</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label for="order-call__name-input">Имя*</label>
-                    <input type="text" id="order-call__name-input" required>
-                  </div>
-                  <div>
-                    <label for="order-call__phone-input">Телефон*</label>
-                    <input type="text" id="order-call__phone-input" required>
-                  </div>
-                  <div class="order-call__submit-form">
-                    <input type="checkbox" id="order-call__checkbox" required>
-                    <label for="order-call__checkbox">Даю согласие на обработку персональных данных и подтверждаю, 
-                      что ознакомлен с политикой обработки персональных данных
-                    </label>
-                    <button class="order-call__send-button">Отправить</button>
-                  </div>
-                </form>
+                <Form id="order-call__form"></Form>
               </Modal>
             </div>
           <a href="https://yandex.ru/maps/org/nizhegorodskiy_gubernskiy_kolledzh/1269470559/?indoorLevel=1&ll=43.948931%2C56.325434&source=serp_navig&z=17.14" class="header__location" target="_blank">
