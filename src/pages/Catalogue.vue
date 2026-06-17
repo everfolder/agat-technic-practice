@@ -5,8 +5,10 @@ import CatalogueList from "@/components/Catalogue/CatalogueList.vue";
 </script>
 
 <template>
-<CatalogueFilter />
-  <CatalogueList />
+  <div class="container catalogue-wrapper">
+    <CatalogueFilter />
+    <CatalogueList />
+  </div>
 </template>
 
 <style
@@ -14,4 +16,9 @@ import CatalogueList from "@/components/Catalogue/CatalogueList.vue";
     lang="scss"
 >
 
+.catalogue-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
 </style>

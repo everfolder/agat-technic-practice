@@ -102,7 +102,9 @@ const setActiveProduct = p => {
 .filter {
   border: rem(1) solid var(--color-gray-lite-2);
   padding: 1rem;
-  width: rem(295);
+  min-width: rem(295);
+  height: fit-content;
+
 
   @include tablet {
     width: rem(312);
