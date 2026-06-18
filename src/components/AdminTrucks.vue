@@ -1,6 +1,6 @@
 <script setup>
-import CatalogueCard from "@/components/Catalogue/CatalogueCard.vue";
 import { onMounted, ref, computed } from "vue";
+import AdminTrucksCard from "@/components/AdminTrucksCard.vue";
 
 const cars = ref([]);
 
@@ -30,12 +30,21 @@ const goToPage = (page) => {
     behavior: "smooth",
   });
 };
+
+const removeTruck = id => {
+  let carsL = JSON.parse(localStorage.getItem('cars'))
+  carsL = carsL.filter(car => car.id !== id)
+  cars.value = cars.value.filter(car => car.id !== id)
+  localStorage.setItem('cars', JSON.stringify(carsL))
+}
 </script>
 
 <template>
-  <div class="wrapper">
+  <div class="wrapper container">
+    <router-link to="/admin-trucks-add-panel">Добавить КАМАААААААААААЗ</router-link>
     <div class="catalogue-list">
-      <CatalogueCard
+      <AdminTrucksCard
+          @delete="removeTruck"
           v-for="c in paginatedCars"
           :key="c.id"
           :car="c"
@@ -61,7 +70,6 @@ const goToPage = (page) => {
       >
         {{ page }}
       </button>
-      <router-link to="/admin-trucks">АДМИНКА</router-link>
       <button
           :disabled="currentPage === totalPages"
           @click="goToPage(currentPage + 1)"
@@ -69,6 +77,8 @@ const goToPage = (page) => {
         →
       </button>
     </div>
+    <router-link to="/admin-trucks">АДМИНКА</router-link>
+
   </div>
 </template>
 

@@ -81,6 +81,7 @@ import Dzen from '@/assets/footer-img/footer-logos/dzen.svg'
               Защита персональных данных <br>
               Юридическая информация
             </a></li>
+
         </ul>
       </div>
     </div>

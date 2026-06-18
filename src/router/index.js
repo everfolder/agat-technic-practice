@@ -1,6 +1,8 @@
 import Main from "@/pages/Main.vue";
 import Catalogue from "@/pages/Catalogue.vue";
 import News from "@/pages/News.vue";
+import AdminTrucks from "@/components/AdminTrucks.vue";
+import AdminTrucksAddPanel from "@/components/AdminTrucksAddPanel.vue";
 import {createRouter, createWebHistory} from "vue-router";
 const routes = [
     {
@@ -15,6 +17,14 @@ const routes = [
         path: '/news',
         component: News
     },
+  {
+    path: '/admin-trucks',
+    component: AdminTrucks
+  },
+  {
+    path: '/admin-trucks-add-panel',
+    component: AdminTrucksAddPanel
+  },
 
 ]
 
