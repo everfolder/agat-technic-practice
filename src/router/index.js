@@ -1,5 +1,6 @@
 import Main from "@/pages/Main.vue";
 import Catalogue from "@/pages/Catalogue.vue";
+import News from "@/pages/News.vue";
 import {createRouter, createWebHistory} from "vue-router";
 const routes = [
     {
@@ -9,6 +10,10 @@ const routes = [
     {
       path: '/catalogue',
       component: Catalogue
+    },
+    {
+        path: '/news',
+        component: News
     },
 
 ]

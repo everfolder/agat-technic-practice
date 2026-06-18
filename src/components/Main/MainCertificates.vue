@@ -57,6 +57,8 @@ const certificates = [
 @use '@/styles/helpers' as *;
 .cert-slider{
   background: #F6F6F6;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .certificate {
   position: relative;

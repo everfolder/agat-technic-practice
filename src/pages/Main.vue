@@ -5,6 +5,7 @@ import MainTypes from "@/components/Main/MainTypes.vue";
 import MainBrandSlider from "@/components/Main/MainBrandSlider.vue";
 import MainAdvantages from "@/components/Main/MainAdvantages.vue";
 import MainCertificates from "@/components/Main/MainCertificates.vue";
+import MainMap from "@/components/Main/MainMap.vue";
 
 const name = ref('')
 </script>
@@ -15,9 +16,7 @@ const name = ref('')
   <MainBrandSlider />
   <MainAdvantages />
   <MainCertificates />
-  <input type="text" v-model="name" placeholder="Введите ваше имя...">
-
-<h1>Hello, {{name}}</h1>
+  <MainMap />
 </template>
 
 <style scoped lang="scss">
