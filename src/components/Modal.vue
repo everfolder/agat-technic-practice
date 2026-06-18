@@ -2,17 +2,19 @@
 import CloseModal from "@/assets/icons/close-modal.svg";
 
 const props = defineProps({
-title: {String, default: ''},
-id: String
+  title: { String, default: '' },
+  id: String
 })
 </script>
 
 <template>
-  <div :style="{display: 'none'}">
+  <div :style="{ display: 'none' }">
     <div class="modal" :id="id">
       <div class="modal__head">
         {{ title }}
-        <button data-fancybox-close class="phone-modal__close-btn"><CloseModal /></button>
+        <button data-fancybox-close class="phone-modal__close-btn">
+          <CloseModal />
+        </button>
       </div>
       <slot>
 
@@ -21,10 +23,7 @@ id: String
   </div>
 </template>
 
-<style
-    scoped
-    lang="scss"
->
+<style scoped lang="scss">
 @use '@/styles/helpers' as *;
 
 .modal {
@@ -33,6 +32,7 @@ id: String
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
   @include mobile {
     width: 100vw;
   }
