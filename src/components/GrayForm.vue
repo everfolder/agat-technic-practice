@@ -1,11 +1,14 @@
 <script setup>
-import { ref } from 'vue'
+
 import Modal from '@/components/Modal.vue'
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import { ref } from 'vue';
 
 const props = defineProps({
-    id: String
+    title: { String, default: 'Остались вопросы? С удовольствием ответим на них' },
+    subtitle: { String, default: 'Заполните форму обратной связи и наш сотрудник свяжется с вами в ближайшее время.' },
+    id: String,
 })
 
 const form = ref(null)
@@ -103,61 +106,119 @@ const submitForm = (event) => {
         });
     }
 }
+
 </script>
 
 <template>
-    <form ref="form" action="#" class="order-call" @submit.prevent="submitForm">
-        <div>
-            <label for="order-call__select">Выберите диллерский центр</label>
-            <select id="order-call__select" required>
-                <option>Нижний Новгород, ул. Ларина, 23г</option>
-            </select>
-            <span class="error"></span>
+    <div class="gray-form">
+        <div class="gray-form__title">
+            {{ title }}
         </div>
-        <div class="input-wrapper">
-            <label for="order-call__name-input" id="name-label">Имя*</label>
-            <input type="text" id="order-call__name-input" required @focus="focusInput" @blur="blurInput"
-                class="name-input" @invalid="customError">
-            <span class="error"></span>
+        <div class="gray-form__subtitle">
+            {{ subtitle }}
         </div>
-        <div class="input-wrapper">
-            <label for="order-call__phone-input" id="phone-label">Телефон*</label>
-            <input type="text" id="order-call__phone-input" required @focus="focusInput" @blur="blurInput"
-                v-mask="'+7 (000) 000-00-00'" value="" class="phone-input" @invalid="customError">
-            <span class="error"></span>
-        </div>
-        <div class="order-call__submit-form">
-            <label class="custom-checkbox">
-                <input type="checkbox" required class="submit-form__checkbox" @invalid="checkboxError"
-                    @change="checkboxChange">
-                <span class="checkmark"></span>
-                Даю согласие на обработку персональных данных и подтверждаю,
-                что ознакомлен с политикой обработки персональных данных
-            </label>
-            <span class="error"></span>
-            <button class="order-call__send-button" type="submit">Отправить</button>
-            <Modal :id="props.id || 'send'" title="&nbsp;">
-                <div class="send__message">
-                    Спасибо. Ваша заявка принята. Наши специалисты свяжутся с Вами в ближайшее время.
+        <form ref="form" action="#" class="gray-form__form" @submit.prevent="submitForm">
+            <div class="gray-form__head">
+                <div class="input-wrapper">
+                    <label for="gray-form__name-input" id="name-label">Имя*</label>
+                    <input type="text" id="gray-form__name-input" required @focus="focusInput" @blur="blurInput"
+                        class="name-input" @invalid="customError">
+                    <span class="error"></span>
                 </div>
-            </Modal>
-        </div>
-    </form>
+                <div class="input-wrapper">
+                    <label for="gray-form__phone-input" id="phone-label">Телефон*</label>
+                    <input type="text" id="gray-form__phone-input" required @focus="focusInput" @blur="blurInput"
+                        v-mask="'+7 (000) 000-00-00'" value="" class="phone-input" @invalid="customError">
+                    <span class="error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label for="gray-form__email-input" id="email-label">E-mail</label>
+                    <input type="email" id="gray-form__email-input" @focus="focusInput" @blur="blurInput" value=""
+                        class="email-input">
+                    <span class="error"></span>
+                </div>
+            </div>
+            <div class="gray-form__select-container">
+                <label for="gray-form__select">Выберите диллерский центр</label>
+                <select id="gray-form__select" required>
+                    <option>Нижний Новгород, ул. Ларина, 23г</option>
+                </select>
+                <span class="error"></span>
+            </div>
+            <div class="gray-form__submit-form">
+                <div class="checkbox-wrapper">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" required class="gray-form__checkbox" @invalid="checkboxError"
+                            @change="checkboxChange">
+                        <span class="checkmark"></span>
+                        Даю согласие на обработку персональных данных и подтверждаю,
+                        что ознакомлен с политикой обработки персональных данных
+                    </label>
+                    <span class="error"></span>
+                </div>
+                <button class="gray-form__send-button" type="submit">Отправить</button>
+                <Modal :id="props.id || 'send'" title="&nbsp;">
+                    <div class="send__message">
+                        Спасибо. Ваша заявка принята. Наши специалисты свяжутся с Вами в ближайшее время.
+                    </div>
+                </Modal>
+            </div>
+        </form>
+    </div>
 </template>
 
 <style scoped lang="scss">
 @use '@/styles/helpers' as *;
 
-.order-call {
+.gray-form {
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    align-items: center;
+    padding-block: 48px 56px;
+    background-color: #545454;
+    color: white;
+    gap: 25px;
+    padding-inline: 341px;
+    width: 100%;
+
+    &__title {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    &__select-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+        gap: 3px;
+        color: black;
+        margin-top: -1%;
+    }
+
+    &__select-container label {
+        color: white;
+    }
 
     &__submit-form {
         display: flex;
         flex-direction: row;
-        gap: 15px;
-        align-items: flex-start;
+        justify-content: space-around;
+        gap: 79px;
         position: relative;
     }
 
@@ -170,7 +231,6 @@ const submitForm = (event) => {
         transition: all 0.4s ease;
         cursor: pointer;
         flex-shrink: 0;
-        height: 52px;
     }
 
     &__send-button:hover {
@@ -180,7 +240,7 @@ const submitForm = (event) => {
 
     &__submit-form .error {
         position: absolute;
-        bottom: -20px;
+        bottom: 10px;
         left: 0;
     }
 }
@@ -192,18 +252,15 @@ const submitForm = (event) => {
     min-height: 52px;
 }
 
-div:not(.input-wrapper):not(.order-call__submit-form) {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
 input,
 select {
     height: 42px;
     padding-left: 15px;
     border: 1px solid #DADADA;
     transition: 0.2s ease;
+    background-color: white;
+    min-width: 400px;
+    color: black;
 }
 
 input:focus,
@@ -216,10 +273,12 @@ label {
     padding-left: 15px;
     font-size: 16px;
     transition: 0.2s ease;
+    color: black;
 }
 
 #name-label,
-#phone-label {
+#phone-label,
+#email-label {
     position: absolute;
     top: 21px;
     transform: translateY(-50%);
@@ -230,10 +289,17 @@ label {
 }
 
 #name-label.active,
-#phone-label.active {
+#phone-label.active,
+#email-label.active {
     top: -10px;
     font-size: 14px;
     padding-left: 15px;
+    color: white;
+}
+
+input:invalid,
+select:invalid {
+    box-shadow: none;
 }
 
 .custom-checkbox {
@@ -244,6 +310,7 @@ label {
     font-size: 14px;
     transition: all 0.4s ease;
     flex: 1;
+    color: white;
 }
 
 .custom-checkbox input {
@@ -256,7 +323,7 @@ label {
 .checkmark {
     min-width: 20px;
     height: 20px;
-    border: 1px solid #DADADA;
+    border: 1px solid white;
     display: inline-block;
     position: relative;
     flex-shrink: 0;
@@ -265,8 +332,7 @@ label {
 }
 
 .custom-checkbox input:checked+.checkmark {
-    background-color: #F9B728;
-    border-color: #F9B728;
+    background-color: white;
     transition: all 0.4s ease;
 }
 
@@ -277,7 +343,7 @@ label {
     top: 3px;
     width: 5px;
     height: 10px;
-    border: solid white;
+    border: solid #F9B728;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
@@ -299,7 +365,6 @@ label {
 
 .input-error {
     border-color: #F9B728;
-    border-width: 2px;
 }
 
 .custom-checkbox.input-error .checkmark {

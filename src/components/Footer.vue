@@ -6,11 +6,15 @@ import Viber from '@/assets/footer-img/footer-logos/viber.svg'
 import Vk from '@/assets/footer-img/footer-logos/vk.svg'
 import Yt from '@/assets/footer-img/footer-logos/youtube.svg'
 import Dzen from '@/assets/footer-img/footer-logos/dzen.svg'
+import GrayForm from '@/components/GrayForm.vue'
 
 </script>
 
 <template>
   <div class="footer">
+    <div class="footer__form">
+        <GrayForm/>
+      </div>
     <div class="footer__inner container">
       <div class="footer__top">
         <div class="footer__top-left">
@@ -26,17 +30,17 @@ import Dzen from '@/assets/footer-img/footer-logos/dzen.svg'
             <ul class="footer__list">
               <li class="footer__list-item">
                 <a href="#">
-                  <Tg class="tg"/> Telegram
+                  <Tg class="tg" /> Telegram
                 </a>
               </li>
               <li class="footer__list-item">
                 <a href="#">
-                  <Whatsapp class="whatsapp"/> WhatsApp
+                  <Whatsapp class="whatsapp" /> WhatsApp
                 </a>
               </li>
               <li class="footer__list-item">
                 <a href="#">
-                  <Viber class="viber"/> Viber
+                  <Viber class="viber" /> Viber
                 </a>
               </li>
             </ul>
@@ -46,22 +50,22 @@ import Dzen from '@/assets/footer-img/footer-logos/dzen.svg'
             <ul class="footer__list">
               <li class="footer__list-item">
                 <a href="#">
-                  <Tg class="tg"/> Telegram
+                  <Tg class="tg" /> Telegram
                 </a>
               </li>
               <li class="footer__list-item">
                 <a href="#">
-                  <Vk class="vk"/> Вконтакте
+                  <Vk class="vk" /> Вконтакте
                 </a>
               </li>
               <li class="footer__list-item">
                 <a href="#">
-                  <Yt class="yt"/> YouTube
+                  <Yt class="yt" /> YouTube
                 </a>
               </li>
               <li class="footer__list-item">
                 <a href="#">
-                  <Dzen class="zen"/> Яндекс.Дзен
+                  <Dzen class="zen" /> Яндекс.Дзен
                 </a>
               </li>
             </ul>
@@ -69,18 +73,26 @@ import Dzen from '@/assets/footer-img/footer-logos/dzen.svg'
         </div>
       </div>
       <div class="footer__bottom">
-        <p>Вся представленная на сайте информация, касающаяся автомобилей и сервисного обслуживания, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Все цены и спецпредложения, указанные на данном сайте носят исключительно информационный характер и являются максимально рекомендуемыми розничными ценами и спецпредложениями по расчетам дистрибьюторов и могут отличаться от цен других дилеров. Для получения подробной информации просьба обращаться в ДЦ компании АГАТ. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.</p>
+        <p>Вся представленная на сайте информация, касающаяся автомобилей и сервисного обслуживания, носит
+          информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Все цены
+          и спецпредложения, указанные на данном сайте носят исключительно информационный характер и являются
+          максимально рекомендуемыми розничными ценами и спецпредложениями по расчетам дистрибьюторов и могут отличаться
+          от цен других дилеров. Для получения подробной информации просьба обращаться в ДЦ компании АГАТ.
+          Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+        </p>
         <ul class="footer__bottom-list">
           <li>© ООО «ТД «Агат» 2008—2022 <br>
             Все права защищены
           </li>
           <li>Обратная связь <br>
-            <a href="#">feedback@agatgroup.com</a></li>
+            <a href="#">feedback@agatgroup.com</a>
+          </li>
           <li>
             <a href="#">
               Защита персональных данных <br>
               Юридическая информация
-            </a></li>
+            </a>
+          </li>
 
         </ul>
       </div>
@@ -90,6 +102,7 @@ import Dzen from '@/assets/footer-img/footer-logos/dzen.svg'
 
 <style scoped lang="scss">
 @use '@/styles/helpers' as *;
+
 a {
   text-decoration: none;
   color: var(--color-white) !important;
@@ -102,25 +115,31 @@ a {
     outline: none;
   }
 }
+
 .footer {
   background: url("@/assets/footer-img/footer-bg.jpg") no-repeat center / cover;
   font-size: fluid(14, 12);
+
   &__inner {
     display: flex;
     flex-direction: column;
   }
+
   &__top {
     display: flex;
     justify-content: space-between;
     padding-block: 2rem;
+
     @include mobile {
       flex-direction: column;
     }
+
     &-left {
       display: flex;
       flex-direction: column;
       gap: 2rem;
     }
+
     &-right {
       display: flex;
       gap: fluid(160, 28);
@@ -130,6 +149,7 @@ a {
         gap: 1rem;
         margin-top: 1rem;
       }
+
       &-col {
         display: flex;
         flex-direction: column;
@@ -142,7 +162,6 @@ a {
         }
       }
     }
-
   }
 
   &__logo {
@@ -166,6 +185,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
     &-item {
       a {
         display: flex;
@@ -176,6 +196,7 @@ a {
           min-width: 35px;
           min-height: 35px;
         }
+
         @include hover {
           color: var(--color-white);
           text-decoration: underline;
@@ -232,9 +253,11 @@ a {
       display: flex;
       justify-content: space-between;
       gap: 1rem;
+
       @include mobile {
         flex-direction: column;
       }
+
       li {
         a {
           text-decoration: underline;
