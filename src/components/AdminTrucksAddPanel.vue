@@ -11,7 +11,7 @@ const form = ref({
   price: '',
   preview_picture: {
     id: '',
-    path: ''
+    path: '' // https://agat-group.com/upload/76/76deed1fd50a0445044e4340653ab4be.png
   },
   propertyValues: {
     transmission: '',
@@ -28,19 +28,78 @@ const form = ref({
   }
 })
 
-const previewUrl = ref()
+const errors = ref({
+  name: true,
+  code: true,
+  brand: true,
+  model: true,
+  price: true
+})
 
-const setPrevImage = (e) => {
-
-  const image = e.target.files[0]
-
-  const reader = new FileReader()
-  reader.onload = e => {
-    previewUrl.value = e.target.result
+const validateName = () => {
+  if (form.value.name.trim().length > 1) {
+    errors.value.name = false
   }
-  reader.readAsDataURL(image)
+}
+
+const validateCode = () => {
+  if (form.value.code.trim().length > 2) {
+    errors.value.code = false
+  }
+}
+
+const validateBrand = () => {
+  if (form.value.brand.trim().length > 1) {
+    errors.value.brand = false
+  }
+}
+
+const validateModel = () => {
+  if (form.value.model.trim().length > 1) {
+    errors.value.model = false
+  }
+}
+
+const validatePrice = () => {
+  if (form.value.price > 0) {
+    errors.value.price = false
+  }
+}
+
+const validateForm = () => {
+  validateBrand()
+  validateCode()
+  validateModel()
+  validateName()
+  validatePrice()
+
+  let valid = true
+
+  for (let k in errors.value) {
+    if (errors.value[k] === true) {
+      valid = false
+    }
+  }
+
+  if (valid) return true
+}
 
 
+const addTruck = () => {
+  form.value.id = String(Date.now())
+  form.value.uuid = crypto.randomUUID()
+  form.value.preview_picture.id = String(Math.floor(Math.random() * (999999 - 1 + 1) + 1))
+
+  if (form.value.preview_picture.path === '') {
+    form.value.preview_picture.path = 'https://agat-group.com/upload/76/76deed1fd50a0445044e4340653ab4be.png'
+  }
+
+  if (validateForm()) {
+    console.log(form.value)
+    let carsL = JSON.parse(localStorage.getItem('cars'))
+    carsL.unshift(form.value)
+    localStorage.setItem('cars', JSON.stringify(carsL))
+  }
 }
 </script>
 
@@ -51,37 +110,89 @@ const setPrevImage = (e) => {
       <div class="form__section1">
         <label class="form__label">
           <span class="form__span">Имя:</span>
-          <input class="form__input">
+          <input class="form__input" v-model="form.name">
         </label>
         <label class="form__label">
           <span class="form__span">Код:</span>
-          <input class="form__input">
+          <input class="form__input" v-model="form.code">
         </label>
         <label class="form__label">
           <span class="form__span">Брэнд:</span>
-          <input class="form__input">
+          <input class="form__input" v-model="form.brand">
         </label>
         <label class="form__label">
           <span class="form__span">Модель:</span>
-          <input class="form__input">
+          <input class="form__input" v-model="form.model">
         </label>
         <label class="form__label">
           <span class="form__span">Цена:</span>
-          <input class="form__input">
+          <input class="form__input" type="number" v-model="form.price">
         </label>
       </div>
       <div class="form__section2">
         <h3>Добавить картинку превью:</h3>
-        <input type="file" accept="image/jpeg" @change="setPrevImage($event)">
-        <img
-            :src="previewUrl"
-            alt="#"
-            style="max-width: 300px;"
-        >
+        <input class="form__input" type="text" placeholder="Вставьте ссылку на изображение" v-model="form.preview_picture.path">
       </div>
+      <div class="form__section3">
+        <label class="form__label">
+          <span class="form__span">Тип КПП:</span>
+          <select class="form__input" v-model="form.propertyValues.transmission">
+            <option value="" selected>Не указано</option>
+            <option value="АКПП">АКПП</option>
+            <option value="МКПП">МКПП</option>
+          </select>
+        </label>
+        <label class="form__label">
+          <span class="form__span">Тип двигателя:</span>
+          <select class="form__input" v-model="form.propertyValues.engine_type">
+            <option value="" selected>Не указано</option>
+            <option value="Дизельный">Дизельный</option>
+            <option value="Бензиновый">Бензиновый</option>
+            <option value="Бензиновый/газовый">Бензиновый/газовый</option>
+          </select>
+        </label>
+        <label class="form__label">
+          <span class="form__span">Объем двигателя:</span>
+          <input class="form__input" type="number" v-model="form.propertyValues.engine_volume">
+        </label>
+        <label class="form__label">
+          <span class="form__span">Мощность двигателя (Л.с.):</span>
+          <input class="form__input" type="number" v-model="form.propertyValues.engine_power">
+        </label>
+        <label class="form__label">
+          <span class="form__span">Максимальная скорость:</span>
+          <input class="form__input" type="number" v-model="form.propertyValues.max_speed">
+        </label>
+        <label class="form__label">
+          <span class="form__span">Количество мест:</span>
+          <input class="form__input" type="number" v-model="form.propertyValues.seats">
+        </label>
+        <label class="form__label">
+          <span class="form__span">Длина:</span>
+          <input class="form__input" type="number" v-model="form.propertyValues.length">
+        </label>
+        <label class="form__label">
+          <span class="form__span">Ширина:</span>
+          <input class="form__input" type="number" v-model="form.propertyValues.width">
+        </label>
+        <label class="form__label">
+          <span class="form__span">Высота:</span>
+          <input class="form__input" type="number" v-model="form.propertyValues.height">
+        </label>
+        <label class="form__label">
+          <span class="form__span">Общая масса:</span>
+          <input class="form__input" type="number" v-model="form.propertyValues.gross_weight">
+        </label>
+        <label class="form__label">
+          <span class="form__span">Добавить изображения:</span>
+          <input class="form__input">
+        </label>
+      </div>
+      <button @click.prevent="addTruck" class="form__button">
+        Добавить камаз
+      </button>
     </form>
   </div>
-
 </template>
 
 <style scoped lang="scss">
@@ -94,14 +205,14 @@ const setPrevImage = (e) => {
   flex-direction: column;
   gap: 2rem;
 
-  &__section1 {
+  &__section1, &__section3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
   &__label {
     display: flex;
-    width: 50%;
+    width: 70%;
     justify-content: space-between;
   }
 
@@ -110,6 +221,17 @@ const setPrevImage = (e) => {
     border: 1px solid black;
   }
 
+  &__button {
+    @include flex-center();
+    padding: .5rem 1rem;
+    background-color: var(--color-yellow);
+    width: fit-content;
+    border: rem(1) solid var(--color-yellow);
 
+    @include hover {
+      border: rem(1) solid var(--color-black);
+      font-weight: 500;
+    }
+  }
 }
 </style>
