@@ -20,16 +20,8 @@ const brands = ref([
     <Swiper :slides-per-view="'auto'" space-between="20" :grab-cursor="true" class="mbslider__slider">
       <SwiperSlide v-for="(brand, index) in brands" :key="index">
         <router-link :to="brand.path">
-          <img
-              class="mbslider__img"
-              :src="brand.imgWhite"
-              alt="logo"
-          >
-          <img
-              class="mbslider__img-color"
-              :src="brand.imgColor"
-              alt="#"
-          >
+          <img class="mbslider__img" :src="brand.imgWhite" alt="logo">
+          <img class="mbslider__img-color" :src="brand.imgColor" alt="#">
         </router-link>
       </SwiperSlide>
     </Swiper>
@@ -37,13 +29,8 @@ const brands = ref([
 </section>
 </template>
 
-<style
-    scoped
-    lang="scss"
->
+<style scoped lang="scss">
 @use '@/styles/helpers' as *;
-
-
 .mbslider {
   background-color: var(--color-gray);
   margin-top: 32px;
