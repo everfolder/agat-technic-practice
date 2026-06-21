@@ -16,6 +16,7 @@ const form = ref({
   propertyValues: {
     transmission: '',
     engine_type: '',
+    body_type: '',
     engine_volume: '',
     engine_power: '',
     max_speed: '',
@@ -29,40 +30,198 @@ const form = ref({
 })
 
 const errors = ref({
-  name: true,
-  code: true,
-  brand: true,
-  model: true,
-  price: true
+  name: {
+    value: false,
+    text: "Длина имени >= 2 символов"
+  },
+  code: {
+    value: false,
+    text: "Длина кода >= 3 символов"
+  },
+  brand: {
+    value: false,
+    text: "Длина бренда >= 2 символов"
+  },
+  model: {
+    value: false,
+    text: "Длина модели >= 2 символов"
+  },
+  price: {
+    value: false,
+    text: "Цена не может быть меньше 1"
+  },
+  transmission: {
+    value: false,
+    text: "Выберите один из вариантов"
+  },
+  engine_type: {
+    value: false,
+    text: "Выберите один из вариантов"
+  },
+  engine_volume: {
+    value: false,
+    text: "Объем двигателя > 0"
+  },
+  engine_power: {
+    value: false,
+    text: "Мощность двигателя > 0"
+  },
+  max_speed: {
+    value: false,
+    text: "Максимальная скорость > 0"
+  },
+  seats: {
+    value: false,
+    text: "Количество мест > 0"
+  },
+  length: {
+    value: false,
+    text: "Длина > 0"
+  },
+  width: {
+    value: false,
+    text: "Ширина > 0"
+  },
+  height: {
+    value: false,
+    text: "Высота > 0"
+  },
+  gross_weight: {
+    value: false,
+    text: "Общий вес > 0"
+  },
+  body_type: {
+    value: false,
+    text: "Выберите один из вариантов"
+  },
+
 })
 
 const validateName = () => {
-  if (form.value.name.trim().length > 1) {
-    errors.value.name = false
+  if (form.value.name.trim().length < 2) {
+    errors.value.name.value = true
+  } else {
+    errors.value.name.value = false
   }
 }
 
 const validateCode = () => {
-  if (form.value.code.trim().length > 2) {
-    errors.value.code = false
+  if (form.value.code.trim().length < 3) {
+    errors.value.code.value = true
+  } else {
+    errors.value.code.value = false
   }
 }
 
 const validateBrand = () => {
-  if (form.value.brand.trim().length > 1) {
-    errors.value.brand = false
+  if (form.value.brand.trim().length < 2) {
+    errors.value.brand.value = true
+  } else {
+    errors.value.brand.value = false
   }
 }
 
 const validateModel = () => {
-  if (form.value.model.trim().length > 1) {
-    errors.value.model = false
+  if (form.value.model.trim().length < 2) {
+    errors.value.model.value = true
+  } else {
+    errors.value.model.value = false
   }
 }
 
 const validatePrice = () => {
-  if (form.value.price > 0) {
-    errors.value.price = false
+  if (form.value.price < 1) {
+    errors.value.price.value = true
+  } else {
+    errors.value.price.value = false
+  }
+}
+
+const validateTransmission = () => {
+  if (form.value.propertyValues.transmission === '') {
+    errors.value.transmission.value = true
+  } else {
+    errors.value.transmission.value = false
+  }
+}
+
+const validateEngineType = () => {
+  if (form.value.propertyValues.engine_type === '') {
+    errors.value.engine_type.value = true
+  } else {
+    errors.value.engine_type.value = false
+  }
+}
+
+const validateBodyType = () => {
+  if (form.value.propertyValues.body_type === '') {
+    errors.value.body_type.value = true
+  } else {
+    errors.value.body_type.value = false
+  }
+}
+
+const validateEngineVolume = () => {
+  if (form.value.propertyValues.engine_volume < 1) {
+    errors.value.engine_volume.value = true
+  } else {
+    errors.value.engine_volume.value = false
+  }
+}
+
+const validateEnginePower = () => {
+  if (form.value.propertyValues.engine_power < 1) {
+    errors.value.engine_power.value = true
+  } else {
+    errors.value.engine_power.value = false
+  }
+}
+
+const validateMaxSpeed = () => {
+  if (form.value.propertyValues.max_speed < 1) {
+    errors.value.max_speed.value = true
+  } else {
+    errors.value.max_speed.value = false
+  }
+}
+
+const validateSeats = () => {
+  if (form.value.propertyValues.seats < 1) {
+    errors.value.seats.value = true
+  } else {
+    errors.value.seats.value = false
+  }
+}
+
+const validateLength = () => {
+  if (form.value.propertyValues.length < 1) {
+    errors.value.length.value = true
+  } else {
+    errors.value.length.value = false
+  }
+}
+
+const validateWidth = () => {
+  if (form.value.propertyValues.width < 1) {
+    errors.value.width.value = true
+  } else {
+    errors.value.width.value = false
+  }
+}
+
+const validateHeight = () => {
+  if (form.value.propertyValues.height < 1) {
+    errors.value.height.value = true
+  } else {
+    errors.value.height.value = false
+  }
+}
+
+const validateGrossWeight = () => {
+  if (form.value.propertyValues.gross_weight < 1) {
+    errors.value.gross_weight.value = true
+  } else {
+    errors.value.gross_weight.value = false
   }
 }
 
@@ -72,11 +231,22 @@ const validateForm = () => {
   validateModel()
   validateName()
   validatePrice()
+  validateTransmission()
+  validateEngineType()
+  validateBodyType()
+  validateEngineVolume()
+  validateEnginePower()
+  validateMaxSpeed()
+  validateSeats()
+  validateLength()
+  validateWidth()
+  validateHeight()
+  validateGrossWeight()
 
   let valid = true
 
   for (let k in errors.value) {
-    if (errors.value[k] === true) {
+    if (errors.value[k].value === true) {
       valid = false
     }
   }
@@ -109,24 +279,49 @@ const addTruck = () => {
     <form class="form">
       <div class="form__section1">
         <label class="form__label">
-          <span class="form__span">Имя:</span>
-          <input class="form__input" v-model="form.name">
+          <div class="form__label-wrapper">
+            <span class="form__span">Имя:</span>
+            <input class="form__input" v-model="form.name">
+          </div>
+          <p v-if="errors.name.value" class="form__error">
+            {{errors.name.text}}
+          </p>
         </label>
         <label class="form__label">
-          <span class="form__span">Код:</span>
-          <input class="form__input" v-model="form.code">
+          <div class="form__label-wrapper">
+            <span class="form__span">Код:</span>
+            <input class="form__input" v-model="form.code">
+          </div>
+          <p v-if="errors.code.value" class="form__error">
+            {{errors.code.text}}
+          </p>
         </label>
         <label class="form__label">
-          <span class="form__span">Брэнд:</span>
-          <input class="form__input" v-model="form.brand">
+          <div class="form__label-wrapper">
+            <span class="form__span">Брэнд:</span>
+            <input class="form__input" v-model="form.brand">
+          </div>
+          <p v-if="errors.brand.value" class="form__error">
+            {{errors.brand.text}}
+          </p>
         </label>
         <label class="form__label">
-          <span class="form__span">Модель:</span>
-          <input class="form__input" v-model="form.model">
+          <div class="form__label-wrapper">
+            <span class="form__span">Модель:</span>
+            <input class="form__input" v-model="form.model">
+          </div>
+          <p v-if="errors.model.value" class="form__error">
+            {{errors.model.text}}
+          </p>
         </label>
         <label class="form__label">
-          <span class="form__span">Цена:</span>
-          <input class="form__input" type="number" v-model="form.price">
+          <div class="form__label-wrapper">
+            <span class="form__span">Цена:</span>
+            <input class="form__input" v-model="form.price" type="number">
+          </div>
+          <p v-if="errors.price.value" class="form__error">
+            {{errors.price.text}}
+          </p>
         </label>
       </div>
       <div class="form__section2">
@@ -135,53 +330,119 @@ const addTruck = () => {
       </div>
       <div class="form__section3">
         <label class="form__label">
-          <span class="form__span">Тип КПП:</span>
-          <select class="form__input" v-model="form.propertyValues.transmission">
-            <option value="" selected>Не указано</option>
-            <option value="АКПП">АКПП</option>
-            <option value="МКПП">МКПП</option>
-          </select>
+          <div class="form__label-wrapper">
+            <span class="form__span">Тип КПП:</span>
+            <select class="form__input" v-model="form.propertyValues.transmission">
+              <option value="" selected disabled>Не указано</option>
+              <option value="АКПП">АКПП</option>
+              <option value="МКПП">МКПП</option>
+            </select>
+          </div>
+          <p v-if="errors.transmission.value" class="form__error">
+            {{errors.transmission.text}}
+          </p>
         </label>
         <label class="form__label">
-          <span class="form__span">Тип двигателя:</span>
-          <select class="form__input" v-model="form.propertyValues.engine_type">
-            <option value="" selected>Не указано</option>
-            <option value="Дизельный">Дизельный</option>
-            <option value="Бензиновый">Бензиновый</option>
-            <option value="Бензиновый/газовый">Бензиновый/газовый</option>
-          </select>
+          <div class="form__label-wrapper">
+            <span class="form__span">Тип двигателя:</span>
+            <select class="form__input" v-model="form.propertyValues.engine_type">
+              <option value="" selected disabled>Не указано</option>
+              <option value="Дизельный">Дизельный</option>
+              <option value="Бензиновый">Бензиновый</option>
+              <option value="Бензиновый/газовый">Бензиновый/газовый</option>
+            </select>
+          </div>
+          <p v-if="errors.engine_type.value" class="form__error">
+            {{errors.engine_type.text}}
+          </p>
+
         </label>
         <label class="form__label">
-          <span class="form__span">Объем двигателя:</span>
-          <input class="form__input" type="number" v-model="form.propertyValues.engine_volume">
+          <div class="form__label-wrapper">
+            <span class="form__span">Тип кузова:</span>
+            <select class="form__input" v-model="form.propertyValues.body_type">
+              <option value="" selected disabled>Не указано</option>
+              <option value="Шасси">Шасси</option>
+              <option value="Самосвал">Самосвал</option>
+              <option value="Тягач">Тягач</option>
+            </select>
+          </div>
+          <p v-if="errors.body_type.value" class="form__error">
+            {{errors.body_type.text}}
+          </p>
+
         </label>
         <label class="form__label">
-          <span class="form__span">Мощность двигателя (Л.с.):</span>
-          <input class="form__input" type="number" v-model="form.propertyValues.engine_power">
+          <div class="form__label-wrapper">
+            <span class="form__span">Объем двигателя:</span>
+            <input class="form__input" type="number" v-model="form.propertyValues.engine_volume" step="0.1">
+          </div>
+          <p v-if="errors.engine_volume.value" class="form__error">
+            {{errors.engine_volume.text}}
+          </p>
         </label>
         <label class="form__label">
-          <span class="form__span">Максимальная скорость:</span>
-          <input class="form__input" type="number" v-model="form.propertyValues.max_speed">
+          <div class="form__label-wrapper">
+            <span class="form__span">Мощность двигателя (Л.с.):</span>
+            <input class="form__input" type="number" v-model="form.propertyValues.engine_power">
+          </div>
+          <p v-if="errors.engine_power.value" class="form__error">
+            {{errors.engine_power.text}}
+          </p>
         </label>
         <label class="form__label">
-          <span class="form__span">Количество мест:</span>
-          <input class="form__input" type="number" v-model="form.propertyValues.seats">
+          <div class="form__label-wrapper">
+            <span class="form__span">Максимальная скорость:</span>
+            <input class="form__input" type="number" v-model="form.propertyValues.max_speed">
+          </div>
+          <p v-if="errors.max_speed.value" class="form__error">
+            {{errors.max_speed.text}}
+          </p>
         </label>
         <label class="form__label">
-          <span class="form__span">Длина:</span>
-          <input class="form__input" type="number" v-model="form.propertyValues.length">
+          <div class="form__label-wrapper">
+            <span class="form__span">Количество мест:</span>
+            <input class="form__input" type="number" v-model="form.propertyValues.seats">
+          </div>
+          <p v-if="errors.seats.value" class="form__error">
+            {{errors.seats.text}}
+          </p>
         </label>
         <label class="form__label">
-          <span class="form__span">Ширина:</span>
-          <input class="form__input" type="number" v-model="form.propertyValues.width">
+          <div class="form__label-wrapper">
+            <span class="form__span">Длина:</span>
+            <input class="form__input" type="number" v-model="form.propertyValues.length">
+          </div>
+          <p v-if="errors.length.value" class="form__error">
+            {{errors.length.text}}
+          </p>
         </label>
         <label class="form__label">
-          <span class="form__span">Высота:</span>
-          <input class="form__input" type="number" v-model="form.propertyValues.height">
+          <div class="form__label-wrapper">
+            <span class="form__span">Ширина:</span>
+            <input class="form__input" type="number" v-model="form.propertyValues.width">
+          </div>
+          <p v-if="errors.width.value" class="form__error">
+            {{errors.width.text}}
+          </p>
         </label>
         <label class="form__label">
-          <span class="form__span">Общая масса:</span>
-          <input class="form__input" type="number" v-model="form.propertyValues.gross_weight">
+          <div class="form__label-wrapper">
+            <span class="form__span">Высота:</span>
+            <input class="form__input" type="number" v-model="form.propertyValues.height">
+          </div>
+          <p v-if="errors.height.value" class="form__error">
+            {{errors.height.text}}
+          </p>
+        </label>
+        <label class="form__label">
+          <div class="form__label-wrapper">
+            <span class="form__span">Общая масса:</span>
+            <input class="form__input" type="number" v-model="form.propertyValues.gross_weight">
+          </div>
+          <p v-if="errors.gross_weight.value" class="form__error">
+            {{errors.gross_weight.text}}
+          </p>
         </label>
         <label class="form__label">
           <span class="form__span">Добавить изображения:</span>
@@ -213,12 +474,26 @@ const addTruck = () => {
   &__label {
     display: flex;
     width: 70%;
-    justify-content: space-between;
-  }
+    flex-direction: column;
+    gap: .25rem;
 
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%
+    }
+
+  }
+  &__span {
+    font-size: 1rem;
+  }
 
   &__input {
     border: 1px solid black;
+  }
+
+  &__error {
+    color: var(--color-yellow);
   }
 
   &__button {
