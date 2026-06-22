@@ -17,40 +17,44 @@ const price = Number(props.car.price).toLocaleString('ru-RU')
 </script>
 
 <template>
-<div class="card">
-  <div class="card__inner">
-    <div class="card__prev-image">
-      <img
-          :src="props.car.preview_picture.path"
-          alt="#"
-      >
+  <router-link :to="`/catalogue/${props.car.id}`">
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__prev-image">
+          <img
+              :src="props.car.preview_picture.path"
+              alt="#"
+              class="card__prev-image-img"
+          >
+        </div>
+        <div class="card__prev-info">
+          <div class="card__prev-info-title">
+            {{props.car.brand}} {{props.car.model}}
+          </div>
+          <div class="card__prev-info-desc">
+            {{props.car.propertyValues.body_type}}
+            {{props.car.propertyValues.engine_volume}} Л.
+            /
+            {{props.car.propertyValues.engine_power}} л. с.,
+            {{props.car.propertyValues.gear_type}} привод,
+            {{props.car.propertyValues.engine_type}}
+          </div>
+          <div class="card__prev-info-price">
+            {{price}} Р
+          </div>
+          <div class="card__prev-info-order">
+            <Cart />
+            Доступно для заказа
+          </div>
+          <button class="card__prev-info-button">
+            Узнать цену
+            <Arrow />
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="card__prev-info">
-      <div class="card__prev-info-title">
-        {{props.car.brand}} {{props.car.model}}
-      </div>
-      <div class="card__prev-info-desc">
-        {{props.car.propertyValues.body_type}}
-        {{props.car.propertyValues.engine_volume}} Л.
-        /
-        {{props.car.propertyValues.engine_power}} л. с.,
-        {{props.car.propertyValues.gear_type}} привод,
-        {{props.car.propertyValues.engine_type}}
-      </div>
-      <div class="card__prev-info-price">
-        {{price}} Р
-      </div>
-      <div class="card__prev-info-order">
-        <Cart />
-        Доступно для заказа
-      </div>
-      <button class="card__prev-info-button">
-        Узнать цену
-        <Arrow />
-      </button>
-    </div>
-  </div>
-</div>
+  </router-link>
+
 </template>
 
 <style
@@ -66,6 +70,21 @@ const price = Number(props.car.price).toLocaleString('ru-RU')
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  &__prev {
+    &-image {
+      position: relative;
+      width: 100%;
+      height: fluid(220, 210);
+      overflow: hidden;
+
+      &-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 
   &__prev-info {

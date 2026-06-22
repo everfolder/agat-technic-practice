@@ -31,6 +31,7 @@ const removeTruck = id => {
         <img
             :src="props.car.preview_picture.path"
             alt="#"
+            class="card__prev-image-img"
         >
       </div>
       <div class="card__prev-info">
@@ -71,6 +72,20 @@ const removeTruck = id => {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  &__prev {
+    &-image {
+      position: relative;
+      width: 100%;
+      height: fluid(220, 210);
+      overflow: hidden;
+
+      &-img {
+        object-fit: cover;
+        @include abs-center;
+      }
+    }
   }
 
   &__prev-info {

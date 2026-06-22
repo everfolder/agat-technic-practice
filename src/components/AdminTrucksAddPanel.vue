@@ -14,6 +14,7 @@ const form = ref({
     path: '' // https://agat-group.com/upload/76/76deed1fd50a0445044e4340653ab4be.png
   },
   propertyValues: {
+    gear_type: '',
     transmission: '',
     engine_type: '',
     body_type: '',
@@ -94,7 +95,10 @@ const errors = ref({
     value: false,
     text: "Выберите один из вариантов"
   },
-
+  gear_type: {
+    value: false,
+    text: "Выберите один из вариантов"
+  }
 })
 
 const validateName = () => {
@@ -158,6 +162,14 @@ const validateBodyType = () => {
     errors.value.body_type.value = true
   } else {
     errors.value.body_type.value = false
+  }
+}
+
+const validateGearType = () => {
+  if (form.value.propertyValues.gear_type === '') {
+    errors.value.gear_type.value = true
+  } else {
+    errors.value.gear_type.value = false
   }
 }
 
@@ -242,6 +254,7 @@ const validateForm = () => {
   validateWidth()
   validateHeight()
   validateGrossWeight()
+  validateGearType()
 
   let valid = true
 
@@ -269,6 +282,8 @@ const addTruck = () => {
     let carsL = JSON.parse(localStorage.getItem('cars'))
     carsL.unshift(form.value)
     localStorage.setItem('cars', JSON.stringify(carsL))
+    location.reload()
+
   }
 }
 </script>
@@ -355,7 +370,20 @@ const addTruck = () => {
           <p v-if="errors.engine_type.value" class="form__error">
             {{errors.engine_type.text}}
           </p>
-
+        </label>
+        <label class="form__label">
+          <div class="form__label-wrapper">
+            <span class="form__span">Привод:</span>
+            <select class="form__input" v-model="form.propertyValues.gear_type">
+              <option value="" selected disabled>Не указано</option>
+              <option value="Передний">Передний</option>
+              <option value="Задний">Задний</option>
+              <option value="Полный">Полный</option>
+            </select>
+          </div>
+          <p v-if="errors.transmission.value" class="form__error">
+            {{errors.transmission.text}}
+          </p>
         </label>
         <label class="form__label">
           <div class="form__label-wrapper">
@@ -460,20 +488,35 @@ const addTruck = () => {
 @use '@/styles/helpers' as *;
 
 
+.container {
+  padding-block: 2rem;
+}
+
 .form {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
+  &__section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .form__input {
+      width: 100%;
+    }
+  }
+
   &__section1, &__section3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    column-gap: 20rem;
+    row-gap: 1rem;
   }
   &__label {
     display: flex;
-    width: 70%;
+    width: 100%;
     flex-direction: column;
     gap: .25rem;
 
@@ -490,6 +533,11 @@ const addTruck = () => {
 
   &__input {
     border: 1px solid black;
+    padding: .35rem 1rem;
+    width: rem(205);
+    &:focus {
+      border: rem(1) solid var(--color-yellow);
+    }
   }
 
   &__error {

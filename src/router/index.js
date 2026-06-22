@@ -4,6 +4,7 @@ import News from "@/pages/News.vue";
 import AdminTrucks from "@/components/AdminTrucks.vue";
 import AdminTrucksAddPanel from "@/components/AdminTrucksAddPanel.vue";
 import {createRouter, createWebHistory} from "vue-router";
+import CarPage from "@/pages/CarPage.vue";
 const routes = [
     {
         path: '/',
@@ -25,7 +26,11 @@ const routes = [
     path: '/admin-trucks-add-panel',
     component: AdminTrucksAddPanel
   },
-
+  {
+    path: '/catalogue/:id',
+    component: CarPage,
+    props: true
+  },
 ]
 
 const router = createRouter({
