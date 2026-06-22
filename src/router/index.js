@@ -4,6 +4,8 @@ import News from "@/pages/News.vue";
 import AdminTrucks from "@/components/AdminTrucks.vue";
 import AdminTrucksAddPanel from "@/components/AdminTrucksAddPanel.vue";
 import {createRouter, createWebHistory} from "vue-router";
+import AdminNews from "@/components/News/AdminNews/AdminNews.vue";
+import AdminNewsAddPanel from "@/components/News/AdminNews/AdminNewsAddPanel.vue";
 const routes = [
     {
         path: '/',
@@ -17,14 +19,22 @@ const routes = [
         path: '/news',
         component: News
     },
-  {
-    path: '/admin-trucks',
-    component: AdminTrucks
-  },
-  {
-    path: '/admin-trucks-add-panel',
-    component: AdminTrucksAddPanel
-  },
+    {
+      path: '/admin-trucks',
+      component: AdminTrucks
+    },
+    {
+      path: '/admin-trucks-add-panel',
+      component: AdminTrucksAddPanel
+    },
+    {
+        path: '/admin-news',
+        component: AdminNews
+    },
+    {
+        path: '/admin-news-add-panel',
+        component: AdminNewsAddPanel
+    },
 
 ]
 
