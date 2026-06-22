@@ -8,6 +8,13 @@ const props = defineProps({
     id: String
 })
 
+const application = ref({
+    dealerCenter: '',
+    name: '',
+    phone: '',
+    email: '',
+})
+
 const form = ref(null)
 
 const focusInput = (event) => {
@@ -80,13 +87,33 @@ const checkboxChange = (event) => {
     }
 }
 
+const loadApplications = () => {
+    const saved = localStorage.getItem('applications');
+    if (saved) {
+        try {
+            return JSON.parse(saved);
+        } catch (e) {
+            return [];
+        }
+    }
+    return [];
+};
+
 const submitForm = (event) => {
     event.preventDefault();
-    if (!form.value) {
-        console.error('Форма не найдена');
-        return;
-    }
     if (form.value.checkValidity()) {
+
+        const existingApplications = loadApplications();
+        const newApplication = {
+            id: Date.now(),
+            ...application.value,
+            status: 'new',
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString()
+        };
+        existingApplications.unshift(newApplication);
+        localStorage.setItem('applications', JSON.stringify(existingApplications));
+
         Fancybox.show([
             {
                 src: `#${props.id || 'send'}`,
@@ -97,7 +124,7 @@ const submitForm = (event) => {
         const inputs = form.value.querySelectorAll('input, select');
         inputs.forEach(input => {
             if (!input.validity.valid) {
-                const event = new Event('invalid', { bubbles: true });
+                const event = new Event('invalid');
                 input.dispatchEvent(event);
             }
         });
@@ -109,7 +136,7 @@ const submitForm = (event) => {
     <form ref="form" action="#" class="order-call" @submit.prevent="submitForm">
         <div>
             <label for="order-call__select">Выберите диллерский центр</label>
-            <select id="order-call__select" required>
+            <select id="order-call__select" required v-model="application.dealerCenter">
                 <option>Нижний Новгород, ул. Ларина, 23г</option>
             </select>
             <span class="error"></span>
@@ -117,18 +144,19 @@ const submitForm = (event) => {
         <div class="input-wrapper">
             <label for="order-call__name-input" id="name-label">Имя*</label>
             <input type="text" id="order-call__name-input" required @focus="focusInput" @blur="blurInput"
-                class="name-input" @invalid="customError">
+                class="name-input" @invalid="customError" v-model="application.name">
             <span class="error"></span>
         </div>
         <div class="input-wrapper">
             <label for="order-call__phone-input" id="phone-label">Телефон*</label>
             <input type="text" id="order-call__phone-input" required @focus="focusInput" @blur="blurInput"
-                v-mask="'+7 (000) 000-00-00'" value="" class="phone-input" @invalid="customError">
+                v-mask="'+7 (000) 000-00-00'" value="" class="phone-input" @invalid="customError"
+                v-model="application.phone">
             <span class="error"></span>
         </div>
         <div class="order-call__submit-form">
             <label class="custom-checkbox">
-                <input type="checkbox" required class="submit-form__checkbox" @invalid="checkboxError"
+                <input type="checkbox" required class="submit-form__checkbox" @invalid="checkboxError" z
                     @change="checkboxChange">
                 <span class="checkmark"></span>
                 Даю согласие на обработку персональных данных и подтверждаю,
