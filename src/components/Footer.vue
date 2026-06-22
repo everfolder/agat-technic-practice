@@ -7,14 +7,15 @@ import Vk from '@/assets/footer-img/footer-logos/vk.svg'
 import Yt from '@/assets/footer-img/footer-logos/youtube.svg'
 import Dzen from '@/assets/footer-img/footer-logos/dzen.svg'
 import GrayForm from '@/components/GrayForm.vue'
+import router from '@/router'
 
 </script>
 
 <template>
   <div class="footer">
     <div class="footer__form">
-        <GrayForm/>
-      </div>
+      <GrayForm />
+    </div>
     <div class="footer__inner container">
       <div class="footer__top">
         <div class="footer__top-left">
@@ -93,7 +94,11 @@ import GrayForm from '@/components/GrayForm.vue'
               Юридическая информация
             </a>
           </li>
-
+          <li>
+            <router-link to="/admin-messages">
+              Админка заявок
+            </router-link>
+          </li>
         </ul>
       </div>
     </div>

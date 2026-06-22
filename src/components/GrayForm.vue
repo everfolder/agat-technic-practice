@@ -11,6 +11,13 @@ const props = defineProps({
     id: String,
 })
 
+const application = ref({
+    dealerCenter: '',
+    name: '',
+    phone: '',
+    email: '',
+})
+
 const form = ref(null)
 
 const focusInput = (event) => {
@@ -55,6 +62,38 @@ const customError = (event) => {
     }
 }
 
+const loadApplications = () => {
+    const saved = localStorage.getItem('applications');
+    if (saved) {
+        try {
+            return JSON.parse(saved);
+        } catch (e) {
+            return [];
+        }
+    }
+    return [];
+};
+
+const customEmailError = (event) => {
+    event.preventDefault();
+    const input = event.target;
+    const parent = input.parentElement;
+    const label = parent.querySelector('label');
+    const errorSpan = parent.querySelector('.error');
+
+    if (!input.value.includes('@')) {
+        input.classList.add('input-error');
+        if (errorSpan) {
+            errorSpan.classList.add('error-visible');
+            errorSpan.textContent = 'Введите корректный email (должен содержать @)';
+        }
+        if (label) {
+            label.classList.add('active');
+        }
+        return;
+    }
+}
+
 const checkboxError = (event) => {
     event.preventDefault();
     const checkbox = event.target;
@@ -85,11 +124,19 @@ const checkboxChange = (event) => {
 
 const submitForm = (event) => {
     event.preventDefault();
-    if (!form.value) {
-        console.error('Форма не найдена');
-        return;
-    }
     if (form.value.checkValidity()) {
+
+        const existingApplications = loadApplications();
+        const newApplication = {
+            id: Date.now(),
+            ...application.value,
+            status: 'new',
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString()
+        };
+        existingApplications.unshift(newApplication);
+        localStorage.setItem('applications', JSON.stringify(existingApplications));
+
         Fancybox.show([
             {
                 src: `#${props.id || 'send'}`,
@@ -100,7 +147,7 @@ const submitForm = (event) => {
         const inputs = form.value.querySelectorAll('input, select');
         inputs.forEach(input => {
             if (!input.validity.valid) {
-                const event = new Event('invalid', { bubbles: true });
+                const event = new Event('invalid');
                 input.dispatchEvent(event);
             }
         });
@@ -122,25 +169,26 @@ const submitForm = (event) => {
                 <div class="input-wrapper">
                     <label for="gray-form__name-input" id="name-label">Имя*</label>
                     <input type="text" id="gray-form__name-input" required @focus="focusInput" @blur="blurInput"
-                        class="name-input" @invalid="customError">
+                        class="name-input" @invalid="customError" v-model="application.name">
                     <span class="error"></span>
                 </div>
                 <div class="input-wrapper">
                     <label for="gray-form__phone-input" id="phone-label">Телефон*</label>
                     <input type="text" id="gray-form__phone-input" required @focus="focusInput" @blur="blurInput"
-                        v-mask="'+7 (000) 000-00-00'" value="" class="phone-input" @invalid="customError">
+                        v-mask="'+7 (000) 000-00-00'" value="" class="phone-input" @invalid="customError"
+                        v-model="application.phone">
                     <span class="error"></span>
                 </div>
                 <div class="input-wrapper">
                     <label for="gray-form__email-input" id="email-label">E-mail</label>
                     <input type="email" id="gray-form__email-input" @focus="focusInput" @blur="blurInput" value=""
-                        class="email-input">
+                        class="email-input" @invalid="customEmailError" v-model="application.email">
                     <span class="error"></span>
                 </div>
             </div>
             <div class="gray-form__select-container">
                 <label for="gray-form__select">Выберите диллерский центр</label>
-                <select id="gray-form__select" required>
+                <select id="gray-form__select" required v-model="application.dealerCenter">
                     <option>Нижний Новгород, ул. Ларина, 23г</option>
                 </select>
                 <span class="error"></span>

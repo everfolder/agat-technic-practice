@@ -3,20 +3,21 @@ import Catalogue from "@/pages/Catalogue.vue";
 import News from "@/pages/News.vue";
 import AdminTrucks from "@/components/AdminTrucks.vue";
 import AdminTrucksAddPanel from "@/components/AdminTrucksAddPanel.vue";
-import {createRouter, createWebHistory} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
+import AdminMessages from "@/pages/AdminMessages.vue";
 const routes = [
-    {
-        path: '/',
-        component: Main
-    },
-    {
-      path: '/catalogue',
-      component: Catalogue
-    },
-    {
-        path: '/news',
-        component: News
-    },
+  {
+    path: '/',
+    component: Main
+  },
+  {
+    path: '/catalogue',
+    component: Catalogue
+  },
+  {
+    path: '/news',
+    component: News
+  },
   {
     path: '/admin-trucks',
     component: AdminTrucks
@@ -25,15 +26,19 @@ const routes = [
     path: '/admin-trucks-add-panel',
     component: AdminTrucksAddPanel
   },
+  {
+    path: '/admin-messages',
+    component: AdminMessages
+  },
 
 ]
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes,
-    scrollBehavior(to, from, savedPosition) {
-        return { top: 0 }
-    }
+  history: createWebHistory(),
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  }
 })
 
 export default router
