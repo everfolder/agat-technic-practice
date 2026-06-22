@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Agromash",
+    "slug": "agromash",
+    "img": "/logos-color/agromash.svg",
+    "description": "Надежная сельскохозяйственная техника для эффективной работы в поле."
+  },
+  {
+    "id": 2,
+    "name": "Daewoo",
+    "slug": "daewoo",
+    "img": "/logos-color/daewoo.svg",
+    "description": "Современные корейские грузовики с высоким ресурсом и комфортом."
+  },
+  {
+    "id": 3,
+    "name": "Hino",
+    "slug": "hino",
+    "img": "/logos-color/hino.svg",
+    "description": "Японское качество, надежность и долговечность в каждой детали."
+  },
+  {
+    "id": 4,
+    "name": "Kamaz",
+    "slug": "kamaz",
+    "img": "/logos-color/kamaz.svg",
+    "description": "Легендарные российские грузовики, проверенные временем и дорогами."
+  },
+  {
+    "id": 5,
+    "name": "Maz",
+    "slug": "maz",
+    "img": "/logos-color/maz.svg",
+    "description": "Белорусская мощь и выносливость для самых сложных задач."
+  },
+  {
+    "id": 6,
+    "name": "Shacman",
+    "slug": "shacman",
+    "img": "/logos-color/shacman.svg",
+    "description": "Китайские грузовики с немецким качеством и современными технологиями."
+  }
+]
