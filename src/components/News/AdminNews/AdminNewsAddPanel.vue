@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>ПАНЕЛЬ ДЛЯ АДМИНКА</h1>
+  <h1>панель, но скорее всего сделаю модалку</h1>
 </template>
 
 <style scoped lang="scss">

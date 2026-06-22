@@ -42,11 +42,9 @@ const props = defineProps({
 
   &:hover {
     transform: translateY(-4px);
-
     img {
       transform: scale(1.03);
     }
-
     .news-item__image::after {
       opacity: 1;
     }
@@ -89,18 +87,12 @@ const props = defineProps({
     &__title {
       font-size: rem(14);
       font-weight: 600;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
+
       overflow: hidden;
     }
 
     &__desc {
       font-size: 15px;
-      line-height: 1.5;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
       overflow: hidden;
     }
   }

@@ -37,7 +37,7 @@ const goToPage = (page) => {
     <div v-if="totalPages > 1" class="pagination">
       <button v-if="currentPage > 1" class="pagination-btn pagination-arrow" @click="goToPage(currentPage - 1)">←</button>
       <button v-for="page in totalPages" :key="page" class="pagination-btn" :class="{ active: currentPage === page }" @click="goToPage(page)">{{ page }}</button>
-      <button>...</button>
+      <button> <router-link to="/admin-news">...</router-link></button>
       <button v-if="currentPage < totalPages" class="pagination-btn pagination-arrow" @click="goToPage(currentPage + 1)">→</button>
     </div>
   </div>
@@ -72,17 +72,13 @@ const goToPage = (page) => {
 .pagination-btn {
   width: 44px;
   height: 44px;
-
   border: 1px solid #d9d9d9;
   background: white;
-
   color: #2b2b2b;
   font-size: 16px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
   transition: 0.25s ease;
 

@@ -1,47 +1,23 @@
 <script setup lang="js">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
+import { getBrands } from '@/services/storageServiceBrandsNews.js'
 
 const emit = defineEmits(['select-brand'])
 const activeBrand = ref(null)
-const brandLists = [
-  {
-    id: 3,
-    name: 'Hino',
-    img: new URL('@/assets/logos-color/hino.svg', import.meta.url).href,
-  },
-  {
-    id: 1,
-    name: 'Agromash',
-    img: new URL('@/assets/logos-color/agromash.svg', import.meta.url).href,
-  },
-  {
-    id: 2,
-    name: 'Daewoo',
-    img: new URL('@/assets/logos-color/daewoo.svg', import.meta.url).href,
-  },
-  {
-    id: 4,
-    name: 'Kamaz',
-    img: new URL('@/assets/logos-color/kamaz.svg', import.meta.url).href,
-  },
-  {
-    id: 5,
-    name: 'Maz',
-    img: new URL('@/assets/logos-color/maz.svg', import.meta.url).href,
-  },
-  {
-    id: 6,
-    name: 'Shacman',
-    img: new URL('@/assets/logos-color/shacman.svg', import.meta.url).href,
-  }
-]
+const brandLists = ref([])
+
 const selectBrand = (brand) => {
   activeBrand.value = brand.id
   emit('select-brand', brand)
 }
+
+onMounted(() => {
+  brandLists.value = getBrands()
+})
 </script>
+
 
 <template>
   <section class="brands">
