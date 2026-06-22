@@ -5,6 +5,8 @@ import AdminTrucks from "@/components/AdminTrucks.vue";
 import AdminTrucksAddPanel from "@/components/AdminTrucksAddPanel.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import AdminMessages from "@/pages/AdminMessages.vue";
+import AdminNews from "@/components/News/AdminNews/AdminNews.vue";
+import AdminNewsAddPanel from "@/components/News/AdminNews/AdminNewsAddPanel.vue";
 const routes = [
   {
     path: '/',
@@ -29,6 +31,14 @@ const routes = [
   {
     path: '/admin-messages',
     component: AdminMessages
+  },
+  {
+    path: '/admin-news',
+    component: AdminNews
+  },
+  {
+    path: '/admin-news-add-panel',
+    component: AdminNewsAddPanel
   },
 
 ]
