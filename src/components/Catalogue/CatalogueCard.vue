@@ -17,7 +17,7 @@ const price = Number(props.car.price).toLocaleString('ru-RU')
 </script>
 
 <template>
-  <router-link :to="`/catalogue/${props.car.id}`">
+  <router-link :to="`/catalogue/${props.car.id}`" class="card-link">
     <div class="card">
       <div class="card__inner">
         <div class="card__prev-image">
@@ -62,9 +62,13 @@ const price = Number(props.car.price).toLocaleString('ru-RU')
     lang="scss"
 >
 @use '@/styles/helpers' as *;
+.card-link {
+  color: var(--color-black);
+}
 
 .card {
   border: rem(1) solid var(--color-yellow);
+  height: 100%;
 
   &__inner {
     display: flex;
@@ -92,6 +96,7 @@ const price = Number(props.car.price).toLocaleString('ru-RU')
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    height: 100%;
 
     &-title {
       font-weight: 500;
@@ -119,6 +124,7 @@ const price = Number(props.car.price).toLocaleString('ru-RU')
       width: 100%;
       @include flex-center();
       background-color: var(--color-yellow);
+      justify-self: end;
     }
   }
 }

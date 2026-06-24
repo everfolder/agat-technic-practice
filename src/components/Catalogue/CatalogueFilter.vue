@@ -107,10 +107,6 @@ const setActiveProduct = p => {
 
 
   @include tablet {
-    width: rem(312);
-  }
-
-  @include mobile {
     width: 100%;
   }
 

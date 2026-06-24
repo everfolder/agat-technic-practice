@@ -1,14 +1,26 @@
 <script setup>
 import CatalogueCard from "@/components/Catalogue/CatalogueCard.vue";
-import { onMounted, ref, computed } from "vue";
+import { onMounted, ref, computed, onUnmounted } from "vue";
 
 const cars = ref([]);
 
 const currentPage = ref(1);
 const itemsPerPage = 9;
 
+// Добавляем реактивную переменную для определения мобильного устройства
+const isMobile = ref(window.innerWidth < 768);
+
+const updateIsMobile = () => {
+  isMobile.value = window.innerWidth < 768;
+};
+
 onMounted(async () => {
-  cars.value = JSON.parse(localStorage.getItem('cars'))
+  cars.value = JSON.parse(localStorage.getItem('cars'));
+  window.addEventListener('resize', updateIsMobile);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateIsMobile);
 });
 
 const totalPages = computed(() =>
@@ -30,6 +42,42 @@ const goToPage = (page) => {
     behavior: "smooth",
   });
 };
+
+// Вычисляем, какие страницы показывать
+const visiblePages = computed(() => {
+  const total = totalPages.value;
+  const current = currentPage.value;
+
+  // На мобильных показываем меньше страниц
+  const delta = isMobile.value ? 1 : 2;
+  const maxVisible = isMobile.value ? 3 : 5;
+
+  if (total <= maxVisible) {
+    return Array.from({ length: total }, (_, i) => i + 1);
+  }
+
+  const pages = [];
+  const leftBound = Math.max(1, current - delta);
+  const rightBound = Math.min(total, current + delta);
+
+  if (leftBound > 1) {
+    pages.push(1);
+    if (leftBound > 2) pages.push('...');
+  }
+
+  for (let i = leftBound; i <= rightBound; i++) {
+    pages.push(i);
+  }
+
+  if (rightBound < total) {
+    if (rightBound < total - 1) pages.push('...');
+    pages.push(total);
+  }
+
+  return pages;
+});
+
+const isEllipsis = (page) => page === '...';
 </script>
 
 <template>
@@ -53,15 +101,24 @@ const goToPage = (page) => {
         ←
       </button>
 
-      <button
-          v-for="page in totalPages"
-          :key="page"
-          @click="goToPage(page)"
-          :class="{ active: page === currentPage }"
-      >
-        {{ page }}
-      </button>
+      <template v-for="page in visiblePages" :key="page">
+        <button
+            v-if="!isEllipsis(page)"
+            @click="goToPage(page)"
+            :class="{ active: page === currentPage }"
+        >
+          {{ page }}
+        </button>
+        <span
+            v-else
+            class="ellipsis"
+        >
+          …
+        </span>
+      </template>
+
       <router-link to="/admin-trucks">АДМИНКА</router-link>
+
       <button
           :disabled="currentPage === totalPages"
           @click="goToPage(currentPage + 1)"
@@ -91,7 +148,8 @@ const goToPage = (page) => {
   }
 
   @include mobile {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, rem(330));
+    margin-inline: auto;
   }
 }
 
@@ -101,6 +159,7 @@ const goToPage = (page) => {
   align-items: center;
   gap: 0.5rem;
   align-self: start;
+  flex-wrap: wrap;
 
   button {
     min-width: 40px;
@@ -123,6 +182,60 @@ const goToPage = (page) => {
       background: #000;
       color: #fff;
       border-color: #000;
+    }
+  }
+
+  .ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    color: #999;
+    user-select: none;
+  }
+
+  // Адаптив для мобильных устройств
+  @include mobile {
+    gap: 0.3rem;
+    align-self: center;
+
+    button {
+      min-width: 32px;
+      height: 32px;
+      font-size: 13px;
+    }
+
+    .ellipsis {
+      min-width: 32px;
+      height: 32px;
+      font-size: 14px;
+    }
+
+    a {
+      font-size: 11px;
+      padding: 0 8px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    gap: 0.2rem;
+
+    button {
+      min-width: 28px;
+      height: 28px;
+      font-size: 11px;
+    }
+
+    .ellipsis {
+      min-width: 28px;
+      height: 28px;
+      font-size: 12px;
+    }
+
+    a {
+      font-size: 10px;
+      padding: 0 6px;
     }
   }
 }

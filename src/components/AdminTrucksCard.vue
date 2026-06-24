@@ -51,7 +51,9 @@ const removeTruck = id => {
         </div>
 
         <div class="card__prev-info-buttons">
-          <button class="card__prev-info-buttons-edit"><Edit class="icon"/></button>
+          <router-link :to="`/admin-trucks/${props.car.id}`">
+            <button class="card__prev-info-buttons-edit"><Edit class="icon"/></button>
+          </router-link>
           <button @click="removeTruck(props.car.id)" class="card__prev-info-buttons-delete"><Delete class="icon"/></button>
         </div>
       </div>
@@ -112,9 +114,9 @@ const removeTruck = id => {
     }
 
     &-buttons{
-      display: flex;
       width: 100%;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
 
       &-edit {

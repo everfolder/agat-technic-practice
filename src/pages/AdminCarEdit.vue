@@ -1,5 +1,9 @@
 <script setup>
-import {ref} from "vue";
+import { ref, onMounted } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+
+const route = useRoute();
+const router = useRouter();
 
 const form = ref({
   id: '',
@@ -11,7 +15,7 @@ const form = ref({
   price: '',
   preview_picture: {
     id: '',
-    path: '' // https://agat-group.com/upload/76/76deed1fd50a0445044e4340653ab4be.png
+    path: ''
   },
   propertyValues: {
     gear_type: '',
@@ -28,8 +32,9 @@ const form = ref({
     gross_weight: '',
     images: [],
   }
-})
+});
 
+// Для добавления изображений
 const imageInput = ref('');
 
 const errors = ref({
@@ -101,40 +106,20 @@ const errors = ref({
     value: false,
     text: "Выберите один из вариантов"
   }
-})
+});
 
-const addImage = () => {
-  if (!imageInput.value.trim()) {
-    alert('Пожалуйста, введите ссылку на изображение');
-    return;
+// Загружаем данные
+const loadCar = () => {
+  const carId = route.params.id;
+  const cars = JSON.parse(localStorage.getItem('cars')) || [];
+  const car = cars.find(c => c.id === carId);
+
+  if (car) {
+    form.value = JSON.parse(JSON.stringify(car));
   }
-
-  if (form.value.propertyValues.images.length >= 4) {
-    alert('Максимум можно добавить 4 изображения');
-    return;
-  }
-
-  const isDuplicate = form.value.propertyValues.images.some(
-      img => img.path === imageInput.value.trim()
-  );
-
-  if (isDuplicate) {
-    alert('Это изображение уже добавлено');
-    return;
-  }
-
-  form.value.propertyValues.images.push({
-    id: String(Math.floor(Math.random() * (999999 - 1 + 1) + 1)),
-    path: imageInput.value.trim()
-  });
-
-  imageInput.value = '';
 };
 
-const removeImage = (index) => {
-  form.value.propertyValues.images.splice(index, 1);
-};
-
+// Валидация полей
 const validateName = () => {
   if (form.value.name.trim().length < 2) {
     errors.value.name.value = true
@@ -301,35 +286,59 @@ const validateForm = () => {
   if (valid) return true
 }
 
-const addTruck = () => {
-  form.value.id = String(Date.now())
-  form.value.uuid = crypto.randomUUID()
-  form.value.preview_picture.id = String(Math.floor(Math.random() * (999999 - 1 + 1) + 1))
+// Добавить изображение
+const addImage = () => {
+  if (form.value.propertyValues.images.length >= 4) return;
+  if (!imageInput.value.trim()) return;
 
-  if (form.value.preview_picture.path === '') {
-    form.value.preview_picture.path = 'https://agat-group.com/upload/76/76deed1fd50a0445044e4340653ab4be.png'
-  }
+  form.value.propertyValues.images.push({
+    id: String(Math.floor(Math.random() * (999999 - 1 + 1) + 1)),
+    path: imageInput.value.trim()
+  });
 
+  imageInput.value = '';
+};
+
+// Удалить изображение
+const removeImage = (index) => {
+  form.value.propertyValues.images.splice(index, 1);
+};
+
+// Сохранить изменения
+const updateTruck = () => {
   if (validateForm()) {
-    console.log(form.value)
-    let carsL = JSON.parse(localStorage.getItem('cars'))
-    carsL.unshift(form.value)
-    localStorage.setItem('cars', JSON.stringify(carsL))
+    const cars = JSON.parse(localStorage.getItem('cars')) || [];
+    const index = cars.findIndex(c => c.id === form.value.id);
 
-    location.reload()
+    if (index !== -1) {
+      cars[index] = JSON.parse(JSON.stringify(form.value));
+      localStorage.setItem('cars', JSON.stringify(cars));
+    }
+
+    router.push('/admin-trucks');
   }
-}
+};
+
+// Отмена
+const cancelEdit = () => {
+  router.push('/admin-trucks');
+};
+
+onMounted(() => {
+  loadCar();
+});
 </script>
 
 <template>
   <div class="container">
-    <h2>Добавить камаз</h2>
+    <h2>Редактирование автомобиля</h2>
+
     <form class="form">
       <div class="form__section1">
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Имя:</span>
-            <input class="form__input" v-model="form.name">
+            <input class="form__input" v-model="form.name" @input="validateName">
           </div>
           <p v-if="errors.name.value" class="form__error">
             {{errors.name.text}}
@@ -338,7 +347,7 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Код:</span>
-            <input class="form__input" v-model="form.code">
+            <input class="form__input" v-model="form.code" @input="validateCode">
           </div>
           <p v-if="errors.code.value" class="form__error">
             {{errors.code.text}}
@@ -347,7 +356,7 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Брэнд:</span>
-            <input class="form__input" v-model="form.brand">
+            <input class="form__input" v-model="form.brand" @input="validateBrand">
           </div>
           <p v-if="errors.brand.value" class="form__error">
             {{errors.brand.text}}
@@ -356,7 +365,7 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Модель:</span>
-            <input class="form__input" v-model="form.model">
+            <input class="form__input" v-model="form.model" @input="validateModel">
           </div>
           <p v-if="errors.model.value" class="form__error">
             {{errors.model.text}}
@@ -365,22 +374,29 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Цена:</span>
-            <input class="form__input" v-model="form.price" type="number">
+            <input class="form__input" v-model="form.price" type="number" @input="validatePrice">
           </div>
           <p v-if="errors.price.value" class="form__error">
             {{errors.price.text}}
           </p>
         </label>
       </div>
+
       <div class="form__section2">
-        <h3>Добавить картинку превью:</h3>
-        <input class="form__input" type="text" placeholder="Вставьте ссылку на изображение" v-model="form.preview_picture.path">
+        <h3>Картинка превью:</h3>
+        <input
+            class="form__input"
+            type="text"
+            placeholder="Вставьте ссылку на изображение"
+            v-model="form.preview_picture.path"
+        >
       </div>
+
       <div class="form__section3">
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Тип КПП:</span>
-            <select class="form__input" v-model="form.propertyValues.transmission">
+            <select class="form__input" v-model="form.propertyValues.transmission" @change="validateTransmission">
               <option value="" selected disabled>Не указано</option>
               <option value="АКПП">АКПП</option>
               <option value="МКПП">МКПП</option>
@@ -393,7 +409,7 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Тип двигателя:</span>
-            <select class="form__input" v-model="form.propertyValues.engine_type">
+            <select class="form__input" v-model="form.propertyValues.engine_type" @change="validateEngineType">
               <option value="" selected disabled>Не указано</option>
               <option value="Дизельный">Дизельный</option>
               <option value="Бензиновый">Бензиновый</option>
@@ -407,21 +423,21 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Привод:</span>
-            <select class="form__input" v-model="form.propertyValues.gear_type">
+            <select class="form__input" v-model="form.propertyValues.gear_type" @change="validateGearType">
               <option value="" selected disabled>Не указано</option>
               <option value="Передний">Передний</option>
               <option value="Задний">Задний</option>
               <option value="Полный">Полный</option>
             </select>
           </div>
-          <p v-if="errors.transmission.value" class="form__error">
-            {{errors.transmission.text}}
+          <p v-if="errors.gear_type.value" class="form__error">
+            {{errors.gear_type.text}}
           </p>
         </label>
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Тип кузова:</span>
-            <select class="form__input" v-model="form.propertyValues.body_type">
+            <select class="form__input" v-model="form.propertyValues.body_type" @change="validateBodyType">
               <option value="" selected disabled>Не указано</option>
               <option value="Шасси">Шасси</option>
               <option value="Самосвал">Самосвал</option>
@@ -431,12 +447,11 @@ const addTruck = () => {
           <p v-if="errors.body_type.value" class="form__error">
             {{errors.body_type.text}}
           </p>
-
         </label>
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Объем двигателя:</span>
-            <input class="form__input" type="number" v-model="form.propertyValues.engine_volume" step="0.1">
+            <input class="form__input" type="number" v-model="form.propertyValues.engine_volume" step="0.1" @input="validateEngineVolume">
           </div>
           <p v-if="errors.engine_volume.value" class="form__error">
             {{errors.engine_volume.text}}
@@ -445,7 +460,7 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Мощность двигателя (Л.с.):</span>
-            <input class="form__input" type="number" v-model="form.propertyValues.engine_power">
+            <input class="form__input" type="number" v-model="form.propertyValues.engine_power" @input="validateEnginePower">
           </div>
           <p v-if="errors.engine_power.value" class="form__error">
             {{errors.engine_power.text}}
@@ -454,7 +469,7 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Максимальная скорость:</span>
-            <input class="form__input" type="number" v-model="form.propertyValues.max_speed">
+            <input class="form__input" type="number" v-model="form.propertyValues.max_speed" @input="validateMaxSpeed">
           </div>
           <p v-if="errors.max_speed.value" class="form__error">
             {{errors.max_speed.text}}
@@ -463,7 +478,7 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Количество мест:</span>
-            <input class="form__input" type="number" v-model="form.propertyValues.seats">
+            <input class="form__input" type="number" v-model="form.propertyValues.seats" @input="validateSeats">
           </div>
           <p v-if="errors.seats.value" class="form__error">
             {{errors.seats.text}}
@@ -472,7 +487,7 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Длина:</span>
-            <input class="form__input" type="number" v-model="form.propertyValues.length">
+            <input class="form__input" type="number" v-model="form.propertyValues.length" @input="validateLength">
           </div>
           <p v-if="errors.length.value" class="form__error">
             {{errors.length.text}}
@@ -481,7 +496,7 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Ширина:</span>
-            <input class="form__input" type="number" v-model="form.propertyValues.width">
+            <input class="form__input" type="number" v-model="form.propertyValues.width" @input="validateWidth">
           </div>
           <p v-if="errors.width.value" class="form__error">
             {{errors.width.text}}
@@ -490,7 +505,7 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Высота:</span>
-            <input class="form__input" type="number" v-model="form.propertyValues.height">
+            <input class="form__input" type="number" v-model="form.propertyValues.height" @input="validateHeight">
           </div>
           <p v-if="errors.height.value" class="form__error">
             {{errors.height.text}}
@@ -499,7 +514,7 @@ const addTruck = () => {
         <label class="form__label">
           <div class="form__label-wrapper">
             <span class="form__span">Общая масса:</span>
-            <input class="form__input" type="number" v-model="form.propertyValues.gross_weight">
+            <input class="form__input" type="number" v-model="form.propertyValues.gross_weight" @input="validateGrossWeight">
           </div>
           <p v-if="errors.gross_weight.value" class="form__error">
             {{errors.gross_weight.text}}
@@ -530,6 +545,7 @@ const addTruck = () => {
             </button>
           </div>
 
+          <!-- Список добавленных изображений -->
           <div v-if="form.propertyValues.images.length > 0" class="form__images-list">
             <div
                 v-for="(img, index) in form.propertyValues.images"
@@ -540,6 +556,7 @@ const addTruck = () => {
                   :src="img.path"
                   :alt="'Изображение ' + (index + 1)"
                   class="form__images-thumb"
+                  @error="(e) => e.target.src = 'https://via.placeholder.com/100?text=No+Image'"
               >
               <button
                   type="button"
@@ -556,11 +573,14 @@ const addTruck = () => {
           </p>
         </div>
       </div>
-      <div class="form__buttons">
-        <button @click.prevent="addTruck" class="form__button-confirm">
-          Добавить камаз
+
+      <div class="form__actions">
+        <button type="button" @click="updateTruck" class="form__button">
+          Сохранить изменения
         </button>
-        <router-link to="/admin-trucks" class="form__button-cancel">Отмена</router-link>
+        <button type="button" @click="cancelEdit" class="form__button form__button--cancel">
+          Отмена
+        </button>
       </div>
     </form>
   </div>
@@ -574,7 +594,7 @@ const addTruck = () => {
 }
 
 .form {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -619,6 +639,7 @@ const addTruck = () => {
     width: rem(205);
     &:focus {
       border: rem(1) solid var(--color-yellow);
+      outline: none;
     }
   }
 
@@ -626,13 +647,7 @@ const addTruck = () => {
     color: var(--color-yellow);
   }
 
-  &__buttons {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
-
-  &__button-confirm {
+  &__button {
     @include flex-center();
     padding: .5rem 1rem;
     background-color: var(--color-yellow);
@@ -643,14 +658,19 @@ const addTruck = () => {
       border: rem(1) solid var(--color-black);
       font-weight: 500;
     }
+
+    &--cancel {
+      background-color: transparent;
+      border-color: var(--color-black);
+    }
   }
 
-  &__button-cancel {
-    border: rem(1) solid var(--color-black);
-    padding: .5rem 1rem;
-    color: var(--color-black);
+  &__actions {
+    display: flex;
+    gap: 1rem;
   }
 
+  // Стили для блока с изображениями
   &__images-section {
     grid-column: 1 / -1;
     display: flex;

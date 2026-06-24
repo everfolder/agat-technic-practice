@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref, computed } from "vue";
+import { onMounted, ref, computed, onUnmounted } from "vue";
 import AdminTrucksCard from "@/components/AdminTrucksCard.vue";
 
 const cars = ref([]);
@@ -7,8 +7,19 @@ const cars = ref([]);
 const currentPage = ref(1);
 const itemsPerPage = 9;
 
+const isMobile = ref(window.innerWidth < 768);
+
+const updateIsMobile = () => {
+  isMobile.value = window.innerWidth < 768;
+};
+
 onMounted(async () => {
-  cars.value = JSON.parse(localStorage.getItem('cars'))
+  cars.value = JSON.parse(localStorage.getItem('cars')) || [];
+  window.addEventListener('resize', updateIsMobile);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateIsMobile);
 });
 
 const totalPages = computed(() =>
@@ -37,6 +48,40 @@ const removeTruck = id => {
   cars.value = cars.value.filter(car => car.id !== id)
   localStorage.setItem('cars', JSON.stringify(carsL))
 }
+
+const visiblePages = computed(() => {
+  const total = totalPages.value;
+  const current = currentPage.value;
+
+  const delta = isMobile.value ? 1 : 2;
+  const maxVisible = isMobile.value ? 3 : 5;
+
+  if (total <= maxVisible) {
+    return Array.from({ length: total }, (_, i) => i + 1);
+  }
+
+  const pages = [];
+  const leftBound = Math.max(1, current - delta);
+  const rightBound = Math.min(total, current + delta);
+
+  if (leftBound > 1) {
+    pages.push(1);
+    if (leftBound > 2) pages.push('...');
+  }
+
+  for (let i = leftBound; i <= rightBound; i++) {
+    pages.push(i);
+  }
+
+  if (rightBound < total) {
+    if (rightBound < total - 1) pages.push('...');
+    pages.push(total);
+  }
+
+  return pages;
+});
+
+const isEllipsis = (page) => page === '...';
 </script>
 
 <template>
@@ -44,8 +89,8 @@ const removeTruck = id => {
     <router-link to="/admin-trucks-add-panel">Добавить КАМАААААААААААЗ</router-link>
     <div class="catalogue-list">
       <AdminTrucksCard
-          @delete="removeTruck"
           v-for="c in paginatedCars"
+          @delete="removeTruck"
           :key="c.id"
           :car="c"
       />
@@ -62,14 +107,22 @@ const removeTruck = id => {
         ←
       </button>
 
-      <button
-          v-for="page in totalPages"
-          :key="page"
-          @click="goToPage(page)"
-          :class="{ active: page === currentPage }"
-      >
-        {{ page }}
-      </button>
+      <template v-for="page in visiblePages" :key="page">
+        <button
+            v-if="!isEllipsis(page)"
+            @click="goToPage(page)"
+            :class="{ active: page === currentPage }"
+        >
+          {{ page }}
+        </button>
+        <span
+            v-else
+            class="ellipsis"
+        >
+          …
+        </span>
+      </template>
+
       <button
           :disabled="currentPage === totalPages"
           @click="goToPage(currentPage + 1)"
@@ -78,7 +131,6 @@ const removeTruck = id => {
       </button>
     </div>
     <router-link to="/admin-trucks">АДМИНКА</router-link>
-
   </div>
 </template>
 
@@ -111,6 +163,7 @@ const removeTruck = id => {
   align-items: center;
   gap: 0.5rem;
   align-self: start;
+  flex-wrap: wrap;
 
   button {
     min-width: 40px;
@@ -133,6 +186,49 @@ const removeTruck = id => {
       background: #000;
       color: #fff;
       border-color: #000;
+    }
+  }
+
+  .ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    color: #999;
+    user-select: none;
+  }
+
+  @include mobile {
+    gap: 0.3rem;
+    align-self: center;
+
+    button {
+      min-width: 32px;
+      height: 32px;
+      font-size: 13px;
+    }
+
+    .ellipsis {
+      min-width: 32px;
+      height: 32px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    gap: 0.2rem;
+
+    button {
+      min-width: 28px;
+      height: 28px;
+      font-size: 11px;
+    }
+
+    .ellipsis {
+      min-width: 28px;
+      height: 28px;
+      font-size: 12px;
     }
   }
 }
