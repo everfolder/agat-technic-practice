@@ -156,7 +156,7 @@ const submitForm = (event) => {
         </div>
         <div class="order-call__submit-form">
             <label class="custom-checkbox">
-                <input type="checkbox" required class="submit-form__checkbox" @invalid="checkboxError" z
+                <input type="checkbox" required class="submit-form__checkbox" @invalid="checkboxError"
                     @change="checkboxChange">
                 <span class="checkmark"></span>
                 Даю согласие на обработку персональных данных и подтверждаю,
