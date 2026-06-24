@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref, computed } from "vue";
-import AdminTrucksCard from "@/components/AdminTrucksCard.vue";
+import AdminTrucksCard from "./AdminTrucksCard.vue";
 
 const cars = ref([]);
 

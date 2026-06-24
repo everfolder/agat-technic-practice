@@ -2,12 +2,13 @@ import { createRouter, createWebHistory } from "vue-router";
 import Main from "@/pages/Main.vue";
 import Catalogue from "@/pages/Catalogue.vue";
 import News from "@/pages/News.vue";
-import AdminTrucks from "@/components/AdminTrucks.vue";
-import AdminTrucksAddPanel from "@/components/AdminTrucksAddPanel.vue";
+import AdminTrucks from "@/components/AdminPanels/AdminCatalogue/AdminTrucks.vue";
+import AdminTrucksAddPanel from "@/components/AdminPanels/AdminCatalogue/AdminTrucksAddPanel.vue";
 import CarPage from "@/pages/CarPage.vue";
-import AdminMessages from "@/pages/AdminMessages.vue";
-import AdminNews from "@/components/News/AdminNews/AdminNews.vue";
-import AdminNewsAddPanel from "@/components/News/AdminNews/AdminNewsAddPanel.vue";
+import AdminMessages from "@/components/AdminPanels/AdminMessages/AdminMessages.vue";
+import AdminNews from "@/components/AdminPanels/AdminNews/AdminNews.vue";
+import AdminNewsAddPanel from "@/components/AdminPanels/AdminNews/AdminNewsAddPanel.vue";
+import AdminPanel from "@/pages/AdminPanel.vue";
 
 const routes = [
   {
@@ -47,6 +48,10 @@ const routes = [
     path: '/admin-news-add-panel',
     component: AdminNewsAddPanel
   },
+  {
+    path: '/admin-panel',
+    component: AdminPanel
+  }
 ]
 
 const router = createRouter({

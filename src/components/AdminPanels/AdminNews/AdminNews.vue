@@ -1,13 +1,10 @@
 <script setup lang="js">
-  import AdminNewsBrands from '@/components/News/AdminNews/AdminNewsBrands.vue'
-  import AdminNewsNews from '@/components/News/AdminNews/AdminNewsNews.vue'
+  import AdminNewsBrands from './AdminNewsBrands.vue'
+  import AdminNewsNews from './AdminNewsNews.vue'
 </script>
 
 <template>
   <div class="title container">
-    <router-link to="/news" style="font-size: 14px">
-      Назад
-    </router-link>
     <h1>Управление новостями и брендами</h1>
   </div>
   <AdminNewsBrands />

@@ -1,9 +1,9 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue';
-import AdminMessagesApplicationDetails from '@/components/AdminMessagesApplicationDetails.vue';
-import AdminMessagesApplicationsList from '@/components/AdminMessagesApplicationsList.vue';
-import AdminMessagesFiltersBar from '@/components/AdminMessagesFiltersBar.vue';
-import AdminMessagesStatsCards from '@/components/AdminMessagesStatsCards.vue';
+import AdminMessagesApplicationDetails from './AdminMessagesApplicationDetails.vue';
+import AdminMessagesApplicationsList from './AdminMessagesApplicationsList.vue';
+import AdminMessagesFiltersBar from './AdminMessagesFiltersBar.vue';
+import AdminMessagesStatsCards from './AdminMessagesStatsCards.vue';
 
 const applications = ref([]);
 const selectedApplication = ref(null);
@@ -115,7 +115,7 @@ onMounted(() => {
 
 <style scoped lang="scss">
 .admin-panel {
-    max-width: 1400px;
+    min-width: 1400px;
     margin: 0 auto;
     padding: 20px;
 }

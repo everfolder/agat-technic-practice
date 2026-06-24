@@ -95,8 +95,8 @@ import router from '@/router'
             </a>
           </li>
           <li>
-            <router-link to="/admin-messages">
-              Админка заявок
+            <router-link to="/admin-panel">
+              Админка
             </router-link>
           </li>
         </ul>
