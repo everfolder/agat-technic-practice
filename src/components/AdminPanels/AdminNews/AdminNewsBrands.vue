@@ -5,27 +5,37 @@ import Search from '@/assets/admin-news/Search.svg'
 import Edit from '@/assets/admin-news/Edit.svg'
 import Delete from '@/assets/admin-news/Delete.svg'
 import { getBrands, createBrand, updateBrand, deleteBrand } from '@/services/storageServiceBrandsNews.js'
+import ModalAdminNews from "@/components/News/AdminNews/ModalAdminNews.vue";
 
 const brands = ref([])
 const searchQuery = ref('')
 const loadBrands = () => {
   brands.value = getBrands()
 }
+const showModal = ref(false)
+const newBrandName  = ref('')
 
 const addBrand = () => {
-  const name = prompt('Введите название нового бренда:')
+  showModal.value = true
   if (name && name.trim()) {
     const newBrand = {
       name: name.trim(),
       slug: name.trim().toLowerCase().replace(/\s+/g, '-'),
-      img: '/logos-color/default.svg',
+      img: '/logos-color/default.jpg',
       description: ''
     }
     createBrand(newBrand)
     loadBrands()
   }
 }
-
+const closeModal = () => {
+  showModal.value = false
+}
+const saveBrand = () => {
+  if (!newBrandName.value.trim()) return
+  showModal.value = false
+  newBrandName.value = ''
+}
 const editBrand = (brand) => {
   const newName = prompt(`Редактировать бренд "${brand.name}":`, brand.name)
   if (newName && newName.trim()) {
@@ -110,6 +120,10 @@ onMounted(() => {
         </table>
       </div>
     </div>
+    <ModalAdminNews :is-open="showModal">
+      <div><p>МОДАЛочка</p></div>
+      <button @click="closeModal">X</button>
+    </ModalAdminNews>
   </section>
 </template>
 
