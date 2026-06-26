@@ -1,5 +1,4 @@
 <script setup>
-
 import { onMounted, ref, computed } from "vue";
 import AdminTrucksCard from "./AdminTrucksCard.vue";
 
@@ -10,9 +9,6 @@ const itemsPerPage = 9;
 
 const isMobile = ref(window.innerWidth < 768);
 
-const updateIsMobile = () => {
-  isMobile.value = window.innerWidth < 768;
-};
 
 onMounted(async () => {
   cars.value = JSON.parse(localStorage.getItem('cars')) || [];

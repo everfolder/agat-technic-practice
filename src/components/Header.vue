@@ -80,9 +80,11 @@ onUnmounted(() => {
                 <a class="burger-menu__item">
                   Бренды
                 </a>
-                <a class="burger-menu__item">
-                  Сервис и запасные части
-                </a>
+                <router-link to="/service">
+                  <a class="header__bottom-item">
+                    Сервис и запасные части
+                  </a>
+                </router-link>
                 <a class="burger-menu__item">
                   Акции
                 </a>
@@ -120,9 +122,11 @@ onUnmounted(() => {
         <a class="header__bottom-item">
           Бренды
         </a>
-        <a class="header__bottom-item">
-          Сервис и запасные части
-        </a>
+        <router-link to="/service">
+          <a class="header__bottom-item">
+            Сервис и запасные части
+          </a>
+        </router-link>
         <a class="header__bottom-item">
           Акции
         </a>

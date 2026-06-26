@@ -12,6 +12,7 @@ import AdminNewsAddPanel from "@/components/AdminPanels/AdminNews/AdminNewsAddPa
 import AdminPanel from "@/pages/AdminPanel.vue";
 import About from "@/pages/About.vue";
 import Contacts from "@/pages/Contacts.vue";
+import Service from "@/pages/Service.vue";
 
 const routes = [
   {
@@ -68,6 +69,10 @@ const routes = [
     path: '/contacts',
     component: Contacts
   },
+  {
+    path: '/service',
+    component: Service
+  }
 ]
 
 const router = createRouter({
