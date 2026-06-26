@@ -117,7 +117,6 @@ const isEllipsis = (page) => page === '...';
         </span>
       </template>
 
-      <router-link to="/admin-trucks">АДМИНКА</router-link>
 
       <button
           :disabled="currentPage === totalPages"

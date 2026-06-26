@@ -74,9 +74,9 @@ onUnmounted(() => {
                 <button data-fancybox-close class="burger-menu__btn">
                   <CloseModal />
                 </button>
-                <a class="burger-menu__item">
+                <router-link to="/catalogue" class="burger-menu__item">
                   Каталог продукции
-                </a>
+                </router-link>
                 <a class="burger-menu__item">
                   Бренды
                 </a>
@@ -86,15 +86,15 @@ onUnmounted(() => {
                 <a class="burger-menu__item">
                   Акции
                 </a>
-                <a class="burger-menu__item">
+                <router-link to="/news" class="burger-menu__item">
                   Новости
-                </a>
-                <a class="burger-menu__item">
+                </router-link>
+                <router-link to="/about" class="burger-menu__item">
                   О компании
-                </a>
-                <a class="burger-menu__item">
+                </router-link>
+                <router-link to="/contacts" class="burger-menu__item">
                   Контакты
-                </a>
+                </router-link>
               </div>
             </div>
           </div>
@@ -114,9 +114,9 @@ onUnmounted(() => {
 
       </div>
       <div class="header__bottom">
-        <a class="header__bottom-item">
+        <router-link to="/catalogue" class="header__bottom-item">
           Каталог продукции
-        </a>
+        </router-link>
         <a class="header__bottom-item">
           Бренды
         </a>
@@ -126,15 +126,15 @@ onUnmounted(() => {
         <a class="header__bottom-item">
           Акции
         </a>
-        <a class="header__bottom-item">
+        <router-link to="/news" class="header__bottom-item">
           Новости
-        </a>
-        <a class="header__bottom-item">
+        </router-link>
+        <router-link to="/about" class="header__bottom-item">
           О компании
-        </a>
-        <a class="header__bottom-item">
+        </router-link>
+        <router-link to="/contacts" class="header__bottom-item">
           Контакты
-        </a>
+        </router-link>
       </div>
     </div>
   </div>

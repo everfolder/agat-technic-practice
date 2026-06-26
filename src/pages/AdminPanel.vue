@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue';
-import AdminTrucksAddPanel from '@/components/AdminPanels/AdminCatalogue/AdminTrucksAddPanel.vue';
-import AdminMessages from '../components/AdminPanels/AdminMessages/AdminMessages.vue';
+import AdminMessages from '@/components/AdminPanels/AdminMessages/AdminMessages.vue';
 import AdminNews from '@/components/AdminPanels/AdminNews/AdminNews.vue';
+import AdminTrucks from "@/components/AdminPanels/AdminCatalogue/AdminTrucks.vue";
 
 const activePanel = ref('catalog')
 
@@ -19,7 +19,7 @@ function setActivePanel(panel) {
       <button class="admin__open-panel" @click="setActivePanel('messages')">Панель обработки заявок</button>
     </div>
     <div class="adnin__panel">
-      <AdminTrucksAddPanel v-if="activePanel === 'catalog'" />
+      <AdminTrucks v-if="activePanel === 'catalog'" />
       <AdminNews v-if="activePanel === 'news'" />
       <AdminMessages v-if="activePanel === 'messages'" />
     </div>

@@ -506,7 +506,6 @@ const addTruck = () => {
           </p>
         </label>
 
-        <!-- Блок для добавления дополнительных изображений -->
         <div class="form__images-section">
           <div class="form__images-header">
             <span class="form__span">Дополнительные изображения (макс. 4):</span>
@@ -560,7 +559,7 @@ const addTruck = () => {
         <button @click.prevent="addTruck" class="form__button-confirm">
           Добавить камаз
         </button>
-        <router-link to="/admin-trucks" class="form__button-cancel">Отмена</router-link>
+        <router-link to="/admin-panel" class="form__button-cancel">Отмена</router-link>
       </div>
     </form>
   </div>

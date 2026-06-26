@@ -119,7 +119,6 @@ const loadCar = () => {
   }
 };
 
-// Валидация полей
 const validateName = () => {
   if (form.value.name.trim().length < 2) {
     errors.value.name.value = true
@@ -286,7 +285,6 @@ const validateForm = () => {
   if (valid) return true
 }
 
-// Добавить изображение
 const addImage = () => {
   if (form.value.propertyValues.images.length >= 4) return;
   if (!imageInput.value.trim()) return;
@@ -299,12 +297,10 @@ const addImage = () => {
   imageInput.value = '';
 };
 
-// Удалить изображение
 const removeImage = (index) => {
   form.value.propertyValues.images.splice(index, 1);
 };
 
-// Сохранить изменения
 const updateTruck = () => {
   if (validateForm()) {
     const cars = JSON.parse(localStorage.getItem('cars')) || [];
@@ -317,11 +313,6 @@ const updateTruck = () => {
 
     router.push('/admin-trucks');
   }
-};
-
-// Отмена
-const cancelEdit = () => {
-  router.push('/admin-trucks');
 };
 
 onMounted(() => {
@@ -578,9 +569,9 @@ onMounted(() => {
         <button type="button" @click="updateTruck" class="form__button">
           Сохранить изменения
         </button>
-        <button type="button" @click="cancelEdit" class="form__button form__button--cancel">
+        <router-link to="/admin-panel" class="form__button form__button--cancel">
           Отмена
-        </button>
+        </router-link>
       </div>
     </form>
   </div>
