@@ -5,10 +5,12 @@ const props = defineProps({
     required: true,
   }
 })
+console.log(props.news)
 </script>
 
 <template>
   <div class="news-item">
+    <router-link :to="`/news/${news.slug}`" class="news-item">
     <div class="news-item__image">
       <img :src="news.image_url" alt="">
     </div>
@@ -26,6 +28,7 @@ const props = defineProps({
         {{ news.preview_text }}
       </div>
     </div>
+    </router-link>
   </div>
 </template>
 

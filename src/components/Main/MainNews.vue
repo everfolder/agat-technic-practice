@@ -1,52 +1,86 @@
 <script setup lang="js">
+import { ref, computed } from 'vue'
 import News1 from '@/assets/main-news/news1.png'
 import News2 from '@/assets/main-news/news2.png'
 import News3 from '@/assets/main-news/news3.png'
 import ButtonIcon from '@/assets/main-news/icons/white-arrow.svg'
-import {Swiper, SwiperSlide} from "swiper/vue";
+import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
-
-const newsFilter = ['Все','Сельскохозяйственная техника','Прицепная техника','Грузовая техника','Спецтехника','Спецавтомобили','Коммунальная техника','Микроавтобусы']
-const newsList = [
-  {img: News1, flag: 'Грузовая техника'},
-  {img: News2, flag: 'Спецтехника'},
-  {img: News3, flag: 'Спецавтомобили'},
+const newsFilter = [
+  'Все',
+  'Сельскохозяйственная техника',
+  'Прицепная техника',
+  'Грузовая техника',
+  'Спецтехника',
+  'Спецавтомобили',
+  'Коммунальная техника',
+  'Микроавтобусы'
 ]
-console.log(newsList[0].img)
+const selectedFilter = ref('Все')
+const newsList = [
+  {
+    img: News1,
+    flag: 'Грузовая техника'
+  },
+  {
+    img: News2,
+    flag: 'Спецтехника'
+  },
+  {
+    img: News3,
+    flag: 'Спецавтомобили'
+  }
+]
+
+const filteredNews = computed(() => {
+  if (selectedFilter.value === 'Все') {
+    return newsList
+  }
+  return newsList.filter(
+      news => news.flag === selectedFilter.value
+  )
+})
 </script>
 
 <template>
-<section class="news">
-  <div class="news-content container">
-    <h2 class="title">Новости</h2>
-    <Swiper :slides-per-view="'auto'" space-between="20" :grab-cursor="true" class="product-content__slider">
-      <SwiperSlide v-for="filter in newsFilter" class="p">
-        <button class="button-filter">{{filter}}</button>
-      </SwiperSlide>
-    </Swiper>
-    <div class="news-block" >
-      <div class="news-block-item" v-for="news in newsList">
-        <img :src=news.img alt="">
-        <div class="news-block-item__content">
-          <div class="news-block-item__content__datetime">
-            30.08.2022 по 31.12.2022
-          </div>
-          <div class="news-block-item__content__title">
-            ЛИЗИНГ ОТ КАМАЗА - Обнуляем авансовый платёж
-          </div>
-          <div class="news-block-item__content__desc">
-            Лизинговые предложения являются универсальными на всей территории России!Лизинговые предложения являются
+  <section class="news">
+    <div class="news-content container">
+      <h2 class="title">Новости</h2>
+
+      <Swiper :slides-per-view="'auto'" :space-between="20" :grab-cursor="true" class="product-content__slider">
+        <SwiperSlide v-for="filter in newsFilter" :key="filter" class="p">
+          <button class="button-filter" :class="{ active: selectedFilter === filter }" @click="selectedFilter = filter">
+            {{ filter }}
+          </button>
+        </SwiperSlide>
+      </Swiper>
+      <div class="news-block">
+        <div class="news-block-item" v-for="news in filteredNews" :key="news.img">
+          <img :src="news.img" alt="">
+          <div class="news-block-item__content">
+            <div class="news-block-item__content__datetime">
+              30.08.2022 по 31.12.2022
+            </div>
+            <div class="news-block-item__content__title">
+              ЛИЗИНГ ОТ КАМАЗА - Обнуляем авансовый платёж
+            </div>
+            <div class="news-block-item__content__desc">
+              Лизинговые предложения являются универсальными на всей территории России!
+              Лизинговые предложения являются
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="show-all">
-    <router-link to="/news">
-      <button class="show-all__btn">Показать все <ButtonIcon /></button>
-    </router-link>
-  </div>
-</section>
+    <div class="show-all">
+      <router-link to="/news">
+        <button class="show-all__btn">
+          Показать все
+          <ButtonIcon />
+        </button>
+      </router-link>
+    </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
@@ -107,5 +141,9 @@ console.log(newsList[0].img)
     display: inline-flex;
     gap: rem(7);
   }
+}
+.button-filter.active {
+  background-color: var(--color-gray-dark);
+  color: var(--color-white);
 }
 </style>

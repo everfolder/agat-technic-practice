@@ -13,6 +13,7 @@ import AdminPanel from "@/pages/AdminPanel.vue";
 import About from "@/pages/About.vue";
 import Contacts from "@/pages/Contacts.vue";
 import Service from "@/pages/Service.vue";
+import NewsItemPage from "@/components/News/NewsItemPage.vue";
 
 const routes = [
   {
@@ -72,6 +73,11 @@ const routes = [
   {
     path: '/service',
     component: Service
+  },
+  {
+    path: '/news/:slug',
+    name: 'news-item',
+    component: NewsItemPage
   }
 ]
 
