@@ -77,17 +77,19 @@ onUnmounted(() => {
                 <router-link to="/catalogue" class="burger-menu__item">
                   Каталог продукции
                 </router-link>
-                <a class="burger-menu__item">
-                  Бренды
-                </a>
+                <router-link to="/articles" class="burger-menu__item">
+                  Статьи
+                </router-link>
                 <router-link to="/service">
                   <a class="header__bottom-item">
                     Сервис и запасные части
                   </a>
                 </router-link>
-                <a class="burger-menu__item">
-                  Акции
-                </a>
+                <router-link to="/promo">
+                  <a class="burger-menu__item">
+                    Акции
+                  </a>
+                </router-link>
                 <router-link to="/news" class="burger-menu__item">
                   Новости
                 </router-link>
@@ -119,17 +121,19 @@ onUnmounted(() => {
         <router-link to="/catalogue" class="header__bottom-item">
           Каталог продукции
         </router-link>
-        <a class="header__bottom-item">
-          Бренды
-        </a>
+        <router-link to="/articles" class="header__bottom-item">
+          Статьи
+        </router-link>
         <router-link to="/service">
           <a class="header__bottom-item">
             Сервис и запасные части
           </a>
         </router-link>
-        <a class="header__bottom-item">
-          Акции
-        </a>
+        <router-link to="/promo">
+          <a class="header__bottom-item">
+            Акции
+          </a>
+        </router-link>
         <router-link to="/news" class="header__bottom-item">
           Новости
         </router-link>

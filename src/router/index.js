@@ -14,6 +14,10 @@ import About from "@/pages/About.vue";
 import Contacts from "@/pages/Contacts.vue";
 import Service from "@/pages/Service.vue";
 import NewsItemPage from "@/components/News/NewsItemPage.vue";
+import Articles from "@/pages/Articles.vue";
+import ArticleItemPage from "@/components/Articles/ArticleItemPage.vue";
+import PromoItemPage from "@/components/Promo/PromoItemPage.vue";
+import Promo from "@/pages/Promo.vue";
 
 const routes = [
   {
@@ -78,6 +82,24 @@ const routes = [
     path: '/news/:slug',
     name: 'news-item',
     component: NewsItemPage
+  },
+  {
+    path: '/articles',
+    component: Articles
+  },
+  {
+    path: '/article/:slug',
+    name: 'article-item',
+    component: ArticleItemPage
+  },
+  {
+    path: '/promo',
+    component: Promo
+  },
+  {
+    path: '/promo/:slug',
+    name: 'promo-item',
+    component: PromoItemPage
   }
 ]
 
