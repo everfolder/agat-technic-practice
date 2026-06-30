@@ -4,7 +4,8 @@
       <h2 class="certificate-title">Сертификаты</h2>
       <div class="certificate__wrap">
         <div class="certificate-slider">
-          <Swiper class="my-swiper" @swiper="setSwiper" :slides-per-view="3" :space-between="0" :modules="[]" :breakpoints="{0: {slidesPerView: 1,}, 421: {   slidesPerView: 3, } }">
+          <Swiper class="my-swiper" @swiper="setSwiper" :slides-per-view="3" :space-between="0" :modules="[]"
+                  :breakpoints="{0: {slidesPerView: 1,}, 421: {   slidesPerView: 3, } }">
             <SwiperSlide v-for="(item, index) in certificates" :key="index">
               <div class="certificate__item">
                 <img :src="item.img" :alt="'Сертификат ' + (index + 1)" />
@@ -13,12 +14,14 @@
           </Swiper>
         </div>
         <button class="certificate-slider__prev" @click="slidePrev">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
             <path d="M15 18l-6-6 6-6" />
           </svg>
         </button>
         <button class="certificate-slider__next" @click="slideNext">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
             <path d="M9 18l6-6-6-6" />
           </svg>
         </button>
