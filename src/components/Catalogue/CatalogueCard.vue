@@ -17,7 +17,7 @@ const price = Number(props.car.price).toLocaleString('ru-RU')
 </script>
 
 <template>
-  <router-link :to="`/catalogue/${props.car.id}`" class="card-link">
+  <router-link :to="`/catalogue/${props.car.id}`" class="card-link" target="_blank">
     <div class="card">
       <div class="card__inner">
         <div class="card__prev-image">
