@@ -1,0 +1,4419 @@
+[
+  {
+    "id": "1664805",
+    "uuid": "f2c219dd-c71c-11ed-917a-00155d016f2b",
+    "name": "1846 AMT 4*2",
+    "code": "1846-amt-42-1664805",
+    "brand_id": "47",
+    "model_id": "8514",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7667163",
+      "path": "https://agat-group.com/upload/5f/5fc96455d30232e5a6c8ac23c9682b57.JPG"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "8230000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "АКПП",
+      "body_type": "Тягач",
+      "cylinder_count": "6",
+      "cylinder_configuration": "рядное",
+      "turning_torque": "2193",
+      "length": "6055",
+      "width": "2490",
+      "wheel_base": "3600",
+      "unladen_weight": "7620",
+      "gross_weight": "18000",
+      "max_speed": "90",
+      "gear_number": "12",
+      "front_brake": "Дисковые",
+      "back_brake": "Дисковые",
+      "front_tire": "315/70R22.5",
+      "back_tire": "315/70R22.5",
+      "for_sale": "1",
+      "front_track": "2021",
+      "back_track": "1829",
+      "engine_volume": "11.8",
+      "seats": "2",
+      "gear_type": "Задний",
+      "engine_power": "470",
+      "environmental_class": "Пятый",
+      "images": []
+    },
+    "brand": "Foton",
+    "model": "Auman EST A BJ4189"
+  },
+  {
+    "id": "1687093",
+    "uuid": "6e3c476a-2a26-11ee-917f-00155d016f2b",
+    "name": "4*2",
+    "code": "foton-auman-42-tyagach-auman-bj4189y6adl-06-1687093",
+    "brand_id": "47",
+    "model_id": "8639",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8088457",
+      "path": "https://agat-group.com/upload/02/029187d5d331254785510f09cdab7c49.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "8500000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "2018",
+        "name": "Золотой",
+        "value": "#ffc100",
+        "second_value": "",
+        "guid": "09237037-2c6a-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "10"
+      },
+      {
+        "id": "2019",
+        "name": "Оранжевый",
+        "value": "#ff9900",
+        "second_value": "",
+        "guid": "73a6a7d3-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "9"
+      },
+      {
+        "id": "2020",
+        "name": "Желтый",
+        "value": "#dddd35",
+        "second_value": "",
+        "guid": "79a02abb-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "10"
+      },
+      {
+        "id": "2021",
+        "name": "Синий",
+        "value": "#1566ef",
+        "second_value": "",
+        "guid": "495ea4bd-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      },
+      {
+        "id": "2022",
+        "name": "Голубой",
+        "value": "#54c9ef",
+        "second_value": "",
+        "guid": "91fb35ed-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "14"
+      },
+      {
+        "id": "2023",
+        "name": "Серебрянный",
+        "value": "#d9d9d9",
+        "second_value": "",
+        "guid": "bc008b59-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "2024",
+        "name": "Красный",
+        "value": "#ff0000",
+        "second_value": "",
+        "guid": "376c8dad-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "2025",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "334fb129-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "2026",
+        "name": "Серый",
+        "value": "#666666",
+        "second_value": "",
+        "guid": "1eafda7e-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "АКПП",
+      "body_type": "Тягач",
+      "engine_power": "580",
+      "turning_torque": "2600/1000-1400",
+      "length": "6665",
+      "width": "2525",
+      "height": "3870",
+      "wheel_base": "4200",
+      "unladen_weight": "7200",
+      "gross_weight": "42000",
+      "max_speed": "110",
+      "environmental_class": "Шестой",
+      "for_sale": "1",
+      "images": [
+        {
+          "id": "8076032",
+          "path": "https://agat-group.com/upload/48/4878459743c8f855651f9a755059d63d.JPG"
+        },
+        {
+          "id": "8076033",
+          "path": "https://agat-group.com/upload/f4/f4e643e23ec5f22b78f22a69fcf12bce.JPG"
+        },
+        {
+          "id": "8076034",
+          "path": "https://agat-group.com/upload/e8/e829f7f0cc507d9bc4c03c29507e2577.JPG"
+        },
+        {
+          "id": "8076035",
+          "path": "https://agat-group.com/upload/11/1183512d9876c7839298438d968b9fb8.JPG"
+        },
+        {
+          "id": "8076036",
+          "path": "https://agat-group.com/upload/ae/ae43ddd5765133a985b18a73909a709d.JPG"
+        },
+        {
+          "id": "8076037",
+          "path": "https://agat-group.com/upload/2f/2f4721db3569cdf15a73c9bada22aeb7.JPG"
+        },
+        {
+          "id": "8076038",
+          "path": "https://agat-group.com/upload/8f/8ffcae94623fae6071d1727803858cb7.JPG"
+        }
+      ],
+      "gear_type": "Задний",
+      "engine_volume": "13.0"
+    },
+    "brand": "Foton",
+    "model": "AUMAN EST U"
+  },
+  {
+    "id": "1690814",
+    "uuid": "bf291194-3dca-11ee-9181-00155d016f2b",
+    "name": "BJ1088VEJEA-F4 4*2",
+    "code": "42-shassi",
+    "brand_id": "47",
+    "model_id": "8647",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8088737",
+      "path": "https://agat-group.com/upload/5e/5efc752fb2462e4573471908db3b0eee.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "4180000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "2018",
+        "name": "Золотой",
+        "value": "#ffc100",
+        "second_value": "",
+        "guid": "09237037-2c6a-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "10"
+      },
+      {
+        "id": "2019",
+        "name": "Оранжевый",
+        "value": "#ff9900",
+        "second_value": "",
+        "guid": "73a6a7d3-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "9"
+      },
+      {
+        "id": "2020",
+        "name": "Желтый",
+        "value": "#dddd35",
+        "second_value": "",
+        "guid": "79a02abb-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "10"
+      },
+      {
+        "id": "2021",
+        "name": "Синий",
+        "value": "#1566ef",
+        "second_value": "",
+        "guid": "495ea4bd-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      },
+      {
+        "id": "2022",
+        "name": "Голубой",
+        "value": "#54c9ef",
+        "second_value": "",
+        "guid": "91fb35ed-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "14"
+      },
+      {
+        "id": "2023",
+        "name": "Серебрянный",
+        "value": "#d9d9d9",
+        "second_value": "",
+        "guid": "bc008b59-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "2024",
+        "name": "Красный",
+        "value": "#ff0000",
+        "second_value": "",
+        "guid": "376c8dad-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "2025",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "334fb129-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "2026",
+        "name": "Серый",
+        "value": "#666666",
+        "second_value": "",
+        "guid": "1eafda7e-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "environmental_class": "Пятый",
+      "gear_number": "6",
+      "for_sale": "1",
+      "engine_power": "152",
+      "turning_torque": "491/ 1200-1900",
+      "length": "7870",
+      "width": "2298",
+      "height": "2335",
+      "unladen_weight": "3370",
+      "gross_weight": "6615",
+      "body_type": "Шасси",
+      "images": [
+        {
+          "id": "8088439",
+          "path": "https://agat-group.com/upload/31/31786beb97a073e469cddcf50d1246d5.JPG"
+        },
+        {
+          "id": "8088440",
+          "path": "https://agat-group.com/upload/10/10584b7e9dd41a3cd80600ba7b98a524.JPG"
+        },
+        {
+          "id": "8088441",
+          "path": "https://agat-group.com/upload/5c/5cbaef980302e62b990641f45559a5b8.JPG"
+        },
+        {
+          "id": "8088442",
+          "path": "https://agat-group.com/upload/29/29249185b16f684f8586e876eb77b89e.JPG"
+        },
+        {
+          "id": "8088443",
+          "path": "https://agat-group.com/upload/d8/d89b10e7e7494e555b7b7d97b75257a5.JPG"
+        },
+        {
+          "id": "8088444",
+          "path": "https://agat-group.com/upload/89/89061b9f23c75edb143988d14da47760.JPG"
+        },
+        {
+          "id": "8088445",
+          "path": "https://agat-group.com/upload/f8/f8a1f71aa6eab1090b665d5d43d361ee.JPG"
+        },
+        {
+          "id": "8088446",
+          "path": "https://agat-group.com/upload/fa/fa5aefb218ac73ff17297eec497613d1.JPG"
+        },
+        {
+          "id": "8088447",
+          "path": "https://agat-group.com/upload/30/30e9b018e369b630a731a42e9ac3a48c.JPG"
+        },
+        {
+          "id": "8088448",
+          "path": "https://agat-group.com/upload/e3/e32849ae3e546628819681d86002ed02.JPG"
+        }
+      ],
+      "gear_type": "Задний",
+      "engine_volume": "3.8"
+    },
+    "brand": "Foton",
+    "model": "AUMAN S085"
+  },
+  {
+    "id": "1692686",
+    "uuid": "bab005d8-47eb-11ee-9184-00155d016f2b",
+    "name": "BJ1108VFPED-F2 4*2",
+    "code": "bj1108vfped-f2-42-1692686",
+    "brand_id": "47",
+    "model_id": "8659",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8088722",
+      "path": "https://agat-group.com/upload/2e/2ebad87b8fb72d295b7d8dae85b8a615.JPG"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "6900000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "2018",
+        "name": "Золотой",
+        "value": "#ffc100",
+        "second_value": "",
+        "guid": "09237037-2c6a-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "10"
+      },
+      {
+        "id": "2019",
+        "name": "Оранжевый",
+        "value": "#ff9900",
+        "second_value": "",
+        "guid": "73a6a7d3-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "9"
+      },
+      {
+        "id": "2020",
+        "name": "Желтый",
+        "value": "#dddd35",
+        "second_value": "",
+        "guid": "79a02abb-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "10"
+      },
+      {
+        "id": "2021",
+        "name": "Синий",
+        "value": "#1566ef",
+        "second_value": "",
+        "guid": "495ea4bd-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      },
+      {
+        "id": "2022",
+        "name": "Голубой",
+        "value": "#54c9ef",
+        "second_value": "",
+        "guid": "91fb35ed-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "14"
+      },
+      {
+        "id": "2023",
+        "name": "Серебрянный",
+        "value": "#d9d9d9",
+        "second_value": "",
+        "guid": "bc008b59-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "2024",
+        "name": "Красный",
+        "value": "#ff0000",
+        "second_value": "",
+        "guid": "376c8dad-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "2025",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "334fb129-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "2026",
+        "name": "Серый",
+        "value": "#666666",
+        "second_value": "",
+        "guid": "1eafda7e-2c88-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "engine_power": "152",
+      "turning_torque": "491 / 1200-1900",
+      "length": "7870",
+      "width": "2298",
+      "height": "2335",
+      "unladen_weight": "3370",
+      "gross_weight": "6615",
+      "environmental_class": "Пятый",
+      "gear_number": "6",
+      "front_brake": "Диск",
+      "back_brake": "Барабан",
+      "for_sale": "1",
+      "images": [
+        {
+          "id": "8088723",
+          "path": "https://agat-group.com/upload/85/854d0ecbc0c575c5e37733f3226e8051.JPG"
+        },
+        {
+          "id": "8088724",
+          "path": "https://agat-group.com/upload/a3/a3309079b276305e1ec86203c6e7db08.JPG"
+        },
+        {
+          "id": "8088725",
+          "path": "https://agat-group.com/upload/63/63e933b3b4881a6c0e2ea06721e0d902.JPG"
+        },
+        {
+          "id": "8088726",
+          "path": "https://agat-group.com/upload/e7/e7dd5c5e8b5536139da7e45694996abf.JPG"
+        },
+        {
+          "id": "8088727",
+          "path": "https://agat-group.com/upload/55/554e249c3cbf97e80e7f1cf4a7954f6e.JPG"
+        },
+        {
+          "id": "8088728",
+          "path": "https://agat-group.com/upload/b6/b6bb72e762df575ef8c81de791831687.JPG"
+        },
+        {
+          "id": "8088729",
+          "path": "https://agat-group.com/upload/92/92542b6f9f39fa502cc85385fcd78641.JPG"
+        },
+        {
+          "id": "8088730",
+          "path": "https://agat-group.com/upload/3c/3c61420ef0ce0dae5e4ec4463e77b4d8.JPG"
+        },
+        {
+          "id": "8088731",
+          "path": "https://agat-group.com/upload/92/921489881ce1acbe2a9d8dc3f12f0056.JPG"
+        },
+        {
+          "id": "8088732",
+          "path": "https://agat-group.com/upload/f1/f146e86142c634d854a6e65151c89064.JPG"
+        }
+      ],
+      "gear_type": "Задний",
+      "engine_volume": "3.8"
+    },
+    "brand": "Foton",
+    "model": "AUMAN S100 (1108)"
+  },
+  {
+    "id": "1695830",
+    "uuid": "20bbde62-578d-11ee-9185-00155d016f2b",
+    "name": "1126VGPFK-A1ZA01 4*2",
+    "code": "1126vgpfk-a1za01-42-1695830",
+    "brand_id": "47",
+    "model_id": "8693",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8088749",
+      "path": "https://agat-group.com/upload/4c/4c32572bfac5e00f6f46a336937efcf1.JPG"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "5480000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "cylinder_count": "4",
+      "engine_volume": "4.5",
+      "cylinder_configuration": "рядное",
+      "engine_power": "154",
+      "turning_torque": "760",
+      "length": "9000",
+      "width": "2550",
+      "height": "2800",
+      "wheel_base": "5150",
+      "front_track": "1922",
+      "back_track": "1800",
+      "unladen_weight": "3220",
+      "gross_weight": "11990",
+      "max_speed": "100",
+      "for_sale": "1",
+      "images": [
+        {
+          "id": "8088750",
+          "path": "https://agat-group.com/upload/b2/b2e0f1ea162100d9be77a311b4a1c778.JPG"
+        },
+        {
+          "id": "8088751",
+          "path": "https://agat-group.com/upload/a9/a9b394430b1c0f5cbdf9198c250ccc70.JPG"
+        },
+        {
+          "id": "8088752",
+          "path": "https://agat-group.com/upload/ec/ecce0dd68bbe9cb677c79691cf87fe29.JPG"
+        },
+        {
+          "id": "8088753",
+          "path": "https://agat-group.com/upload/da/daebb9e44206d5dc052d44573f83bbcf.JPG"
+        },
+        {
+          "id": "8088754",
+          "path": "https://agat-group.com/upload/94/94b1ab17dde0bef009ddd0360d47ae72.JPG"
+        }
+      ],
+      "gear_type": "Задний",
+      "gear_number": "пятый ",
+      "environmental_class": "пятый "
+    },
+    "brand": "Foton",
+    "model": "AUMAN EST-M"
+  },
+  {
+    "id": "70423",
+    "uuid": "8afdbe8d-be1a-11e7-90f9-00155d016f2b",
+    "name": "A21R35-1010 Шасси",
+    "code": "a21r35-1010-shassi-70423",
+    "brand_id": "88",
+    "model_id": "3955",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "508195",
+      "path": "https://agat-group.com/upload/76/7617bc23f5ff168c18627f23f404f94f.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "3120000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "648",
+        "name": "Чили",
+        "value": "#99001F",
+        "second_value": "",
+        "guid": "fe706855-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "649",
+        "name": "Черный",
+        "value": "#000000",
+        "second_value": "",
+        "guid": "092faf2d-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "2"
+      },
+      {
+        "id": "650",
+        "name": "Титан",
+        "value": "#888888",
+        "second_value": "",
+        "guid": "1c5efb43-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "651",
+        "name": "Сильвер лайт",
+        "value": "#DADADA",
+        "second_value": "",
+        "guid": "32bda6c4-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "652",
+        "name": "Сидней",
+        "value": "#0071A6",
+        "second_value": "",
+        "guid": "4f6cc2e2-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "3",
+      "width": "2068",
+      "front_track": "1750",
+      "back_track": "1560",
+      "road_clearance": "170",
+      "unladen_weight": "2040",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "lights_image": "508196",
+      "environmental_class": "ПЯТЫЙ",
+      "body_type": "Шасси",
+      "length": "6709",
+      "height": "2137",
+      "wheel_base": "3745",
+      "turn_diameter": "6,5",
+      "engine_type": "Бензиновый/Газовый",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "A21R35 Газель Next"
+  },
+  {
+    "id": "70900",
+    "uuid": "85eda27c-c09d-11e7-90f9-00155d016f2b",
+    "name": "3302-750 Борт 3 м",
+    "code": "3302-750-bort-3-m-70900",
+    "brand_id": "88",
+    "model_id": "3978",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "339288",
+      "path": "https://agat-group.com/upload/d6/d66765e899b06ce86688960314edf9a1.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2480000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Борт",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "3",
+      "length": "5540",
+      "width": "2066",
+      "height": "2120",
+      "wheel_base": "2900",
+      "front_track": "1700",
+      "back_track": "1560",
+      "turn_diameter": "5.5",
+      "unladen_weight": "1840",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "lights_image": "339289",
+      "environmental_class": "ПЯТЫЙ",
+      "engine_type": "Бензиновый",
+      "base": "Стандартное шасси",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "3302 Газель Бизнес"
+  },
+  {
+    "id": "78471",
+    "uuid": "99075381-ebcf-11e7-90fd-00155d016f2b",
+    "name": "А22R33-55 Борт 3 м",
+    "code": "a22r33-55-bort-3-m-78471",
+    "brand_id": "88",
+    "model_id": "3961",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "421193",
+      "path": "https://agat-group.com/upload/5f/5f89f0decbb4697d3a347a04a82cd47c.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "3260000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "648",
+        "name": "Чили",
+        "value": "#99001F",
+        "second_value": "",
+        "guid": "fe706855-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "649",
+        "name": "Черный",
+        "value": "#000000",
+        "second_value": "",
+        "guid": "092faf2d-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "2"
+      },
+      {
+        "id": "650",
+        "name": "Титан",
+        "value": "#888888",
+        "second_value": "",
+        "guid": "1c5efb43-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "651",
+        "name": "Сильвер лайт",
+        "value": "#DADADA",
+        "second_value": "",
+        "guid": "32bda6c4-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "652",
+        "name": "Сидней",
+        "value": "#0071A6",
+        "second_value": "",
+        "guid": "4f6cc2e2-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Борт",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "front_track": "1750",
+      "back_track": "1560",
+      "road_clearance": "170",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "lights_image": "421194",
+      "environmental_class": "ЧЕТВЕРТЫЙ",
+      "seats": "7",
+      "length": "6373",
+      "wheel_base": "3745",
+      "turn_diameter": "6,5",
+      "engine_type": "Бензиновый",
+      "base": "Удлиненное шасси",
+      "width": "2513",
+      "height": "2766",
+      "unladen_weight": "2165",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "A22R33 Газель Next Фермер"
+  },
+  {
+    "id": "78476",
+    "uuid": "231536c8-ebd1-11e7-90fd-00155d016f2b",
+    "name": "А22R35-1010 Шасси",
+    "code": "a22r35-1010-shassi-78476",
+    "brand_id": "88",
+    "model_id": "4339",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1365649",
+      "path": "https://agat-group.com/upload/0c/0cd288adfcf96fb6a48f9fcc6993a4c9.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "3220000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "648",
+        "name": "Чили",
+        "value": "#99001F",
+        "second_value": "",
+        "guid": "fe706855-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "649",
+        "name": "Черный",
+        "value": "#000000",
+        "second_value": "",
+        "guid": "092faf2d-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "2"
+      },
+      {
+        "id": "650",
+        "name": "Титан",
+        "value": "#888888",
+        "second_value": "",
+        "guid": "1c5efb43-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "651",
+        "name": "Сильвер лайт",
+        "value": "#DADADA",
+        "second_value": "",
+        "guid": "32bda6c4-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "652",
+        "name": "Сидней",
+        "value": "#0071A6",
+        "second_value": "",
+        "guid": "4f6cc2e2-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "width": "2068",
+      "height": "2140",
+      "wheel_base": "3145",
+      "front_track": "1750",
+      "back_track": "1560",
+      "road_clearance": "170",
+      "unladen_weight": "2040",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "lights_image": "1365650",
+      "seats": "7",
+      "length": "6373",
+      "turn_diameter": "6,5",
+      "engine_type": "Бензиновый/Газовый",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "A22R35 Газель Next Фермер"
+  },
+  {
+    "id": "80680",
+    "uuid": "a9a3f9de-000b-11e8-90fd-00155d016f2b",
+    "name": "A21R23-1050 Шасси 3 м",
+    "code": "a21r23-1050-shassi-3-m-80680",
+    "brand_id": "88",
+    "model_id": "3958",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1333712",
+      "path": "https://agat-group.com/upload/54/540bc8f5d3357cd945e1836eabac5ab6.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2970000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "648",
+        "name": "Чили",
+        "value": "#99001F",
+        "second_value": "",
+        "guid": "fe706855-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "649",
+        "name": "Черный",
+        "value": "#000000",
+        "second_value": "",
+        "guid": "092faf2d-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "2"
+      },
+      {
+        "id": "650",
+        "name": "Титан",
+        "value": "#888888",
+        "second_value": "",
+        "guid": "1c5efb43-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "651",
+        "name": "Сильвер лайт",
+        "value": "#DADADA",
+        "second_value": "",
+        "guid": "32bda6c4-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "652",
+        "name": "Сидней",
+        "value": "#0071A6",
+        "second_value": "",
+        "guid": "4f6cc2e2-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "3",
+      "width": "2068",
+      "height": "2140",
+      "wheel_base": "3145",
+      "front_track": "1750",
+      "back_track": "1560",
+      "road_clearance": "170",
+      "turn_diameter": "5,7",
+      "unladen_weight": "2040",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "lights_image": "1333713",
+      "length": "5630",
+      "engine_type": "Бензиновый",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "A21R23 Газель Next"
+  },
+  {
+    "id": "80681",
+    "uuid": "bd7efdb5-000b-11e8-90fd-00155d016f2b",
+    "name": "A21R23-50 Борт 3 м",
+    "code": "a21r23-50-bort-3-m-80681",
+    "brand_id": "88",
+    "model_id": "3958",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1333750",
+      "path": "https://agat-group.com/upload/c1/c137c98bf8dac0938e482e0da5f04b74.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "3060000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "648",
+        "name": "Чили",
+        "value": "#99001F",
+        "second_value": "",
+        "guid": "fe706855-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "649",
+        "name": "Черный",
+        "value": "#000000",
+        "second_value": "",
+        "guid": "092faf2d-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "2"
+      },
+      {
+        "id": "650",
+        "name": "Титан",
+        "value": "#888888",
+        "second_value": "",
+        "guid": "1c5efb43-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "651",
+        "name": "Сильвер лайт",
+        "value": "#DADADA",
+        "second_value": "",
+        "guid": "32bda6c4-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "652",
+        "name": "Сидней",
+        "value": "#0071A6",
+        "second_value": "",
+        "guid": "4f6cc2e2-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Борт",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "3",
+      "wheel_base": "3145",
+      "front_track": "1750",
+      "back_track": "1560",
+      "road_clearance": "170",
+      "turn_diameter": "5,7",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "lights_image": "1333751",
+      "length": "5630",
+      "engine_type": "Бензиновый",
+      "base": "Стандартное шасси",
+      "width": "2513",
+      "height": "2766",
+      "unladen_weight": "1955",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "A21R23 Газель Next"
+  },
+  {
+    "id": "80829",
+    "uuid": "aa3e68a3-0108-11e8-90fd-00155d016f2b",
+    "name": "А21R33-1050 Шасси 4 м",
+    "code": "a21r33-1050-shassi-4-m-80829",
+    "brand_id": "88",
+    "model_id": "3959",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1333714",
+      "path": "https://agat-group.com/upload/de/de8cb44e61fdcd2a2821d481e3a15afd.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "3070000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "648",
+        "name": "Чили",
+        "value": "#99001F",
+        "second_value": "",
+        "guid": "fe706855-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "649",
+        "name": "Черный",
+        "value": "#000000",
+        "second_value": "",
+        "guid": "092faf2d-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "2"
+      },
+      {
+        "id": "650",
+        "name": "Титан",
+        "value": "#888888",
+        "second_value": "",
+        "guid": "1c5efb43-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "651",
+        "name": "Сильвер лайт",
+        "value": "#DADADA",
+        "second_value": "",
+        "guid": "32bda6c4-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "652",
+        "name": "Сидней",
+        "value": "#0071A6",
+        "second_value": "",
+        "guid": "4f6cc2e2-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "3",
+      "width": "2068",
+      "height": "2140",
+      "wheel_base": "3145",
+      "front_track": "1750",
+      "back_track": "1560",
+      "road_clearance": "170",
+      "turn_diameter": "5,7",
+      "unladen_weight": "2040",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "lights_image": "1333715",
+      "length": "6709",
+      "engine_type": "Бензиновый",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "A21R33 Газель Next"
+  },
+  {
+    "id": "80830",
+    "uuid": "d8bc2fee-0108-11e8-90fd-00155d016f2b",
+    "name": "A21R33-50 Борт 4 м",
+    "code": "a21r33-50-bort-4-m-80830",
+    "brand_id": "88",
+    "model_id": "3959",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1333752",
+      "path": "https://agat-group.com/upload/78/78ae0fac10116ba394b0d620711bd193.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "3160000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "648",
+        "name": "Чили",
+        "value": "#99001F",
+        "second_value": "",
+        "guid": "fe706855-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "649",
+        "name": "Черный",
+        "value": "#000000",
+        "second_value": "",
+        "guid": "092faf2d-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "2"
+      },
+      {
+        "id": "650",
+        "name": "Титан",
+        "value": "#888888",
+        "second_value": "",
+        "guid": "1c5efb43-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "651",
+        "name": "Сильвер лайт",
+        "value": "#DADADA",
+        "second_value": "",
+        "guid": "32bda6c4-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "652",
+        "name": "Сидней",
+        "value": "#0071A6",
+        "second_value": "",
+        "guid": "4f6cc2e2-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Борт",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "3",
+      "front_track": "1750",
+      "back_track": "1560",
+      "road_clearance": "170",
+      "turn_diameter": "5,7",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "lights_image": "1333753",
+      "length": "6709",
+      "engine_type": "Бензиновый",
+      "base": "Удлиненное шасси",
+      "width": "2513",
+      "height": "2766",
+      "wheel_base": "3745",
+      "unladen_weight": "2125",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "A21R33 Газель Next"
+  },
+  {
+    "id": "80836",
+    "uuid": "cf8ca3be-010e-11e8-90fd-00155d016f2b",
+    "name": "А31R33-60 Фургон цельнометаллический",
+    "code": "a31r33-60-furgon-celnometallicheskii-80836",
+    "brand_id": "88",
+    "model_id": "6422",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1414647",
+      "path": "https://agat-group.com/upload/61/61f10c3c7587cbcc1c3a5daeb7180f1b.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "3258000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "650",
+        "name": "Титан",
+        "value": "#888888",
+        "second_value": "",
+        "guid": "1c5efb43-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "651",
+        "name": "Сильвер лайт",
+        "value": "#DADADA",
+        "second_value": "",
+        "guid": "32bda6c4-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "652",
+        "name": "Сидней",
+        "value": "#0071A6",
+        "second_value": "",
+        "guid": "4f6cc2e2-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      },
+      {
+        "id": "697",
+        "name": "Красное золото",
+        "value": "#b64505",
+        "second_value": "",
+        "guid": "a300fe8e-ebda-11e7-90fd-00155d016f2b",
+        "code": "",
+        "color_id": "9"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "height": "2753",
+      "front_track": "1750",
+      "back_track": "1560",
+      "road_clearance": "170",
+      "turn_diameter": "5,7",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "engine_type": "Бензиновый",
+      "lights_image": "1414648",
+      "base": "Удлиненное шасси",
+      "seats": "3",
+      "length": "6207",
+      "width": "2513",
+      "wheel_base": "3745",
+      "unladen_weight": "2455",
+      "body_type": "Цельнометаллический фургон",
+      "engine_power": "106,8",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "A31R33 Газель Next"
+  },
+  {
+    "id": "80837",
+    "uuid": "4e186df5-010d-11e8-90fd-00155d016f2b",
+    "name": "А31R23-60 Фургон цельнометаллический",
+    "code": "a31r23-60-furgon-celnometallicheskii-80837",
+    "brand_id": "88",
+    "model_id": "6424",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1801654",
+      "path": "https://agat-group.com/upload/63/63e8ec3795a4db7d733f7ac4b0aa70b0.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "3158000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "650",
+        "name": "Титан",
+        "value": "#888888",
+        "second_value": "",
+        "guid": "1c5efb43-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "651",
+        "name": "Сильвер лайт",
+        "value": "#DADADA",
+        "second_value": "",
+        "guid": "32bda6c4-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "652",
+        "name": "Сидней",
+        "value": "#0071A6",
+        "second_value": "",
+        "guid": "4f6cc2e2-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      },
+      {
+        "id": "697",
+        "name": "Красное золото",
+        "value": "#b64505",
+        "second_value": "",
+        "guid": "a300fe8e-ebda-11e7-90fd-00155d016f2b",
+        "code": "",
+        "color_id": "9"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "length": "5607",
+      "height": "2753",
+      "wheel_base": "3145",
+      "front_track": "1750",
+      "back_track": "1560",
+      "road_clearance": "170",
+      "turn_diameter": "5,7",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "engine_type": "Бензиновый",
+      "lights_image": "1801655",
+      "seats": "3",
+      "width": "2513",
+      "unladen_weight": "2360",
+      "base": "Стандартное шасси",
+      "body_type": "Цельнометаллический фургон",
+      "engine_power": "106,8",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "A31R23 Газель Next"
+  },
+  {
+    "id": "80839",
+    "uuid": "7adc7563-0102-11e8-90fd-00155d016f2b",
+    "name": "22177-753 автобус 6 мест",
+    "code": "22177-753-avtobus-6-mest-80839",
+    "brand_id": "88",
+    "model_id": "3989",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1336060",
+      "path": "https://agat-group.com/upload/ac/acf13cfc027c0870362aac1dc0c59a7f.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2261000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "841",
+        "name": "Серый",
+        "value": "#4b4a48",
+        "second_value": "",
+        "guid": "67f87fed-8e4b-11e8-90f8-00155d88120e",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "1097",
+        "name": "Темно-зеленый",
+        "value": "#154530",
+        "second_value": "",
+        "guid": "2ad1e0f3-0b7e-11ea-9102-00155d85502d",
+        "code": "",
+        "color_id": "12"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Автобус",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "length": "4810",
+      "width": "2030",
+      "height": "2100",
+      "wheel_base": "2760",
+      "unladen_weight": "2245 ",
+      "gross_weight": "2785",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ЧЕТВЕРТЫЙ",
+      "lights_image": "1336061",
+      "engine_type": "Бензиновый",
+      "gear_type": "Полный",
+      "engine_volume": "2.7",
+      "seats": "6+1",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "22177 Соболь"
+  },
+  {
+    "id": "80841",
+    "uuid": "2db8a46f-0103-11e8-90fd-00155d016f2b",
+    "name": "221717-753 автобус 6 мест",
+    "code": "221717-753-avtobus-6-mest-80841",
+    "brand_id": "88",
+    "model_id": "3324",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "510333",
+      "path": "https://agat-group.com/upload/a8/a8422785d822f10ec97f9251df58d87d.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2261000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Автобус",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "length": "4810",
+      "width": "2030",
+      "wheel_base": "2760",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "lights_image": "510334",
+      "environmental_class": "ЧЕТВЕРТЫЙ",
+      "engine_type": "Бензиновый",
+      "height": "2385",
+      "front_track": "1720",
+      "back_track": "1700",
+      "road_clearance": "205",
+      "turn_diameter": "6",
+      "unladen_weight": "2330",
+      "gross_weight": "2765",
+      "gear_type": "Полный",
+      "engine_volume": "2.7",
+      "seats": "6+1",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "221717 Соболь Бизнес автобус"
+  },
+  {
+    "id": "80848",
+    "uuid": "02451ce0-00f3-11e8-90fd-00155d016f2b",
+    "name": "3302-1750 Шасси 3 м",
+    "code": "3302-1750-shassi-3-m-80848",
+    "brand_id": "88",
+    "model_id": "3978",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1333724",
+      "path": "https://agat-group.com/upload/62/62cc6cae44d131804e0fd603c862204d.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2390000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "3",
+      "length": "5540",
+      "width": "2066",
+      "height": "2120",
+      "wheel_base": "2900",
+      "front_track": "1700",
+      "back_track": "1560",
+      "turn_diameter": "5.5",
+      "unladen_weight": "1840",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "lights_image": "1333725",
+      "engine_type": "Бензиновый",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "3302 Газель Бизнес"
+  },
+  {
+    "id": "80868",
+    "uuid": "1c764476-00f6-11e8-90fd-00155d016f2b",
+    "name": "27057-753 ЦМФ",
+    "code": "27057-753-cmf-80868",
+    "brand_id": "88",
+    "model_id": "4332",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1333620",
+      "path": "https://agat-group.com/upload/9f/9f69e3a8872e4550a92ee06efccaa88c.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2690000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "gear_type": "Полный",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "3",
+      "length": "5540",
+      "width": "2066",
+      "height": "2120",
+      "wheel_base": "2900",
+      "front_track": "1700",
+      "back_track": "1560",
+      "turn_diameter": "5.5",
+      "unladen_weight": "1840",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "body_type": "Цельнометаллический фургон",
+      "lights_image": "1333621",
+      "engine_type": "Бензиновый",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "27057 Газель-Бизнес 4*4"
+  },
+  {
+    "id": "80870",
+    "uuid": "52f1b308-00f6-11e8-90fd-00155d016f2b",
+    "name": "27057-773 ЦМФ",
+    "code": "27057-773-cmf-80870",
+    "brand_id": "88",
+    "model_id": "4332",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1333624",
+      "path": "https://agat-group.com/upload/8d/8d4468426d7b6c43e4d8f0b385197c9c.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2740000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "gear_type": "Полный",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "7",
+      "length": "5540",
+      "width": "2066",
+      "height": "2120",
+      "wheel_base": "2900",
+      "front_track": "1700",
+      "back_track": "1560",
+      "turn_diameter": "5.5",
+      "unladen_weight": "1840",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "body_type": "Цельнометаллический фургон",
+      "lights_image": "1333625",
+      "engine_type": "Бензиновый",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "27057 Газель-Бизнес 4*4"
+  },
+  {
+    "id": "80875",
+    "uuid": "4178b0d9-0101-11e8-90fd-00155d016f2b",
+    "name": "27527-773 7 мест",
+    "code": "27527-773-7-mest-80875",
+    "brand_id": "88",
+    "model_id": "4330",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1216717",
+      "path": "https://agat-group.com/upload/fe/fe7e4a5cf90639f07567de971cc9a01e.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2040000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "679",
+        "name": "Вишневый",
+        "value": "#7A0120",
+        "second_value": "",
+        "guid": "00867993-cf94-11e7-90fa-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "841",
+        "name": "Серый",
+        "value": "#4b4a48",
+        "second_value": "",
+        "guid": "67f87fed-8e4b-11e8-90f8-00155d88120e",
+        "code": "",
+        "color_id": "3"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "7",
+      "length": "4810",
+      "width": "2380",
+      "height": "2185",
+      "wheel_base": "2760",
+      "front_track": "1700",
+      "back_track": "1700",
+      "unladen_weight": "2165",
+      "gross_weight": "2800",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "lights_image": "1216718",
+      "gear_type": "Полный",
+      "body_type": "Цельнометаллический фургон",
+      "engine_type": "Бензиновый",
+      "engine_volume": "2.7",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "27527 Соболь 4х4"
+  },
+  {
+    "id": "80881",
+    "uuid": "deaba123-00f9-11e8-90fd-00155d016f2b",
+    "name": "32217-753 автобус",
+    "code": "32217-753-avtobus-80881",
+    "brand_id": "88",
+    "model_id": "4343",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1336027",
+      "path": "https://agat-group.com/upload/1a/1a833a0fc1028370f0f4f7432a4976f3.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2840000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Автобус",
+      "gear_type": "Задний",
+      "cylinder_count": "4",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "8",
+      "length": "5475",
+      "width": "2075",
+      "height": "2200",
+      "wheel_base": "2900",
+      "front_track": "1700",
+      "back_track": "1560",
+      "road_clearance": "170",
+      "unladen_weight": "2445",
+      "gross_weight": "3010",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ЧЕТВЕРТЫЙ",
+      "lights_image": "1336028",
+      "engine_type": "Бензиновый",
+      "engine_volume": "2.7",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "32217 Газель-Бизнес 8 мест 4*4"
+  },
+  {
+    "id": "80885",
+    "uuid": "2af103d1-00f4-11e8-90fd-00155d016f2b",
+    "name": "330232-750 Борт 3 м, сдвоенная кабина",
+    "code": "330232-750-bort-3-m-sdvoennaya-kabina-80885",
+    "brand_id": "88",
+    "model_id": "3982",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1333491",
+      "path": "https://agat-group.com/upload/a1/a177381846648cc23962ccecf33a6d1d.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2580000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Борт",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "length": "5540",
+      "width": "2066",
+      "height": "2120",
+      "wheel_base": "2900",
+      "front_track": "1700",
+      "back_track": "1560",
+      "turn_diameter": "5.5",
+      "unladen_weight": "1840",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "lights_image": "1333492",
+      "seats": "6",
+      "engine_type": "Бензиновый",
+      "base": "Удлиненное шасси",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "330232 Газель-Бизнес Фермер"
+  },
+  {
+    "id": "80886",
+    "uuid": "544f85f8-00f4-11e8-90fd-00155d016f2b",
+    "name": "330232-1750 Шасси, сдвоенная кабина",
+    "code": "330232-1750-shassi-sdvoennaya-kabina-80886",
+    "brand_id": "88",
+    "model_id": "3982",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1217533",
+      "path": "https://agat-group.com/upload/29/2934c3aaad5210cca43398e5826317a6.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2490000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "length": "5540",
+      "width": "2066",
+      "height": "2120",
+      "wheel_base": "2900",
+      "front_track": "1700",
+      "back_track": "1560",
+      "turn_diameter": "5.5",
+      "unladen_weight": "1840",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "lights_image": "1217552",
+      "seats": "6",
+      "engine_type": "Бензиновый",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "330232 Газель-Бизнес Фермер"
+  },
+  {
+    "id": "80887",
+    "uuid": "879b8c9c-00f4-11e8-90fd-00155d016f2b",
+    "name": "33027-753 Борт 3 м",
+    "code": "33027-753-bort-3-m-80887",
+    "brand_id": "88",
+    "model_id": "4338",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1333600",
+      "path": "https://agat-group.com/upload/33/33f928d983b216acbb5bcecfbf995603.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2480000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Борт",
+      "gear_type": "Полный",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "3",
+      "length": "5540",
+      "width": "2066",
+      "wheel_base": "2900",
+      "back_track": "1560",
+      "turn_diameter": "5.5",
+      "unladen_weight": "1840",
+      "gross_weight": "3500",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "lights_image": "1333601",
+      "engine_type": "Бензиновый",
+      "base": "Стандартное шасси",
+      "height": "2660",
+      "front_track": "1720",
+      "road_clearance": "190",
+      "max_speed": "120",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "33027 Газель-Бизнес 4*4"
+  },
+  {
+    "id": "80889",
+    "uuid": "be499d62-00f4-11e8-90fd-00155d016f2b",
+    "name": "33027-1753 Шасси",
+    "code": "33027-1753-shassi-80889",
+    "brand_id": "88",
+    "model_id": "4338",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1333610",
+      "path": "https://agat-group.com/upload/64/64192aadb1aa735a2e07ae9989360c69.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2390000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "gear_type": "Полный",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "3",
+      "length": "5540",
+      "width": "2066",
+      "height": "2120",
+      "wheel_base": "2900",
+      "front_track": "1700",
+      "back_track": "1560",
+      "turn_diameter": "5.5",
+      "unladen_weight": "1840",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "body_type": "Шасси",
+      "lights_image": "1333611",
+      "engine_type": "Бензиновый",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "33027 Газель-Бизнес 4*4"
+  },
+  {
+    "id": "80891",
+    "uuid": "0200fa19-00f5-11e8-90fd-00155d016f2b",
+    "name": "330273-753 Борт 2,3 м",
+    "code": "330273-753-bort-23-m-80891",
+    "brand_id": "88",
+    "model_id": "4416",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1801714",
+      "path": "https://agat-group.com/upload/d4/d433f0395a91af83b9a9b293ceac62b0.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2530000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Борт",
+      "gear_type": "Полный",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "length": "5540",
+      "width": "2066",
+      "wheel_base": "2900",
+      "back_track": "1560",
+      "gross_weight": "3500",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ПЯТЫЙ",
+      "engine_type": "Бензиновый",
+      "base": "Стандартное шасси",
+      "lights_image": "1801715",
+      "seats": "6",
+      "height": "1660",
+      "front_track": "1720",
+      "road_clearance": "190",
+      "turn_diameter": "7,5",
+      "unladen_weight": "2140",
+      "max_speed": "120",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "330273 Газель-Бизнес Фермер"
+  },
+  {
+    "id": "81057",
+    "uuid": "36a46851-019c-11e8-90fd-00155d016f2b",
+    "name": "А65R33-60 Автобус",
+    "code": "a65r33-60-avtobus-81057",
+    "brand_id": "88",
+    "model_id": "6448",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "869728",
+      "path": "https://agat-group.com/upload/30/3081781b9015d096fcaeaeb981b60e2e.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "4058000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "650",
+        "name": "Титан",
+        "value": "#888888",
+        "second_value": "",
+        "guid": "1c5efb43-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "651",
+        "name": "Сильвер лайт",
+        "value": "#DADADA",
+        "second_value": "",
+        "guid": "32bda6c4-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "652",
+        "name": "Сидней",
+        "value": "#0071A6",
+        "second_value": "",
+        "guid": "4f6cc2e2-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      },
+      {
+        "id": "697",
+        "name": "Красное золото",
+        "value": "#b64505",
+        "second_value": "",
+        "guid": "a300fe8e-ebda-11e7-90fd-00155d016f2b",
+        "code": "",
+        "color_id": "9"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Автобус",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "length": "6415",
+      "height": "2837",
+      "wheel_base": "3745",
+      "front_track": "1750",
+      "back_track": "1750",
+      "road_clearance": "170",
+      "turn_diameter": "6,5",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "environmental_class": "ЧЕТВЕРТЫЙ",
+      "lights_image": "869773",
+      "engine_type": "Бензиновый",
+      "width": "2513",
+      "unladen_weight": "2691",
+      "gross_weight": "4056",
+      "seats": "16+1+1",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "A65R33 Газель Next"
+  },
+  {
+    "id": "81271",
+    "uuid": "a770b34a-0294-11e8-90fd-00155d016f2b",
+    "name": "А65R35-60 Автобус",
+    "code": "a65r35-60-avtobus-81271",
+    "brand_id": "88",
+    "model_id": "6504",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "510335",
+      "path": "https://agat-group.com/upload/ca/cad170c26638dc2e57e304d875dc8f5c.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "4108000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "650",
+        "name": "Титан",
+        "value": "#888888",
+        "second_value": "",
+        "guid": "1c5efb43-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "651",
+        "name": "Сильвер лайт",
+        "value": "#DADADA",
+        "second_value": "",
+        "guid": "32bda6c4-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "652",
+        "name": "Сидней",
+        "value": "#0071A6",
+        "second_value": "",
+        "guid": "4f6cc2e2-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      },
+      {
+        "id": "697",
+        "name": "Красное золото",
+        "value": "#b64505",
+        "second_value": "",
+        "guid": "a300fe8e-ebda-11e7-90fd-00155d016f2b",
+        "code": "",
+        "color_id": "9"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Автобус",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "length": "6415",
+      "height": "2837",
+      "wheel_base": "3745",
+      "front_track": "1750",
+      "road_clearance": "170",
+      "turn_diameter": "6,5",
+      "max_speed": "130",
+      "gear_number": "5",
+      "for_sale": "1",
+      "lights_image": "510336",
+      "environmental_class": "ЧЕТВЕРТЫЙ",
+      "width": "2513",
+      "back_track": "1560",
+      "unladen_weight": "2980",
+      "gross_weight": "4135",
+      "seats": "16+1+1",
+      "engine_type": "Бензиновый/Газовый",
+      "engine_power": "104,3",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "A65R35 Газель Next"
+  },
+  {
+    "id": "95971",
+    "uuid": "be9ce6ae-5e5b-11e8-90f6-00155d4e5e11",
+    "name": "А32R25-60",
+    "code": "a32r25-60-95971",
+    "brand_id": "88",
+    "model_id": "6817",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1399216",
+      "path": "https://agat-group.com/upload/c9/c94885684267d0f64a61ccce33bba495.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "3308000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "650",
+        "name": "Титан",
+        "value": "#888888",
+        "second_value": "",
+        "guid": "1c5efb43-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      },
+      {
+        "id": "651",
+        "name": "Сильвер лайт",
+        "value": "#DADADA",
+        "second_value": "",
+        "guid": "32bda6c4-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "652",
+        "name": "Сидней",
+        "value": "#0071A6",
+        "second_value": "",
+        "guid": "4f6cc2e2-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      },
+      {
+        "id": "697",
+        "name": "Красное золото",
+        "value": "#b64505",
+        "second_value": "",
+        "guid": "a300fe8e-ebda-11e7-90fd-00155d016f2b",
+        "code": "",
+        "color_id": "9"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Цельнометаллический фургон",
+      "gear_type": "Задний",
+      "engine_volume": "2.8",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "149,6",
+      "turning_torque": "330",
+      "seats": "7",
+      "length": "5607",
+      "width": "2068",
+      "height": "2753",
+      "wheel_base": "3145",
+      "front_track": "1750",
+      "back_track": "1560",
+      "road_clearance": "170",
+      "turn_diameter": "5,7",
+      "unladen_weight": "2395",
+      "gross_weight": "3500",
+      "max_speed": "130",
+      "environmental_class": "ПЯТЫЙ",
+      "gear_number": "5",
+      "for_sale": "1",
+      "lights_image": "1399217",
+      "engine_type": "Бензиновый/Газовый",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": null
+  },
+  {
+    "id": "97139",
+    "uuid": "4ae23844-64a1-11e8-9108-00155d016f2b",
+    "name": "33026-240 Борт 3 м",
+    "code": "33026-240-bort-3-m-97139",
+    "brand_id": "88",
+    "model_id": "3986",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1405178",
+      "path": "https://agat-group.com/upload/c4/c44dd7dc847151766d20f08b76ad0666.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2730000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "transmission": "МКПП",
+      "body_type": "Борт",
+      "gear_type": "Задний",
+      "engine_volume": "2.9",
+      "cylinder_configuration": "Рядное",
+      "seats": "3",
+      "length": "5540",
+      "width": "2066",
+      "wheel_base": "2900",
+      "front_track": "1700",
+      "back_track": "1560",
+      "turn_diameter": "5.5",
+      "gross_weight": "3500",
+      "environmental_class": "ЧЕТВЕРТЫЙ",
+      "gear_number": "5",
+      "for_sale": "1",
+      "lights_image": "1405179",
+      "engine_type": "Бензиновый/Газовый",
+      "base": "Стандартное шасси",
+      "height": "2585",
+      "road_clearance": "170",
+      "unladen_weight": "2110",
+      "max_speed": "125",
+      "engine_power": "99,8",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "33026 Газель Бизнес"
+  },
+  {
+    "id": "114508",
+    "uuid": "7b01fb57-c192-11e8-910c-00155d016f2b",
+    "name": "27527-753 3 мест",
+    "code": "27527-753-3-mest-114508",
+    "brand_id": "88",
+    "model_id": "4330",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "1794166",
+      "path": "https://agat-group.com/upload/8f/8ff97928c6621fd499ae067554230646.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "1990000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "648",
+        "name": "Чили",
+        "value": "#99001F",
+        "second_value": "",
+        "guid": "fe706855-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Бензиновый",
+      "transmission": "МКПП",
+      "body_type": "Цельнометаллический фургон",
+      "gear_type": "Полный",
+      "engine_volume": "2.7",
+      "cylinder_configuration": "Рядное",
+      "engine_power": "106,8",
+      "turning_torque": "220,5",
+      "seats": "3",
+      "length": "4810",
+      "width": "2380",
+      "height": "2185",
+      "wheel_base": "2760",
+      "front_track": "1700",
+      "back_track": "1700",
+      "unladen_weight": "2055",
+      "gross_weight": "2760",
+      "max_speed": "130",
+      "environmental_class": "ПЯТЫЙ",
+      "gear_number": "5",
+      "for_sale": "1",
+      "lights_image": "1794167",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "27527 Соболь 4х4"
+  },
+  {
+    "id": "1743653",
+    "uuid": "f82a00fb-0132-11ef-91a3-00155d016f2b",
+    "name": "А21R32-1950-26-С22-48-00-000",
+    "code": "a21r32-1950-26-s22-48-00-000-1743344",
+    "brand_id": "88",
+    "model_id": "3946",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8643035",
+      "path": "https://agat-group.com/upload/8e/8e49c579acc1e807ad974d46d704a816.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "4031000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "648",
+        "name": "Чили",
+        "value": "#99001F",
+        "second_value": "",
+        "guid": "fe706855-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "649",
+        "name": "Черный",
+        "value": "#000000",
+        "second_value": "",
+        "guid": "092faf2d-b3d9-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "2"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Фургон",
+      "gear_type": "Задний",
+      "for_sale": "1",
+      "engine_volume": "2.5",
+      "engine_power": "149,6",
+      "seats": "3",
+      "unladen_weight": "2830",
+      "gross_weight": "3500",
+      "gas_type": "ДТ",
+      "environmental_class": "третий",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": "Газель Next"
+  },
+  {
+    "id": "1812926",
+    "uuid": "f1472980-2045-11f0-9de2-96084509ce8d",
+    "name": "330200-1750-09-634-20-00-015",
+    "code": "330200-1750-09-634-20-00-015-1812851",
+    "brand_id": "88",
+    "model_id": "9527",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "9292022",
+      "path": "https://agat-group.com/upload/54/54ff7b367998921242799a0fd9c914b8.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "2986000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "647",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "f2ad4096-b3d8-11e7-90f9-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Бензиновый",
+      "transmission": "МКПП",
+      "body_type": "Самосвал",
+      "gear_type": "Задний",
+      "engine_volume": "2.7",
+      "engine_power": "106,7",
+      "seats": "3",
+      "unladen_weight": "2056",
+      "gross_weight": "3500",
+      "gas_type": "Бензин",
+      "environmental_class": "пятый",
+      "for_sale": "1",
+      "images": []
+    },
+    "brand": "ГАЗ",
+    "model": null
+  },
+  {
+    "id": "1643810",
+    "uuid": "20407e7a-f6dd-11ec-914d-00155d88124f",
+    "name": "Шасси",
+    "code": "cc4ct-shassi-1643810",
+    "brand_id": "8245",
+    "model_id": "8231",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7661924",
+      "path": "https://agat-group.com/upload/76/76deed1fd50a0445044e4340653ab4be.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "6331000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1831",
+        "name": "Белый",
+        "value": "#f3efef",
+        "second_value": "",
+        "guid": "9c2523ae-f6dd-11ec-9167-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "5.9",
+      "engine_power": "270",
+      "seats": "2",
+      "for_sale": "1",
+      "cylinder_count": "6",
+      "cylinder_configuration": "рядный",
+      "turning_torque": "863/1400",
+      "length": "8 785",
+      "width": "2 495",
+      "height": "2 830",
+      "wheel_base": "4 900",
+      "unladen_weight": "5 200",
+      "gross_weight": "12 000",
+      "max_speed": "131",
+      "front_brake": "Барабанные",
+      "back_brake": "Барабанные",
+      "front_tire": "295/80R22.5",
+      "back_tire": "245/70R19.5",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CC4CT"
+  },
+  {
+    "id": "1643811",
+    "uuid": "d641ef83-f6de-11ec-9167-00155d016f2b",
+    "name": "Шасси",
+    "code": "cc6ct-shassi-1643811",
+    "brand_id": "8245",
+    "model_id": "8232",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7387969",
+      "path": "https://agat-group.com/upload/db/db789b075bacce2ab83404988d639451.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "6570000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1831",
+        "name": "Белый",
+        "value": "#f3efef",
+        "second_value": "",
+        "guid": "9c2523ae-f6dd-11ec-9167-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "5.9",
+      "engine_power": "270",
+      "seats": "2",
+      "for_sale": "1",
+      "cylinder_count": "6",
+      "cylinder_configuration": "Рядное",
+      "turning_torque": "863 / 1 400",
+      "length": "10 035",
+      "width": "2 495",
+      "height": "2 830",
+      "wheel_base": "5 800",
+      "unladen_weight": "5 290",
+      "gross_weight": "16 600",
+      "max_speed": "131",
+      "front_brake": "Барабанные",
+      "back_brake": "Барабанные",
+      "front_tire": "295/80R22.5",
+      "back_tire": "245/70R19.5",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CC6CT"
+  },
+  {
+    "id": "1643812",
+    "uuid": "e6833bf1-f6df-11ec-9167-00155d016f2b",
+    "name": "Шасси",
+    "code": "ch7ca-shassi-1643812",
+    "brand_id": "8245",
+    "model_id": "8233",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7387908",
+      "path": "https://agat-group.com/upload/59/59087ff4d42ffd58a9ec20fa5bd96d8e.JPG"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "6915000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1831",
+        "name": "Белый",
+        "value": "#f3efef",
+        "second_value": "",
+        "guid": "9c2523ae-f6dd-11ec-9167-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "5.9",
+      "engine_power": "280",
+      "seats": "2",
+      "for_sale": "1",
+      "cylinder_count": "6",
+      "cylinder_configuration": "Рядный",
+      "turning_torque": "981 / 1 400",
+      "length": "10 525",
+      "width": "2 495",
+      "height": "3 015",
+      "wheel_base": "6 150",
+      "unladen_weight": "5 980",
+      "gross_weight": "18 000",
+      "max_speed": "113",
+      "front_brake": "Барабанные",
+      "back_brake": "Барабанные",
+      "front_tire": "295/80R22.5",
+      "back_tire": "295/80R22.5",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CH7CA"
+  },
+  {
+    "id": "1643813",
+    "uuid": "7ed2d246-f6e0-11ec-9167-00155d016f2b",
+    "name": "Шасси",
+    "code": "cl7af-shassi-1643813",
+    "brand_id": "8245",
+    "model_id": "8234",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7661925",
+      "path": "https://agat-group.com/upload/eb/ebddf0f7cd28f42e4cff0af02e4a8450.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "9144000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1831",
+        "name": "Белый",
+        "value": "#f3efef",
+        "second_value": "",
+        "guid": "9c2523ae-f6dd-11ec-9167-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "7.6",
+      "engine_power": "350",
+      "seats": "2",
+      "for_sale": "1",
+      "cylinder_count": "6",
+      "cylinder_configuration": "V-образный",
+      "turning_torque": "1 471 / 1 200",
+      "length": "9 995",
+      "width": "2 495",
+      "height": "3 090",
+      "wheel_base": "6 025",
+      "unladen_weight": "7 670",
+      "gross_weight": "29 100",
+      "max_speed": "112",
+      "front_brake": "Барабанные",
+      "back_brake": "Барабанные",
+      "front_tire": "295/80R22.5",
+      "back_tire": "245/70R19.5",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CL7AF"
+  },
+  {
+    "id": "1643814",
+    "uuid": "ca3d26a3-f6e0-11ec-9167-00155d016f2b",
+    "name": "Шасси",
+    "code": "cl8cf-shassi-1643814",
+    "brand_id": "8245",
+    "model_id": "8235",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7387920",
+      "path": "https://agat-group.com/upload/e2/e2b08f66bbb391233f49652fe2b7b76c.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "9144000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1831",
+        "name": "Белый",
+        "value": "#f3efef",
+        "second_value": "",
+        "guid": "9c2523ae-f6dd-11ec-9167-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "7.6",
+      "engine_power": "350",
+      "seats": "2",
+      "for_sale": "1",
+      "cylinder_count": "6",
+      "cylinder_configuration": "Рядный",
+      "turning_torque": "1 471 / 1 200",
+      "length": "12 025",
+      "width": "2 495 ",
+      "height": "3 015",
+      "wheel_base": "7 025",
+      "unladen_weight": "8 870",
+      "gross_weight": "31 100",
+      "max_speed": "114",
+      "front_brake": "Барабанные",
+      "back_brake": "Барабанные",
+      "front_tire": "295/80R22.5",
+      "back_tire": "295/80R22.5",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CL8CF"
+  },
+  {
+    "id": "1643815",
+    "uuid": "3fdbc590-f6e1-11ec-9167-00155d016f2b",
+    "name": "Шасси",
+    "code": "cl8kr-shassi-1643815",
+    "brand_id": "8245",
+    "model_id": "8236",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7661926",
+      "path": "https://agat-group.com/upload/97/97794542497b07f1ba763cefb6c6f176.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "9590000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1831",
+        "name": "Белый",
+        "value": "#f3efef",
+        "second_value": "",
+        "guid": "9c2523ae-f6dd-11ec-9167-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "10.9",
+      "engine_power": "390",
+      "seats": "2",
+      "for_sale": "1",
+      "cylinder_count": "6",
+      "cylinder_configuration": "V-образный",
+      "turning_torque": "1 569 / 1 200",
+      "length": "12 025",
+      "width": "2 495",
+      "height": "3 015",
+      "wheel_base": "7 025",
+      "unladen_weight": "8 870",
+      "gross_weight": "31 100",
+      "max_speed": "110",
+      "front_brake": "Барабанные",
+      "back_brake": "Барабанные",
+      "front_tire": "295/80R22.5",
+      "back_tire": "295/80R22.5",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CL8KR"
+  },
+  {
+    "id": "1643816",
+    "uuid": "97ebd145-f6e1-11ec-9167-00155d016f2b",
+    "name": "Шасси",
+    "code": "cl4dy-shassi-1643816",
+    "brand_id": "8245",
+    "model_id": "8237",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7661927",
+      "path": "https://agat-group.com/upload/91/91cbd05c99e8a7d691e2e856dc73c879.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "9353000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1831",
+        "name": "Белый",
+        "value": "#f3efef",
+        "second_value": "",
+        "guid": "9c2523ae-f6dd-11ec-9167-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "10.9",
+      "engine_power": "410",
+      "seats": "2",
+      "for_sale": "1",
+      "cylinder_count": "6",
+      "cylinder_configuration": "V-образный",
+      "turning_torque": "1 746 / 1 400",
+      "length": "7 745",
+      "width": "2 495",
+      "height": "3 175",
+      "wheel_base": "4 705",
+      "unladen_weight": "11 370",
+      "gross_weight": "29 500",
+      "max_speed": "101",
+      "front_brake": "Барабанные",
+      "back_brake": "Барабанные",
+      "front_tire": "12R22.5-16PR",
+      "back_tire": "12R22.5-16PR",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CL4DY"
+  },
+  {
+    "id": "1643817",
+    "uuid": "33eeb7de-f6e2-11ec-9167-00155d016f2b",
+    "name": "Шасси",
+    "code": "cr7ds-shassi-1643817",
+    "brand_id": "8245",
+    "model_id": "8238",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7661928",
+      "path": "https://agat-group.com/upload/c6/c65568754745b96982ef1b78e1dce955.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "10826000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1831",
+        "name": "Белый",
+        "value": "#f3efef",
+        "second_value": "",
+        "guid": "9c2523ae-f6dd-11ec-9167-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "10.9",
+      "engine_power": "420",
+      "seats": "2",
+      "for_sale": "1",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CR7DS"
+  },
+  {
+    "id": "1643818",
+    "uuid": "6de56270-f6e2-11ec-9167-00155d016f2b",
+    "name": "Шасси",
+    "code": "cr9cs-shassi-1643818",
+    "brand_id": "8245",
+    "model_id": "8239",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7661929",
+      "path": "https://agat-group.com/upload/87/875ca51accfb737a34592eb9d11ce49a.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "11055000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1831",
+        "name": "Белый",
+        "value": "#f3efef",
+        "second_value": "",
+        "guid": "9c2523ae-f6dd-11ec-9167-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "10.9",
+      "engine_power": "420",
+      "seats": "2",
+      "for_sale": "1",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CR9CS"
+  },
+  {
+    "id": "1667489",
+    "uuid": "d2058034-dcf0-11ed-917a-00155d016f2b",
+    "name": "шасси",
+    "code": "ch2ca-shassi-1667489",
+    "brand_id": "8245",
+    "model_id": "8534",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7661930",
+      "path": "https://agat-group.com/upload/e3/e33392c4146c51d695588afd0d35b2ab.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "9146000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1941",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "cbf17294-dcf0-11ed-917a-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "5.9",
+      "engine_power": "279",
+      "seats": "3",
+      "unladen_weight": "5745",
+      "gross_weight": "18000",
+      "gas_type": "ДТ",
+      "environmental_class": "пятый",
+      "for_sale": "1",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CH2CA"
+  },
+  {
+    "id": "1667994",
+    "uuid": "277e71b0-e007-11ed-917b-00155d016f2b",
+    "name": "шасси",
+    "code": "cl4d3-shassi-1667994",
+    "brand_id": "8245",
+    "model_id": "8541",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7661931",
+      "path": "https://agat-group.com/upload/a3/a3a40db36b75dc8bda87b3ace9c553e9.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "12760000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "for_sale": "1",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CL4D3"
+  },
+  {
+    "id": "1671379",
+    "uuid": "b9b5d1fc-f9ff-11ed-917d-00155d016f2b",
+    "name": "шасси",
+    "code": "ch7aa-shassi-1671379",
+    "brand_id": "8245",
+    "model_id": "8572",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7661932",
+      "path": "https://agat-group.com/upload/91/9164f9d4abd9d69ac02ac14d50917bb7.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "9425000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1941",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "cbf17294-dcf0-11ed-917a-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "engine_volume": "5.9",
+      "engine_power": "278,7",
+      "unladen_weight": "5890",
+      "gross_weight": "18000",
+      "gas_type": "ДТ",
+      "environmental_class": "пятый",
+      "for_sale": "1",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CH7AA"
+  },
+  {
+    "id": "1671561",
+    "uuid": "0a2720d1-fae3-11ed-917d-00155d016f2b",
+    "name": "Шасси",
+    "code": "cl8p7-shassi-1671561",
+    "brand_id": "8245",
+    "model_id": "8575",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7661933",
+      "path": "https://agat-group.com/upload/97/9775b459fa4391f01a8086120560a1c5.png"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "13757000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1941",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "",
+        "guid": "cbf17294-dcf0-11ed-917a-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Шасси",
+      "gear_type": "Задний",
+      "cylinder_count": "6",
+      "engine_volume": "11.0",
+      "length": "10830",
+      "width": "2495",
+      "height": "3150 ",
+      "unladen_weight": "8670",
+      "gross_weight": "29500",
+      "max_speed": "104",
+      "gas_type": "ДТ",
+      "environmental_class": "пятый",
+      "front_suspension": "Полуэллиптическая листовая рессора, 1500x90 (мм)",
+      "back_suspension": "Полуэллиптическая листовая рессора, 1500x90 (мм)",
+      "front_tire": "12R22.5-16PR, 8.25×22.5",
+      "back_tire": "\t12R22.5-16PR, 8.25×22.5",
+      "for_sale": "1",
+      "engine_power": "323",
+      "images": []
+    },
+    "brand": "Daewoo Trucks",
+    "model": "Novus CL8P7"
+  },
+  {
+    "id": "1646364",
+    "uuid": "a0b1be5f-171b-11ed-9168-00155d016f2b",
+    "name": "(430) 6×6",
+    "code": "shacman-sx32586v385-430-66-1646364",
+    "brand_id": "8300",
+    "model_id": "8301",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7298881",
+      "path": "https://agat-group.com/upload/48/487e71963725df1bf1389c318cf11d24.jpeg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "11000000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1848",
+        "name": "Зеленый",
+        "value": "#95ec28",
+        "second_value": "",
+        "guid": "1975e8f5-4b99-11ed-9170-00155d016f2b",
+        "code": "",
+        "color_id": "12"
+      },
+      {
+        "id": "1849",
+        "name": "Золотой",
+        "value": "#bb975c",
+        "second_value": "",
+        "guid": "06c34694-4b99-11ed-9170-00155d016f2b",
+        "code": "",
+        "color_id": "10"
+      },
+      {
+        "id": "1850",
+        "name": "Желтый",
+        "value": "#d69635",
+        "second_value": "",
+        "guid": "1faa1b2b-4b99-11ed-9170-00155d016f2b",
+        "code": "",
+        "color_id": "10"
+      },
+      {
+        "id": "1927",
+        "name": "Белый",
+        "value": "#f1f4f9",
+        "second_value": "",
+        "guid": "9de0ff24-cd2f-11ed-917a-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "2010",
+        "name": "Бирюзовый",
+        "value": "#00ffff",
+        "second_value": "",
+        "guid": "70d15e1f-24b1-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "14"
+      },
+      {
+        "id": "2011",
+        "name": "Серебряный",
+        "value": "#d9d9d9",
+        "second_value": "",
+        "guid": "4201de1d-2615-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "2012",
+        "name": "Синий",
+        "value": "#005fff",
+        "second_value": "",
+        "guid": "f88500b5-2614-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      },
+      {
+        "id": "2013",
+        "name": "Голубой",
+        "value": "#00c0ff",
+        "second_value": "",
+        "guid": "0af89bd1-2615-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "14"
+      },
+      {
+        "id": "2014",
+        "name": "Красный",
+        "value": "#ff0000",
+        "second_value": "",
+        "guid": "16f0f456-2615-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "2015",
+        "name": "Оранжевый",
+        "value": "#ff9900",
+        "second_value": "",
+        "guid": "23d934d5-2615-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "9"
+      },
+      {
+        "id": "2016",
+        "name": "Черный",
+        "value": "#110505",
+        "second_value": "",
+        "guid": "3018ea6c-2615-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "2"
+      },
+      {
+        "id": "2017",
+        "name": "Серый",
+        "value": "#666666",
+        "second_value": "",
+        "guid": "d6516ff2-262b-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Самосвал",
+      "gear_type": "Полный",
+      "engine_volume": "11.6",
+      "length": "8329",
+      "width": "2490",
+      "height": "3520",
+      "gear_number": "12+2",
+      "for_sale": "1",
+      "environmental_class": "пятый",
+      "engine_power": "430",
+      "images": []
+    },
+    "brand": "Shacman",
+    "model": "SX32586V385"
+  },
+  {
+    "id": "1646365",
+    "uuid": "802afe29-171e-11ed-9168-00155d016f2b",
+    "name": "(550) 8×4",
+    "code": "shacman-sx331863366-550-84-1646365",
+    "brand_id": "8300",
+    "model_id": "8302",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8501092",
+      "path": "https://agat-group.com/upload/29/2909442d8c2d0f62e8e7e752dc713d4d.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "10500000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Самосвал",
+      "gear_type": "Задний",
+      "cylinder_count": "6",
+      "engine_volume": "11.6",
+      "cylinder_configuration": "Рядное",
+      "length": "9750 ",
+      "width": "2500",
+      "height": "3450",
+      "gear_number": "12+2",
+      "for_sale": "1",
+      "engine_power": "430",
+      "environmental_class": "пятый",
+      "images": []
+    },
+    "brand": "Shacman",
+    "model": "SX331863366"
+  },
+  {
+    "id": "1652147",
+    "uuid": "212d3827-5f3d-11ed-9172-00155d016f2b",
+    "name": "(430) 6×4",
+    "code": "shacman-sx32586t384-430-64-1652147",
+    "brand_id": "8300",
+    "model_id": "8376",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8940912",
+      "path": "https://agat-group.com/upload/fc/fc1131fb30fbc7ead93296228ae07738.jpeg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "9200000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Самосвал",
+      "gear_type": "Задний",
+      "engine_power": "430",
+      "length": "5600",
+      "width": "2300",
+      "height": "1500",
+      "max_speed": "90",
+      "for_sale": "1",
+      "engine_volume": "11.6",
+      "environmental_class": "пятый",
+      "images": []
+    },
+    "brand": "Shacman",
+    "model": "SX32586V384"
+  },
+  {
+    "id": "1654704",
+    "uuid": "34a38e5c-7c85-11ed-9173-00155d016f2b",
+    "name": "(430) 6×4",
+    "code": "shacman-sx42584v324-430-64-1654704",
+    "brand_id": "8300",
+    "model_id": "8525",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7661407",
+      "path": "https://agat-group.com/upload/f5/f53052d590595ef7e9b738e459b49746.JPG"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "8600000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Самосвал",
+      "gear_type": "Задний",
+      "cylinder_count": "6",
+      "cylinder_configuration": "рядное",
+      "engine_power": "430",
+      "length": "6850",
+      "width": "2550",
+      "height": "3850",
+      "unladen_weight": "9800",
+      "environmental_class": "пятый",
+      "for_sale": "1",
+      "engine_volume": "11.6",
+      "images": []
+    },
+    "brand": "Shacman",
+    "model": "SX42584V324"
+  },
+  {
+    "id": "1656981",
+    "uuid": "e5ed1fc6-97dc-11ed-9174-00155d016f2b",
+    "name": "(480) 4×2",
+    "code": "shacman-sx4188yy381-480-42-1656981",
+    "brand_id": "8300",
+    "model_id": "8524",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8501418",
+      "path": "https://agat-group.com/upload/0d/0d252ae726eea2c9843e949cdf8a5f3d.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "8500000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "1848",
+        "name": "Зеленый",
+        "value": "#95ec28",
+        "second_value": "",
+        "guid": "1975e8f5-4b99-11ed-9170-00155d016f2b",
+        "code": "",
+        "color_id": "12"
+      },
+      {
+        "id": "1849",
+        "name": "Золотой",
+        "value": "#bb975c",
+        "second_value": "",
+        "guid": "06c34694-4b99-11ed-9170-00155d016f2b",
+        "code": "",
+        "color_id": "10"
+      },
+      {
+        "id": "1927",
+        "name": "Белый",
+        "value": "#f1f4f9",
+        "second_value": "",
+        "guid": "9de0ff24-cd2f-11ed-917a-00155d016f2b",
+        "code": "",
+        "color_id": "1"
+      },
+      {
+        "id": "2010",
+        "name": "Бирюзовый",
+        "value": "#00ffff",
+        "second_value": "",
+        "guid": "70d15e1f-24b1-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "14"
+      },
+      {
+        "id": "2011",
+        "name": "Серебряный",
+        "value": "#d9d9d9",
+        "second_value": "",
+        "guid": "4201de1d-2615-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "4"
+      },
+      {
+        "id": "2012",
+        "name": "Синий",
+        "value": "#005fff",
+        "second_value": "",
+        "guid": "f88500b5-2614-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "13"
+      },
+      {
+        "id": "2013",
+        "name": "Голубой",
+        "value": "#00c0ff",
+        "second_value": "",
+        "guid": "0af89bd1-2615-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "14"
+      },
+      {
+        "id": "2014",
+        "name": "Красный",
+        "value": "#ff0000",
+        "second_value": "",
+        "guid": "16f0f456-2615-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "6"
+      },
+      {
+        "id": "2015",
+        "name": "Оранжевый",
+        "value": "#ff9900",
+        "second_value": "",
+        "guid": "23d934d5-2615-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "9"
+      },
+      {
+        "id": "2016",
+        "name": "Черный",
+        "value": "#110505",
+        "second_value": "",
+        "guid": "3018ea6c-2615-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "2"
+      },
+      {
+        "id": "2017",
+        "name": "Серый",
+        "value": "#666666",
+        "second_value": "",
+        "guid": "d6516ff2-262b-11ee-917f-00155d016f2b",
+        "code": "",
+        "color_id": "3"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "body_type": "Тягач",
+      "gear_type": "Задний",
+      "cylinder_count": "6",
+      "engine_volume": "12.5",
+      "cylinder_configuration": "рядное",
+      "engine_power": "480",
+      "unladen_weight": "7300",
+      "max_speed": "125",
+      "environmental_class": "пятый",
+      "for_sale": "1",
+      "transmission": "АКПП",
+      "images": [
+        {
+          "id": "8501419",
+          "path": "https://agat-group.com/upload/4c/4c520ae3083766ca689702a64249e085.jpg"
+        },
+        {
+          "id": "8501420",
+          "path": "https://agat-group.com/upload/c6/c686addc48882346dfde7ca04dcbc859.jpg"
+        },
+        {
+          "id": "8501421",
+          "path": "https://agat-group.com/upload/a3/a3f1ddb8dbd182106e71737922e388e8.jpg"
+        },
+        {
+          "id": "8501422",
+          "path": "https://agat-group.com/upload/69/6979d149ae7eb45ce337d0528422a90f.jpg"
+        },
+        {
+          "id": "8501423",
+          "path": "https://agat-group.com/upload/c8/c8215e30925cbe3c18c6015c99a20b2b.jpg"
+        },
+        {
+          "id": "8501424",
+          "path": "https://agat-group.com/upload/a5/a5c108fc2ce195f51ab46a01e4b811b4.jpg"
+        },
+        {
+          "id": "8501425",
+          "path": "https://agat-group.com/upload/a3/a3add3adae1ea3509c83e8582d530d2b.jpg"
+        },
+        {
+          "id": "8501426",
+          "path": "https://agat-group.com/upload/ed/ed386bb13892a10af5854906dcd1d8d0.jpg"
+        },
+        {
+          "id": "8501427",
+          "path": "https://agat-group.com/upload/02/02af8d56fc65aea0d4109814add2d62b.jpg"
+        }
+      ],
+      "drom_ru_complectation_id": "11111111111",
+      "drom_ru_modification_id": "2222222222222"
+    },
+    "brand": "Shacman",
+    "model": "SX4188YY381"
+  },
+  {
+    "id": "1668017",
+    "uuid": "836ebc6d-e010-11ed-917b-00155d016f2b",
+    "name": "(430) 8×4",
+    "code": "shacman-sx33186v366-430-84-1668017",
+    "brand_id": "8300",
+    "model_id": "8542",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8501405",
+      "path": "https://agat-group.com/upload/c5/c5135aa272c042689d30141ea6148739.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "10200000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Самосвал",
+      "gear_type": "Задний",
+      "engine_volume": "11.6",
+      "engine_power": "430",
+      "length": "7600",
+      "width": "2300",
+      "height": "1500+500",
+      "environmental_class": "пятый",
+      "for_sale": "1",
+      "images": [
+        {
+          "id": "8501406",
+          "path": "https://agat-group.com/upload/aa/aa4a4e659f9f8144092b49a00996173c.jpg"
+        },
+        {
+          "id": "8501407",
+          "path": "https://agat-group.com/upload/05/05603b1c3b32d65c9798cc328ef3dfd1.jpg"
+        },
+        {
+          "id": "8501408",
+          "path": "https://agat-group.com/upload/ad/ad662b4e80042f91555b16e2e325e79d.jpg"
+        },
+        {
+          "id": "8501409",
+          "path": "https://agat-group.com/upload/f3/f348eb0e6cd0f432f3b95468957003b0.jpg"
+        },
+        {
+          "id": "8501410",
+          "path": "https://agat-group.com/upload/2c/2c59cd6e0fe85a5c1cf414428d05fb89.jpg"
+        },
+        {
+          "id": "8501411",
+          "path": "https://agat-group.com/upload/bc/bc5bf627bcc64936147a5ff2a0892da3.jpg"
+        }
+      ]
+    },
+    "brand": "Shacman",
+    "model": "SX33186V366"
+  },
+  {
+    "id": "1670914",
+    "uuid": "ebe1d485-f62e-11ed-917d-00155d016f2b",
+    "name": "(430) 6×6",
+    "code": "430-6-6-1670914",
+    "brand_id": "8300",
+    "model_id": "8566",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8501014",
+      "path": "https://agat-group.com/upload/29/2927e03c0589be98bfa9c4f854243864.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "10300000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Тягач",
+      "engine_volume": "11.6",
+      "engine_power": "430",
+      "seats": "2",
+      "length": "7450",
+      "width": "2550",
+      "height": "3900",
+      "unladen_weight": "11000",
+      "gross_weight": "25000",
+      "environmental_class": "пятый",
+      "for_sale": "1",
+      "images": [
+        {
+          "id": "8501018",
+          "path": "https://agat-group.com/upload/93/93cd80a3793085b15f6ccba6fcc6bdd6.jpg"
+        },
+        {
+          "id": "8501019",
+          "path": "https://agat-group.com/upload/13/1313a223da964a3a97d9cfc62346a3bf.jpg"
+        },
+        {
+          "id": "8501020",
+          "path": "https://agat-group.com/upload/7b/7b459782b6db255c4a10d8042d15d92d.jpg"
+        },
+        {
+          "id": "8501022",
+          "path": "https://agat-group.com/upload/fb/fb7dd6ef9712484e594b5fb15bd13cbd.jpg"
+        }
+      ],
+      "gear_type": "Полный"
+    },
+    "brand": "Shacman",
+    "model": "SX42586V385"
+  },
+  {
+    "id": "1701859",
+    "uuid": "3f99a582-725b-11ee-9194-00155d016f2b",
+    "name": "(550) 4x2",
+    "code": "550-4x2-1701859",
+    "brand_id": "8300",
+    "model_id": "8736",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8501437",
+      "path": "https://agat-group.com/upload/c7/c72b9668e655b85d34f7d9fad5ea4f44.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "7990000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "body_type": "Тягач",
+      "gear_type": "Задний",
+      "engine_volume": "12.5",
+      "engine_power": "550",
+      "turning_torque": "2550 Нм",
+      "gross_weight": "7300",
+      "environmental_class": "Пятый",
+      "for_sale": "1",
+      "transmission": "АКПП",
+      "images": [
+        {
+          "id": "8501438",
+          "path": "https://agat-group.com/upload/bd/bd70c12833e1bc90b8ac6131406faac4.jpg"
+        },
+        {
+          "id": "8501439",
+          "path": "https://agat-group.com/upload/18/18b38b34723d753783f38d6c19b65564.jpg"
+        },
+        {
+          "id": "8501440",
+          "path": "https://agat-group.com/upload/a9/a9dfa05f958dd4b3529e90fb3adf630a.jpg"
+        },
+        {
+          "id": "8501441",
+          "path": "https://agat-group.com/upload/a4/a4ce80bacff304fed1d49b69c707577a.jpg"
+        }
+      ],
+      "engine_type": "Дизельный"
+    },
+    "brand": "Shacman",
+    "model": "SX418853381"
+  },
+  {
+    "id": "1704218",
+    "uuid": "7279fa15-77ec-11ee-9194-00155d016f2b",
+    "name": "(430) 6×4 U образный кузов",
+    "code": "shacman-sx32586v384-430-64-u-obraznyi-kuzov-1704218",
+    "brand_id": "8300",
+    "model_id": "8376",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8501150",
+      "path": "https://agat-group.com/upload/d3/d3e67b1013afd83ada392cb1b3968970.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "9500000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Самосвал",
+      "gear_type": "Задний",
+      "engine_volume": "11.6",
+      "engine_power": "430",
+      "length": "5600",
+      "width": "2300",
+      "height": "1500+500",
+      "max_speed": "90",
+      "environmental_class": "пятый",
+      "for_sale": "1",
+      "images": [
+        {
+          "id": "8501151",
+          "path": "https://agat-group.com/upload/b5/b578cdc6b481c443f5fa858acbc56923.jpg"
+        },
+        {
+          "id": "8501152",
+          "path": "https://agat-group.com/upload/16/162a1b069b9e4ad2f5d76b66dc2a82e0.jpg"
+        },
+        {
+          "id": "8501153",
+          "path": "https://agat-group.com/upload/84/8412e1255b11f7ce1b0df9b896065eb1.jpg"
+        },
+        {
+          "id": "8501154",
+          "path": "https://agat-group.com/upload/df/df142aed85743ccb2c8113f1c875498b.jpg"
+        },
+        {
+          "id": "8501155",
+          "path": "https://agat-group.com/upload/f6/f6ab1e906ebeaf3c9bb418ad47864e2e.jpg"
+        },
+        {
+          "id": "8501156",
+          "path": "https://agat-group.com/upload/f7/f7980899fec8fc3272459f237787d2c6.jpg"
+        },
+        {
+          "id": "8501157",
+          "path": "https://agat-group.com/upload/b1/b1e4eb1924c60d02efd9779aa7054a1f.jpg"
+        }
+      ]
+    },
+    "brand": "Shacman",
+    "model": "SX32586V384"
+  },
+  {
+    "id": "1705909",
+    "uuid": "158cb887-7fc3-11ee-9195-00155d016f2b",
+    "name": "(550) 8×4 U образный кузов",
+    "code": "shacman-sx331863366-550-84-u-obraznyi-kuzov-1705909",
+    "brand_id": "8300",
+    "model_id": "8302",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8501085",
+      "path": "https://agat-group.com/upload/3c/3c27dc90ae6c29abbe6d919e238034f0.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "10250000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Самосвал",
+      "gear_type": "Задний",
+      "engine_volume": "11.6",
+      "engine_power": "550",
+      "length": "7800",
+      "width": "2300",
+      "height": "1500+500",
+      "environmental_class": "пятый",
+      "front_tire": "315/80R22,5",
+      "back_tire": "315/80R22,5",
+      "for_sale": "1",
+      "images": [
+        {
+          "id": "8501086",
+          "path": "https://agat-group.com/upload/04/04fb340b0df94e83acd381274ff201e4.jpg"
+        },
+        {
+          "id": "8501087",
+          "path": "https://agat-group.com/upload/1d/1dc985b7a8eb39db2c20737cef18625d.jpg"
+        },
+        {
+          "id": "8501088",
+          "path": "https://agat-group.com/upload/60/60758f22c2fd44c8144f98c18705788b.jpg"
+        },
+        {
+          "id": "8501089",
+          "path": "https://agat-group.com/upload/4a/4ab5d0de6177d21d88a58e88a316dc61.jpg"
+        },
+        {
+          "id": "8501090",
+          "path": "https://agat-group.com/upload/c6/c6f5bd2d09d071376f25d52095a57eb6.jpg"
+        }
+      ]
+    },
+    "brand": "Shacman",
+    "model": "SX331863366"
+  },
+  {
+    "id": "1747456",
+    "uuid": "ddcde9ef-092b-11ef-91a4-00155d016f2b",
+    "name": "(430) 8×4 U образный кузов",
+    "code": "shacman-sx33186v366-430-84-u-obraznyi-kuzov-1747430",
+    "brand_id": "8300",
+    "model_id": "8542",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8501430",
+      "path": "https://agat-group.com/upload/ea/eafeb35bf31e2ae97305ab0ccc3a482c.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "10300000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Самосвал",
+      "gear_type": "Задний",
+      "engine_volume": "11.6",
+      "engine_power": "430",
+      "length": "7600",
+      "width": "2300",
+      "height": "1500",
+      "environmental_class": "пятый",
+      "front_tire": "315/80R22.5",
+      "back_tire": "315/80R22.5",
+      "for_sale": "1",
+      "images": [
+        {
+          "id": "8501431",
+          "path": "https://agat-group.com/upload/dd/dd90593a45b8a8321b4db32a15e52b63.jpg"
+        },
+        {
+          "id": "8501432",
+          "path": "https://agat-group.com/upload/f1/f1d171363ee852fc83c0fa179b36eef5.jpg"
+        },
+        {
+          "id": "8501433",
+          "path": "https://agat-group.com/upload/d6/d6f48751bb3ec5064996c07df0578393.jpg"
+        },
+        {
+          "id": "8501434",
+          "path": "https://agat-group.com/upload/83/83ce219faa18424ba45fc5290dacd371.jpg"
+        }
+      ]
+    },
+    "brand": "Shacman",
+    "model": "SX33186V366"
+  },
+  {
+    "id": "1686309",
+    "uuid": "09870208-2614-11ee-917f-00155d016f2b",
+    "name": "8х4 U-образный грузовой",
+    "code": "faw-j6-ca3310-8h4-u-obraznyi-gruzovoi-1686309",
+    "brand_id": "8380",
+    "model_id": "8401",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8064445",
+      "path": "https://agat-group.com/upload/b9/b921a5d31f2c77e5fae4d0cfdd38ccb3.JPG"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "8700000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "МКПП",
+      "body_type": "Самосвал",
+      "gear_type": "Задний",
+      "engine_volume": "11.1",
+      "engine_power": "420",
+      "seats": "2",
+      "length": "10290",
+      "width": "2495",
+      "height": "3450",
+      "wheel_base": "2100+3600+1350",
+      "front_track": "2020",
+      "back_track": "1878",
+      "road_clearance": "320",
+      "unladen_weight": "18820",
+      "gross_weight": "42600",
+      "max_speed": "90",
+      "environmental_class": "пятый",
+      "for_sale": "1",
+      "images": [
+        {
+          "id": "8064446",
+          "path": "https://agat-group.com/upload/91/915728514213728f461b5a1df344545d.JPG"
+        },
+        {
+          "id": "8064447",
+          "path": "https://agat-group.com/upload/52/52d3a89654ca1e36d2b1fa0e92454be3.JPG"
+        },
+        {
+          "id": "8064448",
+          "path": "https://agat-group.com/upload/af/af4fa994d93a1da905ae2e9a1950feaf.JPG"
+        },
+        {
+          "id": "8064449",
+          "path": "https://agat-group.com/upload/47/47a27ef50269035da505ac541c71eec0.JPG"
+        },
+        {
+          "id": "8064450",
+          "path": "https://agat-group.com/upload/1c/1cb18c91cb78ac64d2baab16dae03f07.JPG"
+        },
+        {
+          "id": "8064451",
+          "path": "https://agat-group.com/upload/53/5381e59c390a23e929d3d34466aa2987.JPG"
+        }
+      ]
+    },
+    "brand": "FAW Trucks",
+    "model": "J6 CA3310 8х4"
+  },
+  {
+    "id": "1693814",
+    "uuid": "d593c09f-4d8c-11ee-9185-00155d016f2b",
+    "name": " ",
+    "code": "faw-j7-ca4180-1693814",
+    "brand_id": "8380",
+    "model_id": "8672",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "7873227",
+      "path": "https://agat-group.com/upload/53/53c89abc6b5d20065b6f70b2521b5112.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "8500000",
+    "auto_type": "3847",
+    "colors": [],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "body_type": "Тягач",
+      "engine_volume": "12.5",
+      "length": "6270",
+      "width": "2550",
+      "height": "4000",
+      "wheel_base": "3800",
+      "environmental_class": "пятый",
+      "front_brake": "Дисковые",
+      "back_brake": "Дисковые",
+      "for_sale": "1",
+      "transmission": "АКПП",
+      "gear_type": "Задний",
+      "engine_power": "550",
+      "max_speed": "407",
+      "images": []
+    },
+    "brand": "FAW Trucks",
+    "model": "J7 CA4180 4*2"
+  },
+  {
+    "id": "1747683",
+    "uuid": "c6825c92-11ff-11ef-91a5-00155d016f2b",
+    "name": "4×2 ZZ4186V391HE",
+    "code": "4-2-zz4186v391he-1747594",
+    "brand_id": "8906",
+    "model_id": "8912",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8255158",
+      "path": "https://agat-group.com/upload/e5/e5443d1d74fd2cd1bb89645d829a2504.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "8450000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "2191",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "#ffffff",
+        "guid": "6a32dec5-11ff-11ef-91a5-00155d016f2b",
+        "code": "Белый",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "Робот",
+      "body_type": "Тягач",
+      "gear_type": "Задний",
+      "cylinder_count": "6",
+      "engine_volume": "12.4",
+      "cylinder_configuration": "рядный",
+      "engine_power": "480",
+      "turning_torque": "2300 Нм при 1050-1400 об/мин.",
+      "unladen_weight": "41 800",
+      "gross_weight": "18 000",
+      "front_brake": "дисковые",
+      "back_brake": "дисковые",
+      "for_sale": "1",
+      "images": [
+        {
+          "id": "8255159",
+          "path": "https://agat-group.com/upload/81/814cbfc43e1ceb65577f3e7f842f1222.jpg"
+        },
+        {
+          "id": "8255160",
+          "path": "https://agat-group.com/upload/d6/d60487a78b9c75c3ac46896c34a324c5.jpg"
+        },
+        {
+          "id": "8255161",
+          "path": "https://agat-group.com/upload/e8/e8ff7ed04f54204548a7c0cfdd94d51e.jpg"
+        },
+        {
+          "id": "8255162",
+          "path": "https://agat-group.com/upload/95/951977c23468a243960233adf1a67773.jpg"
+        },
+        {
+          "id": "8255163",
+          "path": "https://agat-group.com/upload/29/2927a3b3410ea1f11f3c5379b5026077.jpg"
+        },
+        {
+          "id": "8255164",
+          "path": "https://agat-group.com/upload/3d/3d73f8341bd8e65f27bd67d7b8b3fd9c.jpg"
+        }
+      ],
+      "environmental_class": "Пятый"
+    },
+    "brand": "Sitrak",
+    "model": "C7H"
+  },
+  {
+    "id": "1747684",
+    "uuid": "0eceaf23-12b7-11ef-91a5-00155d016f2b",
+    "name": "4×2 ZZ4186V391HE ADR",
+    "code": "4-2-zz4186v391he-adr-1747594",
+    "brand_id": "8906",
+    "model_id": "8912",
+    "preview_text": "",
+    "preview_picture": {
+      "id": "8255166",
+      "path": "https://agat-group.com/upload/cb/cb8c5db52534ece25d4aab42851e26b7.jpg"
+    },
+    "detail_text": "",
+    "detail_picture": "",
+    "price": "8450000",
+    "auto_type": "3847",
+    "colors": [
+      {
+        "id": "2191",
+        "name": "Белый",
+        "value": "#ffffff",
+        "second_value": "#ffffff",
+        "guid": "6a32dec5-11ff-11ef-91a5-00155d016f2b",
+        "code": "Белый",
+        "color_id": "1"
+      }
+    ],
+    "propertyValues": {
+      "engine_type": "Дизельный",
+      "transmission": "Робот",
+      "body_type": "Тягач",
+      "gear_type": "Задний",
+      "cylinder_count": "6",
+      "engine_volume": "12.4",
+      "cylinder_configuration": "рядный",
+      "engine_power": "480",
+      "turning_torque": "2300 Нм при 1050-1400 об/мин.",
+      "unladen_weight": "41 800",
+      "gross_weight": "18 000",
+      "front_brake": "дисковые",
+      "back_brake": "дисковые",
+      "for_sale": "1",
+      "images": [
+        {
+          "id": "8255167",
+          "path": "https://agat-group.com/upload/99/995fda4a2bf819ba9e66047021d59d83.jpg"
+        },
+        {
+          "id": "8255168",
+          "path": "https://agat-group.com/upload/91/91da5b06961521e808cfa917d5d6888a.jpg"
+        },
+        {
+          "id": "8255169",
+          "path": "https://agat-group.com/upload/a2/a2ca57220ccefc5a728f5d07b86762d2.jpg"
+        },
+        {
+          "id": "8255170",
+          "path": "https://agat-group.com/upload/be/bef7ed1bde64888b3a84390f15a6dcf5.jpg"
+        },
+        {
+          "id": "8255171",
+          "path": "https://agat-group.com/upload/e6/e65a7b442561a9619aaf84134491f95b.jpg"
+        },
+        {
+          "id": "8255172",
+          "path": "https://agat-group.com/upload/37/371d35b738231704b2d85bb7d4d47075.jpg"
+        }
+      ],
+      "environmental_class": "Пятый"
+    },
+    "brand": "Sitrak",
+    "model": "C7H"
+  }
+]
