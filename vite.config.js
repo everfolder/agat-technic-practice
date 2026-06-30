@@ -12,6 +12,7 @@ export default defineConfig({
     vueDevTools(),
     svgLoader()
   ],
+  base: '/agat-technic-practice/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

@@ -13,38 +13,71 @@ const loadBrands = () => {
   brands.value = getBrands()
 }
 const showModal = ref(false)
-const newBrandName  = ref('')
+const editingBrandId = ref(null)
+
+const form = ref({
+  name: '',
+  slug: '',
+  img: '',
+  description: ''
+})
 
 const addBrand = () => {
-  showModal.value = true
-  if (name && name.trim()) {
-    const newBrand = {
-      name: name.trim(),
-      slug: name.trim().toLowerCase().replace(/\s+/g, '-'),
-      img: '/logos-color/default.jpg',
-      description: ''
-    }
-    createBrand(newBrand)
-    loadBrands()
+  editingBrandId.value = null
+
+  form.value = {
+    name: '',
+    slug: '',
+    img: '',
+    description: ''
   }
+
+  showModal.value = true
 }
 const closeModal = () => {
   showModal.value = false
+  editingBrandId.value = null
+}
+const generateSlug = () => {
+  form.value.slug = form.value.name
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, '-')
 }
 const saveBrand = () => {
-  if (!newBrandName.value.trim()) return
-  showModal.value = false
-  newBrandName.value = ''
-}
-const editBrand = (brand) => {
-  const newName = prompt(`Редактировать бренд "${brand.name}":`, brand.name)
-  if (newName && newName.trim()) {
-    updateBrand(brand.id, {
-      name: newName.trim(),
-      slug: newName.trim().toLowerCase().replace(/\s+/g, '-')
-    })
-    loadBrands()
+  if (!form.value.name.trim()) {
+    alert('Введите название бренда')
+    return
   }
+
+  const brandData = {
+    name: form.value.name,
+    slug: form.value.slug,
+    img: form.value.img,
+    description: form.value.description
+  }
+
+  if (editingBrandId.value !== null) {
+    updateBrand(editingBrandId.value, brandData)
+  } else {
+    createBrand(brandData)
+  }
+
+  loadBrands()
+  closeModal()
+}
+
+const editBrand = (brand) => {
+  editingBrandId.value = brand.id
+
+  form.value = {
+    name: brand.name,
+    slug: brand.slug,
+    img: brand.img,
+    description: brand.description
+  }
+
+  showModal.value = true
 }
 
 const removeBrand = (id, name) => {
@@ -120,10 +153,26 @@ onMounted(() => {
         </table>
       </div>
     </div>
-    <ModalAdminNews :is-open="showModal">
-      <div><p>МОДАЛочка</p></div>
-      <button @click="closeModal">X</button>
+
+    <ModalAdminNews :is-open="showModal" @close="closeModal">
+      <div class="brand-modal">
+        <h3>{{ editingBrandId ? 'Редактировать бренд' : 'Добавить бренд' }}</h3>
+        <input v-model="form.name" placeholder="Название бренда" @input="generateSlug">
+        <input v-model="form.slug" placeholder="Slug">
+        <input v-model="form.img" placeholder="Ссылка на логотип">
+        <textarea v-model="form.description" placeholder="Описание бренда"/>
+        <img v-if="form.img" :src="form.img" alt="" class="brand-preview">
+        <div class="brand-modal__actions">
+          <button class="cancel-btn" @click="closeModal">
+            Отмена
+          </button>
+          <button class="save-btn" @click="saveBrand">
+            {{ editingBrandId ? 'Обновить' : 'Создать' }}
+          </button>
+        </div>
+      </div>
     </ModalAdminNews>
+
   </section>
 </template>
 
@@ -248,5 +297,54 @@ onMounted(() => {
 .delete-btn:hover {
   transform: scale(1.1);
   color: #dc3545;
+}
+
+.brand-modal {
+  display: flex;
+  flex-direction: column;
+  gap: rem(15);
+  min-width: rem(500);
+
+  h3 {
+    margin: 0;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: rem(12);
+    border: 1px solid #ddd;
+    border-radius: rem(5);
+  }
+
+  textarea {
+    min-height: rem(120);
+    resize: vertical;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: rem(10);
+  }
+}
+
+.brand-preview {
+  width: rem(150);
+  height: rem(150);
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: rem(5);
+}
+
+.cancel-btn,
+.save-btn {
+  padding: rem(10) rem(20);
+  border-radius: rem(5);
+  cursor: pointer;
+}
+
+.save-btn {
+  background: var(--color-yellow);
 }
 </style>
