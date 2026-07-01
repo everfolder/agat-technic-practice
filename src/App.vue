@@ -23,7 +23,7 @@ onMounted(async () => {
 <template>
   <Header />
   <router-view />
-<!--  <Footer />-->
+  <Footer />
 </template>
 
 <style scoped>
