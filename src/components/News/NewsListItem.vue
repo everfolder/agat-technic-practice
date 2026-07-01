@@ -6,13 +6,25 @@ const props = defineProps({
   }
 })
 const baseUrl = import.meta.env.BASE_URL
+const getImageUrl = (path) => {
+  if (!path) return ''
+
+  if (
+      path.startsWith('http://') ||
+      path.startsWith('https://')
+  ) {
+    return path
+  }
+
+  return `${baseUrl}${path}`
+}
 </script>
 
 <template>
   <div class="news-item">
     <router-link :to="`/news/${news.slug}`" class="news-item">
     <div class="news-item__image">
-      <img :src="`${baseUrl}${news.image_url}`" alt="">
+      <img :src="getImageUrl(news.image_url)" alt="">
     </div>
 
     <div class="news-item__text-info">

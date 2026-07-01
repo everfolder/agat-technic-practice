@@ -100,6 +100,18 @@ onMounted(() => {
 })
 
 const baseUrl = import.meta.env.BASE_URL
+const getImageUrl = (path) => {
+  if (!path) return ''
+
+  if (
+      path.startsWith('http://') ||
+      path.startsWith('https://')
+  ) {
+    return path
+  }
+
+  return `${baseUrl}${path}`
+}
 </script>
 
 <template>
@@ -135,7 +147,7 @@ const baseUrl = import.meta.env.BASE_URL
           <tr v-for="item in filteredNews" :key="item.id">
             <td>{{ item.id }}</td>
             <td style="text-align:center">
-              <img :src="`${baseUrl}${item.image_url}`" :alt="item.title" class="news-image">
+              <img :src="getImageUrl(item.image_url)" :alt="item.title" class="news-image">
             </td>
             <td>
               {{ item.title }}
@@ -257,6 +269,7 @@ const baseUrl = import.meta.env.BASE_URL
 
 .news-table {
   margin-top: rem(20);
+  margin-bottom: rem(20);
   width: 100%;
   border-collapse: collapse;
   color: var(--color-gray-dark);
