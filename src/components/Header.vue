@@ -80,10 +80,8 @@ onUnmounted(() => {
                 <router-link to="/articles" class="burger-menu__item">
                   Статьи
                 </router-link>
-                <router-link to="/service">
-                  <a class="header__bottom-item">
+                <router-link to="/service" class="burger-menu__item">
                     Сервис и запасные части
-                  </a>
                 </router-link>
                 <router-link to="/promo">
                   <a class="burger-menu__item">

@@ -228,10 +228,17 @@ const submitForm = (event) => {
     gap: 25px;
     padding-inline: 341px;
     width: 100%;
+    box-sizing: border-box;
 
     &__title {
         font-size: 28px;
         font-weight: 500;
+        text-align: center;
+    }
+
+    &__subtitle {
+        text-align: center;
+        max-width: 600px;
     }
 
     &__form {
@@ -239,6 +246,7 @@ const submitForm = (event) => {
         flex-direction: column;
         gap: 25px;
         align-items: center;
+        width: 100%;
     }
 
     &__head {
@@ -246,6 +254,8 @@ const submitForm = (event) => {
         flex-direction: row;
         gap: 20px;
         justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
     }
 
     &__select-container {
@@ -265,9 +275,12 @@ const submitForm = (event) => {
     &__submit-form {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         gap: 79px;
         position: relative;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     &__send-button {
@@ -279,6 +292,7 @@ const submitForm = (event) => {
         transition: all 0.4s ease;
         cursor: pointer;
         flex-shrink: 0;
+        min-width: 150px;
     }
 
     &__send-button:hover {
@@ -288,7 +302,7 @@ const submitForm = (event) => {
 
     &__submit-form .error {
         position: absolute;
-        bottom: 10px;
+        bottom: -25px;
         left: 0;
     }
 }
@@ -298,6 +312,8 @@ const submitForm = (event) => {
     flex-direction: column;
     position: relative;
     min-height: 52px;
+    flex: 1;
+    min-width: 200px;
 }
 
 input,
@@ -307,8 +323,10 @@ select {
     border: 1px solid #DADADA;
     transition: 0.2s ease;
     background-color: white;
-    min-width: 400px;
+    min-width: 200px;
     color: black;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input:focus,
@@ -359,6 +377,7 @@ select:invalid {
     transition: all 0.4s ease;
     flex: 1;
     color: white;
+    cursor: pointer;
 }
 
 .custom-checkbox input {
@@ -394,6 +413,11 @@ select:invalid {
     border: solid #F9B728;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
+}
+
+.checkbox-wrapper {
+    flex: 1;
+    position: relative;
 }
 
 .error {
@@ -432,5 +456,216 @@ select:invalid {
 
 #send .fancybox__close {
     display: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .gray-form {
+        padding-inline: 100px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .gray-form {
+        padding-inline: 50px;
+        padding-block: 40px 50px;
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__head {
+            gap: 15px;
+        }
+    }
+
+    input,
+    select {
+        min-width: 150px;
+    }
+
+    .gray-form__submit-form {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gray-form {
+        padding-inline: 20px;
+        padding-block: 30px 40px;
+        gap: 20px;
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            max-width: 100%;
+        }
+
+        &__head {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        &__submit-form {
+            flex-direction: column;
+            gap: 25px;
+            align-items: stretch;
+        }
+
+        &__send-button {
+            width: 100%;
+            min-width: unset;
+        }
+
+        &__submit-form .error {
+            position: relative;
+            bottom: auto;
+            left: auto;
+            margin-top: 4px;
+        }
+    }
+
+    .input-wrapper {
+        min-width: unset;
+        width: 100%;
+    }
+
+    input,
+    select {
+        min-width: unset;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .gray-form__select-container {
+        margin-top: 0;
+    }
+
+    .gray-form__select-container label {
+        font-size: 14px;
+    }
+
+    .custom-checkbox {
+        font-size: 13px;
+        gap: 12px;
+    }
+
+    .checkmark {
+        min-width: 22px;
+        height: 22px;
+        margin-top: 0px;
+    }
+
+    .error {
+        font-size: 12px;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 4px;
+    }
+
+    .checkbox-wrapper {
+        position: relative;
+        .error {
+            position: relative;
+            bottom: auto;
+            left: auto;
+        }
+    }
+
+    .send__message {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #name-label,
+    #phone-label,
+    #email-label {
+        top: 21px;
+        font-size: 14px;
+    }
+
+    #name-label.active,
+    #phone-label.active,
+    #email-label.active {
+        top: -8px;
+        font-size: 12px;
+        padding-left: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gray-form {
+        padding-inline: 15px;
+        padding-block: 25px 35px;
+        gap: 15px;
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__subtitle {
+            font-size: 13px;
+        }
+
+        &__form {
+            gap: 15px;
+        }
+
+        &__head {
+            gap: 12px;
+        }
+
+        &__submit-form {
+            gap: 20px;
+        }
+    }
+
+    input,
+    select {
+        height: 38px;
+        padding-left: 12px;
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 14px;
+        padding-left: 12px;
+    }
+
+    #name-label,
+    #phone-label,
+    #email-label {
+        padding-left: 12px;
+    }
+
+    .gray-form__send-button {
+        padding: 12px 10px;
+        font-size: 14px;
+        min-height: 44px;
+    }
+
+    .custom-checkbox {
+        font-size: 12px;
+        gap: 10px;
+    }
+
+    .checkmark {
+        min-width: 18px;
+        height: 18px;
+    }
+
+    .custom-checkbox input:checked+.checkmark::after {
+        left: 6px;
+        top: 2px;
+        width: 4px;
+        height: 8px;
+    }
+
+    .send__message {
+        font-size: 14px;
+    }
 }
 </style>

@@ -77,4 +77,46 @@ h2{
     }
 }
 
+@media screen and (max-width: 1224px) {
+    h2 {
+        font-size: 22px;
+        padding-block: 32px 20px;
+    }
+
+    .service {
+
+        &__images img {
+            width: 50%;
+            height: auto;
+        }
+
+        &__text {
+            padding: 20px 20px;
+            font-size: 14px;
+        }
+
+        &__ul li {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+        padding-block: 24px 16px;
+    }
+
+    .service {
+        &__text {
+            padding: 15px 15px;
+            font-size: 13px;
+        }
+
+        &__ul li {
+            margin-left: 15px;
+            font-size: 13px;
+        }
+    }
+}
 </style>

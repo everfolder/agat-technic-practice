@@ -28,7 +28,7 @@ const formatDate = (dateString) => {
     try {
         const date = new Date(dateString);
         if (isNaN(date.getTime())) return '—';
-        return date.toLocaleString('ru-RU', {
+        return date.toLocaleString( {
             day: '2-digit',
             month: '2-digit',
             year: 'numeric',

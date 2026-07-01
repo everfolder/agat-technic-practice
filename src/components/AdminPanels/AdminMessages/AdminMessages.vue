@@ -34,22 +34,22 @@ const saveApplications = () => {
 };
 
 const updateStatus = (app, newStatus) => {
-    app.status = newStatus;
-    app.updatedAt = new Date().toISOString();
-    saveApplications();
-};
+    app.status = newStatus
+    app.updatedAt = new Date().toISOString() // преобразует дату в строку формата UTC
+    saveApplications()
+}
 
 const deleteApplication = (id) => {
-    applications.value = applications.value.filter(app => app.id !== id);
-    saveApplications();
+    applications.value = applications.value.filter(app => app.id !== id)
+    saveApplications()
     if (selectedApplication.value?.id === id) {
-        selectedApplication.value = null;
+        selectedApplication.value = null
     }
-};
+}
 
 const selectApplication = (app) => {
-    selectedApplication.value = app;
-};
+    selectedApplication.value = app
+}
 
 const filteredApplications = computed(() => {
     let filtered = applications.value;
@@ -69,9 +69,6 @@ const filteredApplications = computed(() => {
 });
 
 const stats = computed(() => {
-    if (!Array.isArray(applications.value)) {
-        return { total: 0, newCount: 0, inProgress: 0, completed: 0, rejected: 0 };
-    }
     const total = applications.value.length;
     const newCount = applications.value.filter(app => app.status === 'new').length;
     const inProgress = applications.value.filter(app => app.status === 'in_progress').length;

@@ -98,4 +98,73 @@ h2 {
         }
     }
 }
+
+@media screen and (max-width: 1300px) {
+    .service {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        padding-block: 40px 20px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .service {
+        grid-template-columns: 1fr;
+        gap: 15px;
+
+        &__service {
+            padding: 20px;
+            flex-direction: row;
+            gap: 15px;
+        }
+
+        &__service-title {
+            font-size: 16px;
+        }
+
+        &__buttons {
+            gap: 15px;
+        }
+
+        &-btn1,
+        &-btn2 {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        padding-block: 30px 16px;
+        font-size: 20px;
+    }
+
+    .service {
+        &__service {
+            padding: 16px;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        &__service-title {
+            font-size: 14px;
+        }
+
+        &__buttons {
+            gap: 10px;
+        }
+
+        &-btn1,
+        &-btn2 {
+            padding: 8px 12px;
+            font-size: 12px;
+        }
+    }
+}
 </style>

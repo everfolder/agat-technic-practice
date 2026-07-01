@@ -41,48 +41,47 @@ const blurInput = (event) => {
 }
 
 const customError = (event) => {
-    event.preventDefault();
-    const input = event.target;
-    const parent = input.parentElement;
-    const label = parent.querySelector('label');
-    const errorSpan = parent.querySelector('.error');
-
+    event.preventDefault()
+    const input = event.target
+    const parent = input.parentElement
+    const label = parent.querySelector('label')
+    const errorSpan = parent.querySelector('.error')
     if (input.validity.valueMissing) {
-        input.classList.add('input-error');
+        input.classList.add('input-error')
         if (errorSpan) {
-            errorSpan.classList.add('error-visible');
-            errorSpan.textContent = 'Пожалуйста, заполните это поле';
+            errorSpan.classList.add('error-visible')
+            errorSpan.textContent = 'Пожалуйста, заполните это поле'
         }
         if (label && input.value === '') {
-            label.classList.add('active');
+            label.classList.add('active')
         }
     }
 }
 
 const checkboxError = (event) => {
-    event.preventDefault();
-    const checkbox = event.target;
-    const label = checkbox.closest('.custom-checkbox');
-    const parent = label.parentElement;
-    const errorSpan = parent.querySelector('.error');
+    event.preventDefault()
+    const checkbox = event.target
+    const label = checkbox.closest('.custom-checkbox')
+    const parent = label.parentElement
+    const errorSpan = parent.querySelector('.error')
     if (checkbox.validity.valueMissing) {
-        label.classList.add('input-error');
+        label.classList.add('input-error')
         if (errorSpan) {
-            errorSpan.classList.add('error-visible');
-            errorSpan.textContent = 'Необходимо согласие на обработку данных';
+            errorSpan.classList.add('error-visible')
+            errorSpan.textContent = 'Необходимо согласие на обработку данных'
         }
     }
 }
 
 const checkboxChange = (event) => {
-    const checkbox = event.target;
-    const label = checkbox.closest('.custom-checkbox');
-    const parent = label.parentElement;
-    const errorSpan = parent.querySelector('.error');
+    const checkbox = event.target
+    const label = checkbox.closest('.custom-checkbox')
+    const parent = label.parentElement
+    const errorSpan = parent.querySelector('.error')
     if (checkbox.checked) {
-        label.classList.remove('input-error');
+        label.classList.remove('input-error')
         if (errorSpan) {
-            errorSpan.classList.remove('error-visible');
+            errorSpan.classList.remove('error-visible')
         }
     }
 }
@@ -100,9 +99,8 @@ const loadApplications = () => {
 };
 
 const submitForm = (event) => {
-    event.preventDefault();
+    event.preventDefault()
     if (form.value.checkValidity()) {
-
         const existingApplications = loadApplications();
         const newApplication = {
             id: Date.now(),
@@ -110,24 +108,23 @@ const submitForm = (event) => {
             status: 'new',
             createdAt: new Date().toISOString(),
             updatedAt: new Date().toISOString()
-        };
-        existingApplications.unshift(newApplication);
-        localStorage.setItem('applications', JSON.stringify(existingApplications));
-
+        }
+        existingApplications.unshift(newApplication)
+        localStorage.setItem('applications', JSON.stringify(existingApplications))
         Fancybox.show([
             {
                 src: `#${props.id || 'send'}`,
                 type: "inline",
             }
-        ]);
+        ])
     } else {
-        const inputs = form.value.querySelectorAll('input, select');
+        const inputs = form.value.querySelectorAll('input, select')
         inputs.forEach(input => {
             if (!input.validity.valid) {
-                const event = new Event('invalid');
-                input.dispatchEvent(event);
+                const event = new Event('invalid')
+                input.dispatchEvent(event)
             }
-        });
+        })
     }
 }
 </script>
