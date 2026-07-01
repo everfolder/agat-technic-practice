@@ -9,17 +9,18 @@ import Commercial from '@/components/Commercial.vue'
 import { onMounted, onUnmounted } from 'vue'
 import { Fancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox/fancybox.css"
-
 let timer = null;
 
 onMounted(() => {
   timer = setTimeout(() => {
-    Fancybox.show([
-      {
-        src: '#reklama',
-        type: "inline",
-      }
-    ])
+    if (window.innerWidth >= 1440) {
+      Fancybox.show([
+        {
+          src: '#reklama',
+          type: "inline",
+        }
+      ])
+    }
   }, 7000)
 })
 
@@ -28,7 +29,6 @@ onUnmounted(() => {
     clearTimeout(timer)
   }
 })
-
 </script>
 
 <template>
