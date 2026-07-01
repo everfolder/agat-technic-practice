@@ -16,13 +16,10 @@ const brands = ref([
   {name: 'MAZ'},
   {name: 'Scania'},
   {name: 'Foton'},
+  {name: 'Shacman'},
 ])
 
-const products = ref([
-  {name: 'Цельнометаллические автомобили'},
-  {name: 'Прицепная техника'},
-  {name: 'Грузовая техника'},
-])
+const transmission = ref(['МКПП', 'АКПП'])
 
 const activeType = ref('')
 
@@ -31,28 +28,39 @@ const swapType = (t) => {
   console.log(activeType.value)
 }
 
-const activeBrand = ref([])
+const activeTransmission = ref('')
+const activeBrand = ref('')
+const activeSort = ref('')
+const emit = defineEmits(['selectBrand', 'selectTransmission', 'selectSort'])
 
 const setActiveBrand = b => {
-  if (activeBrand.value.find(br => br === b)) {
-    activeBrand.value = activeBrand.value.filter(br => br !== b)
+  if (activeBrand.value === b) {
+    activeBrand.value = ''
   } else {
-    activeBrand.value.push(b)
+    activeBrand.value = b
   }
-  console.log(activeBrand.value)
+  emit('selectBrand', activeBrand.value)
 }
 
-const activeProducts = ref([])
 
-const setActiveProduct = p => {
-  if (activeProducts.value.find(pr => pr === p)) {
-    activeProducts.value = activeProducts.value.filter(pr => pr !== p)
+const setActiveTransmission = t => {
+  if (activeTransmission.value === t) {
+    activeTransmission.value = ''
   } else {
-    activeProducts.value.push(p)
+    activeTransmission.value = t
   }
-  console.log(activeProducts.value)
+  emit('selectTransmission', activeTransmission.value)
 }
 
+const setActiveSort = s => {
+  if (activeSort.value === s) {
+    activeSort.value = ''
+  } else {
+    activeSort.value = s
+  }
+  console.log(activeSort.value)
+  emit('selectSort', activeSort.value)
+}
 </script>
 
 <template>
@@ -64,31 +72,20 @@ const setActiveProduct = p => {
           {{type.name}}
         </button>
       </div>
+      <div class="filter__sort">
+        <button @click="setActiveSort('inc')" class="filter__sort-btn" :class="{'active': activeSort === 'inc'}">Цена (Возрастание) ↑</button>
+        <button @click="setActiveSort('dec')" class="filter__sort-btn" :class="{'active': activeSort === 'dec'}">Цена (Убывание) ↓</button>
+      </div>
       <FilterDrop title="Бренды" class="filter__brands">
-        <div @click="setActiveBrand(b.name)" v-for="b in brands" class="drop-item" :class="{'active-item': activeBrand.find(br => br === b.name)}">
+        <div @click="setActiveBrand(b.name)" v-for="b in brands" class="drop-item" :class="{'active-item': activeBrand === b.name}">
           {{b.name}}
         </div>
       </FilterDrop>
-      <FilterDrop title="Продукция" class="filter__products">
-        <div @click="setActiveProduct(p.name)" class="drop-item" v-for="p in products" :class="{'active-item': activeProducts.find(pr => pr === p.name)}">
-          {{p.name}}
+      <FilterDrop title="Тип КПП" class="filter__products">
+        <div @click="setActiveTransmission(t)" class="drop-item" v-for="t in transmission" :class="{'active-item': activeTransmission === t}">
+          {{t}}
         </div>
       </FilterDrop>
-      <div class="filter__transmission">
-        <p class="filter__transmission-title">
-          Коробка передач
-        </p>
-        <div class="filter__transmission-checks">
-          <label>
-            <input type="checkbox">
-            <span>МКПП</span>
-          </label>
-          <label>
-            <input type="checkbox">
-            <span>АКПП</span>
-          </label>
-        </div>
-      </div>
     </div>
   </div>
 </template>
@@ -126,24 +123,15 @@ const setActiveProduct = p => {
     gap: 1rem;
   }
 
-  &__transmission {
+  &__sort {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 1rem;
 
-    &-title {
-      font-weight: 600;
-    }
-
-    &-checks {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-
-      label {
-        display: flex;
-        align-items: center;
-        gap: .25rem;
+    &-btn {
+      background-color: var(--color-gray-lite-2);
+      @include tablet {
+        padding: .5rem 1rem;
       }
     }
   }

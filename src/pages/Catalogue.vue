@@ -5,6 +5,25 @@ import CatalogueList from "@/components/Catalogue/CatalogueList.vue";
 import CatalogueBrands from "@/components/Catalogue/CatalogueBrands.vue";
 import Filter from '@/assets/icons/filter.svg'
 import CloseModal from "@/assets/icons/close-modal.svg";
+import {ref} from "vue";
+
+const selectedBrand = ref('')
+const selectedTransmission = ref('')
+const selectedSort = ref('')
+
+const setBrand = b => {
+  selectedBrand.value = b
+  console.log(selectedBrand.value)
+}
+
+const setTransmission = t => {
+  selectedTransmission.value = t
+  console.log(selectedTransmission.value)
+}
+
+const setSort = s => {
+  selectedSort.value = s
+}
 </script>
 
 <template>
@@ -19,13 +38,13 @@ import CloseModal from "@/assets/icons/close-modal.svg";
           <button data-fancybox-close class="burger-menu__btn">
             <CloseModal />
           </button>
-          <CatalogueFilter class="filter-tablet"/>
+          <CatalogueFilter class="filter-tablet" @selectBrand="setBrand" @selectTransmission="setTransmission"/>
         </div>
       </div>
     </div>
     <div class="catalogue__wrapper2">
-      <CatalogueFilter class="filter"/>
-      <CatalogueList />
+      <CatalogueFilter class="filter" @selectBrand="setBrand" @selectTransmission="setTransmission" @selectSort="setSort"/>
+      <CatalogueList :filterBrand="selectedBrand" :filterTransmission="selectedTransmission" :sort="selectedSort"/>
     </div>
   </div>
 </template>

@@ -1,37 +1,71 @@
 <script setup>
 import CatalogueCard from "@/components/Catalogue/CatalogueCard.vue";
-import { onMounted, ref, computed, onUnmounted } from "vue";
+import { onMounted, ref, computed, watch } from "vue";
+
+const props = defineProps({
+  filterBrand: {
+    type: String,
+    required: false,
+    default: ''
+  },
+  filterTransmission: {
+    type: String,
+    required: false,
+    default: ''
+  },
+  sort: {
+    type: String,
+    required: false,
+    default: ''
+  }
+})
 
 const cars = ref([]);
 
 const currentPage = ref(1);
 const itemsPerPage = 9;
 
-// Добавляем реактивную переменную для определения мобильного устройства
-const isMobile = ref(window.innerWidth < 768);
-
-const updateIsMobile = () => {
-  isMobile.value = window.innerWidth < 768;
-};
 
 onMounted(async () => {
-  cars.value = JSON.parse(localStorage.getItem('cars'));
-  window.addEventListener('resize', updateIsMobile);
+  const storedCars = localStorage.getItem('cars');
+  cars.value = storedCars ? JSON.parse(storedCars) : [];
 });
 
-onUnmounted(() => {
-  window.removeEventListener('resize', updateIsMobile);
+const brandFilteredCars = computed(() => {
+  if (props.filterBrand === '') {
+    return cars.value;
+  } else {
+    return cars.value.filter(c => c.brand === props.filterBrand);
+  }
+});
+
+const transmissionFilteredCars = computed(() => {
+  if (props.filterTransmission === '') {
+    return brandFilteredCars.value;
+  } else {
+    return brandFilteredCars.value.filter(c => c.propertyValues?.transmission === props.filterTransmission);
+  }
+});
+
+const allFilteredCars = computed(() => {
+  let carsToSort = [...transmissionFilteredCars.value];
+  if (props.sort === 'inc') {
+    return carsToSort.sort((a, b) => a.price - b.price);
+  } else if (props.sort === 'dec') {
+    return carsToSort.sort((a, b) => b.price - a.price);
+  } else {
+    return carsToSort;
+  }
 });
 
 const totalPages = computed(() =>
-    Math.ceil(cars.value.length / itemsPerPage)
+    Math.ceil(allFilteredCars.value.length / itemsPerPage)
 );
 
 const paginatedCars = computed(() => {
   const start = (currentPage.value - 1) * itemsPerPage;
   const end = start + itemsPerPage;
-
-  return cars.value.slice(start, end);
+  return allFilteredCars.value.slice(start, end);
 });
 
 const goToPage = (page) => {
@@ -43,14 +77,12 @@ const goToPage = (page) => {
   });
 };
 
-// Вычисляем, какие страницы показывать
 const visiblePages = computed(() => {
   const total = totalPages.value;
   const current = currentPage.value;
 
-  // На мобильных показываем меньше страниц
-  const delta = isMobile.value ? 1 : 2;
-  const maxVisible = isMobile.value ? 3 : 5;
+  const delta = 2;
+  const maxVisible = 3;
 
   if (total <= maxVisible) {
     return Array.from({ length: total }, (_, i) => i + 1);
@@ -78,11 +110,32 @@ const visiblePages = computed(() => {
 });
 
 const isEllipsis = (page) => page === '...';
+
+watch([() => props.filterBrand, () => props.filterTransmission, () => props.sort], () => {
+  if (currentPage.value > totalPages.value) {
+    currentPage.value = Math.max(1, totalPages.value);
+  } else {
+    currentPage.value = 1;
+  }
+});
+
+// Дополнительная проверка: если страница стала больше общего количества страниц
+watch(totalPages, (newTotalPages) => {
+  if (currentPage.value > newTotalPages && newTotalPages > 0) {
+    currentPage.value = newTotalPages;
+  } else if (newTotalPages === 0) {
+    currentPage.value = 1;
+  }
+});
 </script>
 
 <template>
   <div class="wrapper">
-    <div class="catalogue-list">
+    <div v-if="allFilteredCars.length === 0" class="no-results">
+      <p>Автомобили не найдены</p>
+    </div>
+
+    <div v-else class="catalogue-list">
       <CatalogueCard
           v-for="c in paginatedCars"
           :key="c.id"
@@ -135,6 +188,13 @@ const isEllipsis = (page) => page === '...';
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #666;
+  font-size: 1.125rem;
 }
 
 .catalogue-list {
@@ -194,7 +254,6 @@ const isEllipsis = (page) => page === '...';
     user-select: none;
   }
 
-  // Адаптив для мобильных устройств
   @include mobile {
     gap: 0.3rem;
     align-self: center;
@@ -209,11 +268,6 @@ const isEllipsis = (page) => page === '...';
       min-width: 32px;
       height: 32px;
       font-size: 14px;
-    }
-
-    a {
-      font-size: 11px;
-      padding: 0 8px;
     }
   }
 
@@ -230,11 +284,6 @@ const isEllipsis = (page) => page === '...';
       min-width: 28px;
       height: 28px;
       font-size: 12px;
-    }
-
-    a {
-      font-size: 10px;
-      padding: 0 6px;
     }
   }
 }

@@ -1,20 +1,30 @@
 <script setup>
-
-import { useRoute } from "vue-router";
-import { ref } from "vue";
+import {useRoute} from "vue-router";
+import {ref, computed} from "vue";
 import CarPagePropertyItem from "@/components/CarPagePropertyItem.vue";
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper/modules';
+
+
 import Modal from "@/components/Modal.vue";
 import Form from "@/components/Form.vue";
 
 const route = useRoute()
-
-
 
 const carId = route.params.id
 console.log(carId)
 
 const car = ref(JSON.parse(localStorage.getItem('cars')).find(car => car.id === carId))
 console.log(car.value)
+
+const swiperModules = [Navigation, Pagination]
+
+const hasImages = computed(() => {
+  return car.value?.propertyValues?.images?.length > 0
+})
 </script>
 
 <template>
@@ -33,7 +43,35 @@ console.log(car.value)
     </div>
     <div class="car-page__main-info">
       <div class="car-page__main-info-image">
-        <img :src="car.preview_picture.path" alt="">
+        <swiper
+            v-if="hasImages"
+            :modules="swiperModules"
+            :slides-per-view="1"
+            :space-between="0"
+            :navigation="true"
+            :pagination="{ clickable: true }"
+            class="car-page__swiper"
+        >
+          <swiper-slide
+              v-for="image in car.propertyValues.images"
+              :key="image.id"
+              class="car-page__slide"
+          >
+            <img
+                :src="image.path"
+                :alt="`${car.brand} ${car.model}`"
+                class="car-page__slide-image"
+            >
+          </swiper-slide>
+        </swiper>
+
+        <div v-else class="car-page__preview">
+          <img
+              :src="car.preview_picture.path"
+              :alt="`${car.brand} ${car.model}`"
+              class="car-page__preview-image"
+          >
+        </div>
       </div>
       <div class="car-page__main-info-property">
         <h3>Технические характеристики</h3>
@@ -151,17 +189,24 @@ console.log(car.value)
       flex-direction: column;
     }
 
-
     &-image {
-      width: 100%;
+      width: 50%;
+      flex-shrink: 0;
+
+      @include tablet {
+        width: 100%;
+      }
     }
 
     &-property {
-      width: 100%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       gap: 2rem;
 
+      @include tablet {
+        width: 100%;
+      }
 
       &-data {
         display: flex;
@@ -169,6 +214,42 @@ console.log(car.value)
         justify-content: space-between;
         gap: 2rem;
       }
+    }
+  }
+
+  &__swiper {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+
+  &__slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__preview {
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray-light);
+    border-radius: 4px;
+    overflow: hidden;
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
