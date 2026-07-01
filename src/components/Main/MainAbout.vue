@@ -43,30 +43,93 @@ import About from '@/assets/main-about/About.mp4'
 
 <style scoped lang="scss">
 @use '@/styles/helpers' as *;
+
 .about {
   margin-bottom: rem(41);
+
+  @include mobile {
+    margin-bottom: rem(24);
+  }
+
+  /* =====================
+     VIDEO BLOCK
+  ===================== */
   &-video {
     float: right;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
+    margin-left: rem(32);
+    margin-bottom: rem(16);
     video {
       width: rem(610);
       height: rem(394);
+      object-fit: cover;
+      display: block;
+    }
+
+    @include laptop {
+      video {
+        width: rem(520);
+        height: rem(340);
+      }
+    }
+
+    @include tablet {
+      float: none;
+      margin-left: 0;
+      margin-bottom: rem(20);
+
+      video {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @include mobile {
+      float: none;
+      margin-left: 0;
+      margin-bottom: rem(16);
+
+      video {
+        width: 100%;
+        height: auto;
+      }
     }
   }
+
+  /* =====================
+     TEXT
+  ===================== */
   p {
     margin-top: rem(14);
+    line-height: 1.6;
+
+    @include mobile {
+      margin-top: rem(10);
+      font-size: rem(13);
+    }
   }
 
-  &-text{
+  &-text {
     font-size: rem(14);
+    color: var(--color-gray-dark);
+
+    @include mobile {
+      font-size: rem(13);
+    }
   }
 }
-.about-content{
-  &__title{
+
+/* =====================
+   TITLE
+===================== */
+.about-content {
+  &__title {
     font-size: rem(28);
     color: var(--color-gray-dark);
     font-weight: 500;
+
+    @include mobile {
+      font-size: rem(20);
+    }
   }
 }
 </style>

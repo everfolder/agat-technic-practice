@@ -4,7 +4,7 @@ const BRANDS_KEY = 'my_brands_data'
 export const initStorage = async () => {
     if (!localStorage.getItem(NEWS_KEY)) {
         try {
-            const res = await fetch('/news.json')
+            const res = await fetch(`${import.meta.env.BASE_URL}news.json`)
             const data = await res.json()
             localStorage.setItem(NEWS_KEY, JSON.stringify(data))
         } catch (e) {
@@ -14,7 +14,7 @@ export const initStorage = async () => {
 
     if (!localStorage.getItem(BRANDS_KEY)) {
         try {
-            const res = await fetch('/brands.json')
+            const res = await fetch(`${import.meta.env.BASE_URL}brands.json`)
             const data = await res.json()
             localStorage.setItem(BRANDS_KEY, JSON.stringify(data))
         } catch (e) {

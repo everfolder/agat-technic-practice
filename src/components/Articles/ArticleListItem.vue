@@ -11,7 +11,7 @@ localStorage.setItem(
     JSON.stringify(props.article)
 )
 console.log(props.article)
-</script>не
+</script>
 
 <template>
   <div class="news-item">

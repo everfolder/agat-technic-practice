@@ -85,63 +85,187 @@ const filteredNews = computed(() => {
 
 <style scoped lang="scss">
 @use '@/styles/helpers' as *;
-.title{
+
+/* =====================
+   TITLE
+===================== */
+.title {
   font-size: rem(28);
   color: var(--color-gray-dark);
+
+  @include mobile {
+    font-size: rem(20);
+  }
 }
-.p{
+
+/* =====================
+   SWIPER WRAPPER FIX
+===================== */
+.p {
   width: auto !important;
 }
-.button-filter{
+
+/* =====================
+   FILTER BUTTONS
+===================== */
+.button-filter {
   box-sizing: border-box;
-  padding: rem(7) rem(10) rem(7) rem(10);
+  padding: rem(7) rem(10);
   background-color: var(--color-light-gray);
   color: var(--color-gray-dark);
+  white-space: nowrap;
+  font-size: rem(14);
+  transition: 0.2s ease;
+
+  @include mobile {
+    font-size: rem(12);
+    padding: rem(6) rem(8);
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &.active,
+  &:focus {
+    background-color: var(--color-gray-dark);
+    color: var(--color-white);
+  }
 }
-.button-filter:focus{
-  background-color: var(--color-gray-dark);
-  color: var(--color-white);
+
+/* =====================
+   SWIPER SPACING
+===================== */
+.product-content__slider {
+  margin: rem(25) 0 rem(32);
+
+  @include mobile {
+    margin: rem(16) 0 rem(20);
+  }
 }
-.product-content__slider{
-  margin: rem(25) 0 rem(32) 0;
-}
-.news-block{
-  display: inline-flex;
-  justify-content: space-between;
+
+/* =====================
+   NEWS GRID
+===================== */
+.news-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(24);
   width: 100%;
-  &-item{
+
+  @include laptop {
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(20);
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: rem(16);
+  }
+
+  /* =====================
+     CARD
+  ===================== */
+  &-item {
     box-sizing: border-box;
     background-color: var(--color-light-gray);
-    max-width: rem(400);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.25s ease;
 
-    &__content{
-      padding: rem(28) rem(24) rem(32) rem(24);
+    &:hover {
+      transform: translateY(-2px);
+    }
 
-      &__datetime, &__title, &__desc{
-        color: var(--color-gray-dark);
+    /* IMAGE (если есть в шаблоне) */
+    img {
+      width: 100%;
+      height: rem(200);
+      object-fit: cover;
+
+      @include mobile {
+        height: rem(160);
       }
-      &__title{
+    }
+
+    /* CONTENT */
+    &__content {
+      padding: rem(28) rem(24) rem(32);
+
+      @include mobile {
+        padding: rem(16);
+      }
+
+      &__datetime {
+        color: var(--color-gray-dark);
+        font-size: rem(13);
+
+        @include mobile {
+          font-size: rem(12);
+        }
+      }
+
+      &__title {
+        color: var(--color-gray-dark);
         font-weight: 500;
-        margin: rem(25) 0 rem(17) 0;
+        margin: rem(25) 0 rem(17);
+
+        @include mobile {
+          margin: rem(12) 0 rem(10);
+          font-size: rem(14);
+        }
+      }
+
+      &__desc {
+        color: var(--color-gray-dark);
+
+        @include mobile {
+          font-size: rem(13);
+          line-height: 1.4;
+        }
       }
     }
   }
 }
-.show-all{
+
+/* =====================
+   SHOW ALL BUTTON
+===================== */
+.show-all {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: rem(32) 0 rem(56) 0;
+  margin: rem(32) 0 rem(56);
 
-  &__btn{
+  @include mobile {
+    margin: rem(20) 0 rem(32);
+  }
+
+  &__btn {
+    display: inline-flex;
     align-items: center;
-    padding: rem(12) rem(16) rem(12) rem(16);
+    gap: rem(7);
+    padding: rem(12) rem(16);
     background-color: var(--color-gray-dark);
     color: var(--color-white);
-    display: inline-flex;
-    gap: rem(7);
+    transition: 0.2s ease;
+
+    @include mobile {
+      padding: rem(10) rem(14);
+      font-size: rem(14);
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
   }
 }
+
+/* =====================
+   ACTIVE STATE FIX
+===================== */
 .button-filter.active {
   background-color: var(--color-gray-dark);
   color: var(--color-white);

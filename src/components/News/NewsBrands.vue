@@ -13,9 +13,24 @@ const selectBrand = (brand) => {
   emit('select-brand', brand)
 }
 
+const getImageUrl = (path) => {
+  if (!path) return ''
+
+  if (
+      path.startsWith('http://') ||
+      path.startsWith('https://')
+  ) {
+    return path
+  }
+
+  return `${baseUrl}${path}`
+}
+
 onMounted(() => {
   brandLists.value = getBrands()
 })
+
+const baseUrl = import.meta.env.BASE_URL
 </script>
 
 
@@ -26,7 +41,7 @@ onMounted(() => {
       <Swiper :slides-per-view="'auto'" :space-between="24" class="brands-swiper">
         <SwiperSlide v-for="brand in brandLists" :key="brand.id" class="brand-slide">
           <button  :class="{ active: activeBrand === brand.id }" @click="selectBrand(brand)">
-            <img class="brand-item" :src="brand.img" :alt="brand.name">
+            <img class="brand-item" :src="getImageUrl(brand.img)" :alt="brand.name">
           </button>
         </SwiperSlide>
       </Swiper>

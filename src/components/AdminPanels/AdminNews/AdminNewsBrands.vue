@@ -66,17 +66,14 @@ const saveBrand = () => {
   loadBrands()
   closeModal()
 }
-
 const editBrand = (brand) => {
   editingBrandId.value = brand.id
-
   form.value = {
     name: brand.name,
     slug: brand.slug,
     img: brand.img,
     description: brand.description
   }
-
   showModal.value = true
 }
 
@@ -99,6 +96,15 @@ const filteredBrands = computed(() => {
 onMounted(() => {
   loadBrands()
 })
+
+const getImageUrl = (path) => {
+  if (!path) return ''
+  if (path.startsWith('http://') || path.startsWith('https://')) {
+    return path
+  }
+  return `${baseUrl}${path}`
+}
+const baseUrl = import.meta.env.BASE_URL
 </script>
 
 <template>
@@ -134,7 +140,7 @@ onMounted(() => {
           <tr v-for="brand in filteredBrands" :key="brand.id">
             <td>{{ brand.id }}</td>
             <td style="text-align: center">
-              <img :src="brand.img" :alt="brand.name" class="brand-logo">
+              <img :src="getImageUrl(brand.img)" :alt="brand.name" class="brand-logo">
             </td>
             <td>{{ brand.name }}</td>
             <td>{{ brand.slug }}</td>
@@ -161,7 +167,7 @@ onMounted(() => {
         <input v-model="form.slug" placeholder="Slug">
         <input v-model="form.img" placeholder="Ссылка на логотип">
         <textarea v-model="form.description" placeholder="Описание бренда"/>
-        <img v-if="form.img" :src="form.img" alt="" class="brand-preview">
+        <img v-if="form.img" :src="getImageUrl(form.img)" alt="" class="brand-preview">
         <div class="brand-modal__actions">
           <button class="cancel-btn" @click="closeModal">
             Отмена

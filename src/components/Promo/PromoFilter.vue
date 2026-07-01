@@ -14,7 +14,7 @@ const chooseFilter = (filter) => {
 </script>
 
 <template>
-  <div class="container">
+  <div class="content container">
     <button v-for="filter in props.filter" :key="filter" @click="chooseFilter(filter)" class="filter">
       {{ filter }}
     </button>
@@ -23,6 +23,9 @@ const chooseFilter = (filter) => {
 
 <style scoped lang="scss">
 @use '@/styles/helpers' as *;
+.content{
+  margin-top: rem(16);
+}
 .filter{
   margin-right: rem(16);
   box-sizing: border-box;

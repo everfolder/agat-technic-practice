@@ -10,6 +10,8 @@ const news = computed(() => {
       item => item.slug === route.params.slug
   )
 })
+
+const baseUrl = import.meta.env.BASE_URL
 </script>
 
 <template>
@@ -22,7 +24,7 @@ const news = computed(() => {
       {{news.title}}
     </div>
     <h1 class="title">{{ news.title }}</h1>
-    <img :src="news.image_url" :alt="news.title" style="width: 100%; margin: 20px 0;">
+    <img :src="`${baseUrl}${news.image_url}`" :alt="news.title" style="width: 100%; margin: 20px 0;">
     <p class="date">{{ news.date }}</p>
     <div class="full-text">
       {{ news.full_text }}

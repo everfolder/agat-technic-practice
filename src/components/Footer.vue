@@ -143,6 +143,7 @@ a {
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      min-width: 0;
     }
 
     &-right {
@@ -170,8 +171,7 @@ a {
   }
 
   &__logo {
-    width: fluid(296, 244);
-
+    width: fluid(296, 280);
   }
 
   &__contacts {

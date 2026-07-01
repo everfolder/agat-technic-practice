@@ -42,7 +42,7 @@ const promo = [
     date: "01.11.2025",
     preview: "Агат техника для бизнеса готовы предложить удобное и выгодное финансовое решение для любых целей вашей деятельности.",
     full_text: "",
-    img_url: new URL('@/assets/promo/3promo.jpg', import.meta.url).href,
+    img_url: new URL('@/assets/promo/3promo.png', import.meta.url).href,
     flag: "Продажи"
   },
   {

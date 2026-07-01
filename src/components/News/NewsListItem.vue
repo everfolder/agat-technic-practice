@@ -5,14 +5,14 @@ const props = defineProps({
     required: true,
   }
 })
-console.log(props.news)
+const baseUrl = import.meta.env.BASE_URL
 </script>
 
 <template>
   <div class="news-item">
     <router-link :to="`/news/${news.slug}`" class="news-item">
     <div class="news-item__image">
-      <img :src="news.image_url" alt="">
+      <img :src="`${baseUrl}${news.image_url}`" alt="">
     </div>
 
     <div class="news-item__text-info">

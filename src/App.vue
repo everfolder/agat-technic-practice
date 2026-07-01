@@ -8,9 +8,8 @@ const carsLocal = ref([])
 onMounted(async () => {
   try {
     await initStorage()
-
     if (!localStorage.getItem('cars')) {
-      const res = await fetch("src/cars.json");
+      const res = await fetch(`${import.meta.env.BASE_URL}cars.json`);
       carsLocal.value = await res.json();
       localStorage.setItem('cars', JSON.stringify(carsLocal.value))
     }
@@ -24,7 +23,7 @@ onMounted(async () => {
 <template>
   <Header />
   <router-view />
-  <Footer />
+<!--  <Footer />-->
 </template>
 
 <style scoped>

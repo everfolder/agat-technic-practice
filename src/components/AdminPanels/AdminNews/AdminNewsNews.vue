@@ -98,6 +98,8 @@ const filteredNews = computed(() => {
 onMounted(() => {
   loadNews()
 })
+
+const baseUrl = import.meta.env.BASE_URL
 </script>
 
 <template>
@@ -133,7 +135,7 @@ onMounted(() => {
           <tr v-for="item in filteredNews" :key="item.id">
             <td>{{ item.id }}</td>
             <td style="text-align:center">
-              <img :src="item.image_url" :alt="item.title" class="news-image">
+              <img :src="`${baseUrl}${item.image_url}`" :alt="item.title" class="news-image">
             </td>
             <td>
               {{ item.title }}

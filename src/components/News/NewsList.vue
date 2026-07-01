@@ -29,19 +29,19 @@ const goToPage = (page) => {
 </script>
 
 <template>
-<section class="news">
-  <div class="news-content container">
-    <div class="news-content__list">
-      <NewsListItem v-for="singleNews in paginatedNews" :key="singleNews.id" :news=singleNews />
+  <section class="news">
+    <div class="news-content container">
+      <div class="news-content__list">
+        <NewsListItem v-for="singleNews in paginatedNews" :key="singleNews.id" :news=singleNews />
+      </div>
+      <div v-if="totalPages > 1" class="pagination">
+        <button v-if="currentPage > 1" class="pagination-btn pagination-arrow" @click="goToPage(currentPage - 1)">←</button>
+        <button v-for="page in totalPages" :key="page" class="pagination-btn" :class="{ active: currentPage === page }" @click="goToPage(page)">{{ page }}</button>
+        <button> <router-link to="/admin-news">...</router-link></button>
+        <button v-if="currentPage < totalPages" class="pagination-btn pagination-arrow" @click="goToPage(currentPage + 1)">→</button>
+      </div>
     </div>
-    <div v-if="totalPages > 1" class="pagination">
-      <button v-if="currentPage > 1" class="pagination-btn pagination-arrow" @click="goToPage(currentPage - 1)">←</button>
-      <button v-for="page in totalPages" :key="page" class="pagination-btn" :class="{ active: currentPage === page }" @click="goToPage(page)">{{ page }}</button>
-      <button> <router-link to="/admin-news">...</router-link></button>
-      <button v-if="currentPage < totalPages" class="pagination-btn pagination-arrow" @click="goToPage(currentPage + 1)">→</button>
-    </div>
-  </div>
-</section>
+  </section>
 </template>
 
 <style scoped lang="scss">
@@ -49,24 +49,50 @@ const goToPage = (page) => {
 
 .news {
   padding-block: rem(20);
+
+  @include mobile {
+    padding-block: rem(12);
+  }
 }
 
 .news-content {
   display: flex;
   flex-direction: column;
   gap: rem(40);
+
+  @include mobile {
+    gap: rem(20);
+  }
 }
+
 .news-content__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: rem(32);
+
+  @include laptop {
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(24);
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: rem(16);
+  }
 }
+
 .pagination {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
-  margin-top: 20px;
+  gap: rem(10);
+  margin-top: rem(20);
+  flex-wrap: wrap;
+
+  @include mobile {
+    justify-content: center;
+    gap: rem(6);
+  }
 }
 
 .pagination-btn {

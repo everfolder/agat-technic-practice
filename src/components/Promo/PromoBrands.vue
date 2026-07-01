@@ -4,21 +4,44 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import { getBrands } from '@/services/storageServiceBrandsNews.js'
 
+const emit = defineEmits(['select-brand'])
+const activeBrand = ref(null)
 const brandLists = ref([])
+
+const selectBrand = (brand) => {
+  activeBrand.value = brand.id
+  emit('select-brand', brand)
+}
+
 onMounted(() => {
   brandLists.value = getBrands()
 })
+
+const getImageUrl = (path) => {
+  if (!path) return ''
+
+  if (
+      path.startsWith('http://') ||
+      path.startsWith('https://')
+  ) {
+    return path
+  }
+
+  return `${baseUrl}${path}`
+}
+
+const baseUrl = import.meta.env.BASE_URL
 </script>
 
 
 <template>
   <section class="brands">
     <div class="brand-content container">
-      <h2 class="title">Статьи</h2>
+      <h2 class="title">Акции</h2>
       <Swiper :slides-per-view="'auto'" :space-between="24" class="brands-swiper">
         <SwiperSlide v-for="brand in brandLists" :key="brand.id" class="brand-slide">
-          <button>
-            <img class="brand-item" :src="brand.img" :alt="brand.name">
+          <button  :class="{ active: activeBrand === brand.id }" @click="selectBrand(brand)">
+            <img class="brand-item" :src="getImageUrl(brand.img)" :alt="brand.name">
           </button>
         </SwiperSlide>
       </Swiper>
